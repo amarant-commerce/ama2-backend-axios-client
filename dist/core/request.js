@@ -48,9 +48,12 @@ export const getQueryString = (params) => {
     const process = (key, value) => {
         if (isDefined(value)) {
             if (Array.isArray(value)) {
-                value.forEach(v => {
-                    process(key, v);
+                let newValue = {};
+                value.forEach((i, v) => {
+                    newValue[i] = v;
                 });
+                console.log(newValue);
+                process(key, newValue);
             }
             else if (typeof value === 'object') {
                 Object.entries(value).forEach(([k, v]) => {
