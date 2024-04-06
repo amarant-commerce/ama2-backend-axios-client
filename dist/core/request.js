@@ -1,4 +1,4 @@
-/* generated using openapi-typescript-codegen -- do no edit */
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
@@ -48,11 +48,11 @@ export const getQueryString = (params) => {
     const process = (key, value) => {
         if (isDefined(value)) {
             if (Array.isArray(value)) {
+                // preserve indexes for array type query params
                 let newValue = {};
-                value.forEach((i, v) => {
+                value.forEach((v, i) => {
                     newValue[i] = v;
                 });
-                console.log(newValue);
                 process(key, newValue);
             }
             else if (typeof value === 'object') {
@@ -147,7 +147,7 @@ export const getHeaders = async (config, options, formData) => {
         const credentials = base64(`${username}:${password}`);
         headers['Authorization'] = `Basic ${credentials}`;
     }
-    if (options.body) {
+    if (options.body !== undefined) {
         if (options.mediaType) {
             headers['Content-Type'] = options.mediaType;
         }
@@ -177,6 +177,7 @@ export const sendRequest = async (config, options, url, body, formData, headers,
         data: body !== null && body !== void 0 ? body : formData,
         method: options.method,
         withCredentials: config.WITH_CREDENTIALS,
+        withXSRFToken: config.CREDENTIALS === 'include' ? config.WITH_CREDENTIALS : false,
         cancelToken: source.token,
     };
     onCancel(() => source.cancel('The user aborted a request.'));
