@@ -49,11 +49,9 @@ export const getQueryString = (params) => {
         if (isDefined(value)) {
             if (Array.isArray(value)) {
                 // preserve indexes for array type query params
-                let newValue = {};
                 value.forEach((v, i) => {
-                    newValue[i] = v;
+                    process(`${key}[${i}]`, v);
                 });
-                process(key, newValue);
             }
             else if (typeof value === 'object') {
                 Object.entries(value).forEach(([k, v]) => {
