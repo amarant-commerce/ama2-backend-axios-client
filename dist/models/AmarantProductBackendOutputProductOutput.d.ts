@@ -3,8 +3,8 @@ export type AmarantProductBackendOutputProductOutput = {
     type: string;
     sku: string;
     masterSku?: string | null;
-    setId: number;
-    setName: string;
+    attributeSetId: number;
+    attributeSetName: string;
     channels: Array<string>;
     attributes: Record<string, string | number | number | boolean | any[] | null>;
     imageUrl?: string | null;

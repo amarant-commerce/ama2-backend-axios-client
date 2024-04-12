@@ -6,3 +6,4 @@ export { ApiError } from './core/ApiError';
 export { CancelablePromise, CancelError } from './core/CancelablePromise';
 export { OpenAPI } from './core/OpenAPI';
 export { ProductsService } from './services/ProductsService';
+export { SalesService } from './services/SalesService';

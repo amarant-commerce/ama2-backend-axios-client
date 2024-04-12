@@ -11,4 +11,7 @@ export type { AmarantSearchAggregationResultStatsAggregationModel } from './mode
 export type { AmarantSearchAggregationResultTermAggregationModel } from './models/AmarantSearchAggregationResultTermAggregationModel';
 export type { AmarantSearchCriteriaFilter } from './models/AmarantSearchCriteriaFilter';
 export type { AmarantSearchTermAggregationItem } from './models/AmarantSearchTermAggregationItem';
+export type { AmarantTierRule } from './models/AmarantTierRule';
+export type { AmarantTierRuleItem } from './models/AmarantTierRuleItem';
 export { ProductsService } from './services/ProductsService';
+export { SalesService } from './services/SalesService';
