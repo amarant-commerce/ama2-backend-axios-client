@@ -12,8 +12,8 @@ export class SalesService {
     /**
      * Get tier rule collection.
      * Get tier rule collection.
-     * @param q Accepted as a JSON encoded string.
-     * @param page Page.
+     * @param q Search criteria query.
+     * @param page PageModel.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError

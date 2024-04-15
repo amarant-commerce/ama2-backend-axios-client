@@ -3,31 +3,31 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
-import type { AmarantProductBackendOutputProductOutput } from '../models/AmarantProductBackendOutputProductOutput';
+import type { AmarantCmsPageModel } from '../models/AmarantCmsPageModel';
 import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
-export class ProductsService {
+export class CmsService {
     /**
-     * Get product collection.
-     * Get product collection.
+     * Get CMS page collection.
+     * Get CMS page collection.
      * @param q Search criteria query.
      * @param page PageModel.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
-    public static getProductCollection(
+    public static getCmsPageCollection(
         q?: AmarantSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
-        data: Array<AmarantProductBackendOutputProductOutput>;
+        data: Array<AmarantCmsPageModel>;
     })> {
         return __request(OpenAPI, {
             method: 'GET',
-            url: '/api/products/v1',
+            url: '/api/cms/v1/pages',
             query: {
                 'q': q,
                 'page': page,
@@ -36,18 +36,18 @@ export class ProductsService {
         });
     }
     /**
-     * Get product item.
-     * Get product item.
-     * @param id Product ID
-     * @returns AmarantProductBackendOutputProductOutput OK
+     * Get CMS page item.
+     * Get CMS page item.
+     * @param id PageModel ID
+     * @returns AmarantCmsPageModel OK
      * @throws ApiError
      */
-    public static getProductItem(
+    public static getCmsPageItem(
         id: number,
-    ): CancelablePromise<AmarantProductBackendOutputProductOutput> {
+    ): CancelablePromise<AmarantCmsPageModel> {
         return __request(OpenAPI, {
             method: 'GET',
-            url: '/api/products/v1/{id}',
+            url: '/api/cms/v1/pages/{id}',
             path: {
                 'id': id,
             },

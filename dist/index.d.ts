@@ -5,6 +5,8 @@ export type { OpenAPIConfig } from './core/OpenAPI';
 export type { AmarantApiError } from './models/AmarantApiError';
 export type { AmarantApiLinks } from './models/AmarantApiLinks';
 export type { AmarantApiPaginatedCollectionResponse } from './models/AmarantApiPaginatedCollectionResponse';
+export type { AmarantCmsPageModel } from './models/AmarantCmsPageModel';
+export type { AmarantCmsPageTagModel } from './models/AmarantCmsPageTagModel';
 export type { AmarantProductBackendOutputProductOutput } from './models/AmarantProductBackendOutputProductOutput';
 export type { AmarantSearchAggregationResultModel } from './models/AmarantSearchAggregationResultModel';
 export type { AmarantSearchAggregationResultStatsAggregationModel } from './models/AmarantSearchAggregationResultStatsAggregationModel';
@@ -13,5 +15,6 @@ export type { AmarantSearchCriteriaFilter } from './models/AmarantSearchCriteria
 export type { AmarantSearchTermAggregationItem } from './models/AmarantSearchTermAggregationItem';
 export type { AmarantTierRule } from './models/AmarantTierRule';
 export type { AmarantTierRuleItem } from './models/AmarantTierRuleItem';
+export { CmsService } from './services/CmsService';
 export { ProductsService } from './services/ProductsService';
 export { SalesService } from './services/SalesService';
