@@ -7,7 +7,7 @@ export declare class SalesService {
      * Get tier rule collection.
      * Get tier rule collection.
      * @param q Search criteria query.
-     * @param page PageModel.
+     * @param page Page.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
