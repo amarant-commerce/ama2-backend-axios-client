@@ -22,6 +22,7 @@ export type { AmarantSearchCriteriaFilter } from './models/AmarantSearchCriteria
 export type { AmarantSearchTermAggregationItem } from './models/AmarantSearchTermAggregationItem';
 export type { AmarantTierRule } from './models/AmarantTierRule';
 export type { AmarantTierRuleItem } from './models/AmarantTierRuleItem';
+export type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from './models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
 
 export { CmsService } from './services/CmsService';
 export { ProductsService } from './services/ProductsService';

@@ -1,6 +1,7 @@
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantProductBackendOutputProductOutput } from '../models/AmarantProductBackendOutputProductOutput';
 import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
+import type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from '../models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
 import type { CancelablePromise } from '../core/CancelablePromise';
 export declare class ProductsService {
     /**
@@ -23,4 +24,12 @@ export declare class ProductsService {
      * @throws ApiError
      */
     static getProductItem(id: number): CancelablePromise<AmarantProductBackendOutputProductOutput>;
+    /**
+     * Bulk delete product items.
+     * Bulk delete product items.
+     * @param requestBody
+     * @returns any
+     * @throws ApiError
+     */
+    static bulkDeleteProductItems(requestBody?: BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto): CancelablePromise<any>;
 }

@@ -37,4 +37,19 @@ export class ProductsService {
             },
         });
     }
+    /**
+     * Bulk delete product items.
+     * Bulk delete product items.
+     * @param requestBody
+     * @returns any
+     * @throws ApiError
+     */
+    static bulkDeleteProductItems(requestBody) {
+        return __request(OpenAPI, {
+            method: 'DELETE',
+            url: '/api/products/v1/bulk',
+            body: requestBody,
+            mediaType: 'application/json',
+        });
+    }
 }

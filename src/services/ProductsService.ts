@@ -5,6 +5,7 @@
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantProductBackendOutputProductOutput } from '../models/AmarantProductBackendOutputProductOutput';
 import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
+import type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from '../models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
@@ -51,6 +52,23 @@ export class ProductsService {
             path: {
                 'id': id,
             },
+        });
+    }
+    /**
+     * Bulk delete product items.
+     * Bulk delete product items.
+     * @param requestBody
+     * @returns any
+     * @throws ApiError
+     */
+    public static bulkDeleteProductItems(
+        requestBody?: BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto,
+    ): CancelablePromise<any> {
+        return __request(OpenAPI, {
+            method: 'DELETE',
+            url: '/api/products/v1/bulk',
+            body: requestBody,
+            mediaType: 'application/json',
         });
     }
 }
