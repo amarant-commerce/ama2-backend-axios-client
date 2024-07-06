@@ -7,13 +7,19 @@ export { CancelablePromise, CancelError } from './core/CancelablePromise';
 export { OpenAPI } from './core/OpenAPI';
 export type { OpenAPIConfig } from './core/OpenAPI';
 
+export type { AmarantApiCollectionResponse } from './models/AmarantApiCollectionResponse';
 export type { AmarantApiError } from './models/AmarantApiError';
 export type { AmarantApiLinks } from './models/AmarantApiLinks';
 export type { AmarantApiPaginatedCollectionResponse } from './models/AmarantApiPaginatedCollectionResponse';
+export { AmarantAttributeDataTypeEnum } from './models/AmarantAttributeDataTypeEnum';
+export { AmarantAttributeInputTypeEnum } from './models/AmarantAttributeInputTypeEnum';
+export type { AmarantAttributeModel } from './models/AmarantAttributeModel';
+export { AmarantAttributeModelFlag } from './models/AmarantAttributeModelFlag';
 export type { AmarantCmsBlockModel } from './models/AmarantCmsBlockModel';
 export type { AmarantCmsBlockTagModel } from './models/AmarantCmsBlockTagModel';
 export type { AmarantCmsPageModel } from './models/AmarantCmsPageModel';
 export type { AmarantCmsPageTagModel } from './models/AmarantCmsPageTagModel';
+export { AmarantDataScope } from './models/AmarantDataScope';
 export type { AmarantImageModel } from './models/AmarantImageModel';
 export type { AmarantImageModelVariant } from './models/AmarantImageModelVariant';
 export type { AmarantOrderAdjustmentModel } from './models/AmarantOrderAdjustmentModel';
@@ -35,6 +41,7 @@ export type { AmarantTierRule } from './models/AmarantTierRule';
 export type { AmarantTierRuleItem } from './models/AmarantTierRuleItem';
 export type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from './models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
 
+export { AttributesService } from './services/AttributesService';
 export { CmsService } from './services/CmsService';
 export { OrdersService } from './services/OrdersService';
 export { ProductsService } from './services/ProductsService';

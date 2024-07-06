@@ -5,6 +5,11 @@
 export { ApiError } from './core/ApiError';
 export { CancelablePromise, CancelError } from './core/CancelablePromise';
 export { OpenAPI } from './core/OpenAPI';
+export { AmarantAttributeDataTypeEnum } from './models/AmarantAttributeDataTypeEnum';
+export { AmarantAttributeInputTypeEnum } from './models/AmarantAttributeInputTypeEnum';
+export { AmarantAttributeModelFlag } from './models/AmarantAttributeModelFlag';
+export { AmarantDataScope } from './models/AmarantDataScope';
+export { AttributesService } from './services/AttributesService';
 export { CmsService } from './services/CmsService';
 export { OrdersService } from './services/OrdersService';
 export { ProductsService } from './services/ProductsService';

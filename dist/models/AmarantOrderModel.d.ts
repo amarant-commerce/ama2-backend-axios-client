@@ -8,10 +8,16 @@ export type AmarantOrderModel = {
     id: string;
     humanId: string;
     channelId: number;
+    channelScopeId: number;
+    channel: string;
     baseCurrency: string;
     currency: string;
     conversionRate?: string | null;
+    status: string;
     physical: boolean;
+    shippingAddressFormatted?: string | null;
+    billingAddressFormatted?: string | null;
+    email: (string | Array<string>);
     customer?: AmarantOrderCustomerModel | null;
     items: Array<AmarantOrderItemModel>;
     payments: Array<AmarantOrderPaymentModel>;
