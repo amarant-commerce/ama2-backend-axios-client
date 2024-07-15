@@ -2,7 +2,7 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-export type AmarantTierRuleItem = {
+export type AmarantSalesTierRuleItem = {
     id: number;
     type: string;
     qty: string;

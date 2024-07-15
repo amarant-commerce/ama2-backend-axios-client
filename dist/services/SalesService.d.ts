@@ -1,6 +1,7 @@
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
+import type { AmarantSalesPricingRule } from '../models/AmarantSalesPricingRule';
+import type { AmarantSalesTierRule } from '../models/AmarantSalesTierRule';
 import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
-import type { AmarantTierRule } from '../models/AmarantTierRule';
 import type { CancelablePromise } from '../core/CancelablePromise';
 export declare class SalesService {
     /**
@@ -13,14 +14,34 @@ export declare class SalesService {
      * @throws ApiError
      */
     static getTierRuleCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
-        data: Array<AmarantTierRule>;
+        data: Array<AmarantSalesTierRule>;
     })>;
     /**
      * Get tier rule item.
      * Get tier rule item.
      * @param id Tier Rule ID
-     * @returns AmarantTierRule OK
+     * @returns AmarantSalesTierRule OK
      * @throws ApiError
      */
-    static getTierRuleItem(id: number): CancelablePromise<AmarantTierRule>;
+    static getTierRuleItem(id: number): CancelablePromise<AmarantSalesTierRule>;
+    /**
+     * Get pricing rule collection.
+     * Get pricing rule collection.
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getPricingRuleCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+        data: Array<AmarantSalesPricingRule>;
+    })>;
+    /**
+     * Get pricing rule item.
+     * Get pricing rule item.
+     * @param id Pricing Rule ID
+     * @returns AmarantSalesPricingRule OK
+     * @throws ApiError
+     */
+    static getPricingRuleItem(id: number): CancelablePromise<AmarantSalesPricingRule>;
 }

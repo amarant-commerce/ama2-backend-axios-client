@@ -2,12 +2,12 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-import type { AmarantTierRuleItem } from './AmarantTierRuleItem';
-export type AmarantTierRule = {
+import type { AmarantSalesTierRuleItem } from './AmarantSalesTierRuleItem';
+export type AmarantSalesTierRule = {
     id: number;
     name: string;
     description?: string | null;
-    items: Array<AmarantTierRuleItem>;
+    items: Array<AmarantSalesTierRuleItem>;
     updatedAt: string;
 };
 

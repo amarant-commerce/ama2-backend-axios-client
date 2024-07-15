@@ -31,13 +31,14 @@ export type { AmarantOrderShippingBatchItemModel } from './models/AmarantOrderSh
 export type { AmarantOrderShippingBatchModel } from './models/AmarantOrderShippingBatchModel';
 export type { AmarantOrderTotalModel } from './models/AmarantOrderTotalModel';
 export type { AmarantProductBackendOutputProductOutput } from './models/AmarantProductBackendOutputProductOutput';
+export type { AmarantSalesPricingRule } from './models/AmarantSalesPricingRule';
+export type { AmarantSalesTierRule } from './models/AmarantSalesTierRule';
+export type { AmarantSalesTierRuleItem } from './models/AmarantSalesTierRuleItem';
 export type { AmarantSearchAggregationResultModel } from './models/AmarantSearchAggregationResultModel';
 export type { AmarantSearchAggregationResultStatsAggregationModel } from './models/AmarantSearchAggregationResultStatsAggregationModel';
 export type { AmarantSearchAggregationResultTermAggregationModel } from './models/AmarantSearchAggregationResultTermAggregationModel';
 export type { AmarantSearchCriteriaFilter } from './models/AmarantSearchCriteriaFilter';
 export type { AmarantSearchTermAggregationItem } from './models/AmarantSearchTermAggregationItem';
-export type { AmarantTierRule } from './models/AmarantTierRule';
-export type { AmarantTierRuleItem } from './models/AmarantTierRuleItem';
 export type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from './models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
 
 export { AttributesService } from './services/AttributesService';
