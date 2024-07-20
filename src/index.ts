@@ -31,6 +31,9 @@ export type { AmarantOrderShippingBatchItemModel } from './models/AmarantOrderSh
 export type { AmarantOrderShippingBatchModel } from './models/AmarantOrderShippingBatchModel';
 export type { AmarantOrderTotalModel } from './models/AmarantOrderTotalModel';
 export type { AmarantProductBackendOutputProductOutput } from './models/AmarantProductBackendOutputProductOutput';
+export type { AmarantSalesCustomerAccountAddressOutputDto } from './models/AmarantSalesCustomerAccountAddressOutputDto';
+export type { AmarantSalesCustomerAccountOutputDto } from './models/AmarantSalesCustomerAccountOutputDto';
+export { AmarantSalesCustomerAccountStateOutputDto } from './models/AmarantSalesCustomerAccountStateOutputDto';
 export type { AmarantSalesPricingRule } from './models/AmarantSalesPricingRule';
 export type { AmarantSalesTierRule } from './models/AmarantSalesTierRule';
 export type { AmarantSalesTierRuleItem } from './models/AmarantSalesTierRuleItem';
@@ -43,6 +46,7 @@ export type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from
 
 export { AttributesService } from './services/AttributesService';
 export { CmsService } from './services/CmsService';
+export { CustomersService } from './services/CustomersService';
 export { OrdersService } from './services/OrdersService';
 export { ProductsService } from './services/ProductsService';
 export { SalesService } from './services/SalesService';
