@@ -41,7 +41,7 @@ export class ProductsService {
      * Bulk delete product items.
      * Bulk delete product items.
      * @param requestBody
-     * @returns any
+     * @returns void
      * @throws ApiError
      */
     static bulkDeleteProductItems(requestBody) {
@@ -50,6 +50,21 @@ export class ProductsService {
             url: '/api/products/v1/bulk',
             body: requestBody,
             mediaType: 'application/json',
+        });
+    }
+    /**
+     * Sync product data from CSV.
+     * Sync product data from CSV.
+     * @param formData
+     * @returns void
+     * @throws ApiError
+     */
+    static syncProductCsv(formData) {
+        return __request(OpenAPI, {
+            method: 'POST',
+            url: '/api/products/v1/sync/csv',
+            formData: formData,
+            mediaType: 'multipart/form-data',
         });
     }
 }

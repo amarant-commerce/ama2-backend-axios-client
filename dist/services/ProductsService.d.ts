@@ -2,6 +2,7 @@ import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApi
 import type { AmarantProductBackendOutputProductOutput } from '../models/AmarantProductBackendOutputProductOutput';
 import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
 import type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from '../models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
+import type { SyncProductCsvInputAmarantProductCsvSyncInputDto } from '../models/SyncProductCsvInputAmarantProductCsvSyncInputDto';
 import type { CancelablePromise } from '../core/CancelablePromise';
 export declare class ProductsService {
     /**
@@ -28,8 +29,16 @@ export declare class ProductsService {
      * Bulk delete product items.
      * Bulk delete product items.
      * @param requestBody
-     * @returns any
+     * @returns void
      * @throws ApiError
      */
-    static bulkDeleteProductItems(requestBody?: BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto): CancelablePromise<any>;
+    static bulkDeleteProductItems(requestBody?: BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto): CancelablePromise<void>;
+    /**
+     * Sync product data from CSV.
+     * Sync product data from CSV.
+     * @param formData
+     * @returns void
+     * @throws ApiError
+     */
+    static syncProductCsv(formData?: SyncProductCsvInputAmarantProductCsvSyncInputDto): CancelablePromise<void>;
 }

@@ -6,6 +6,7 @@ import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApi
 import type { AmarantProductBackendOutputProductOutput } from '../models/AmarantProductBackendOutputProductOutput';
 import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
 import type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from '../models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
+import type { SyncProductCsvInputAmarantProductCsvSyncInputDto } from '../models/SyncProductCsvInputAmarantProductCsvSyncInputDto';
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
@@ -58,17 +59,34 @@ export class ProductsService {
      * Bulk delete product items.
      * Bulk delete product items.
      * @param requestBody
-     * @returns any
+     * @returns void
      * @throws ApiError
      */
     public static bulkDeleteProductItems(
         requestBody?: BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto,
-    ): CancelablePromise<any> {
+    ): CancelablePromise<void> {
         return __request(OpenAPI, {
             method: 'DELETE',
             url: '/api/products/v1/bulk',
             body: requestBody,
             mediaType: 'application/json',
+        });
+    }
+    /**
+     * Sync product data from CSV.
+     * Sync product data from CSV.
+     * @param formData
+     * @returns void
+     * @throws ApiError
+     */
+    public static syncProductCsv(
+        formData?: SyncProductCsvInputAmarantProductCsvSyncInputDto,
+    ): CancelablePromise<void> {
+        return __request(OpenAPI, {
+            method: 'POST',
+            url: '/api/products/v1/sync/csv',
+            formData: formData,
+            mediaType: 'multipart/form-data',
         });
     }
 }

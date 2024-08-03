@@ -38,6 +38,7 @@ export type { AmarantSearchAggregationResultTermAggregationModel } from './model
 export type { AmarantSearchCriteriaFilter } from './models/AmarantSearchCriteriaFilter';
 export type { AmarantSearchTermAggregationItem } from './models/AmarantSearchTermAggregationItem';
 export type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from './models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
+export type { SyncProductCsvInputAmarantProductCsvSyncInputDto } from './models/SyncProductCsvInputAmarantProductCsvSyncInputDto';
 export { AttributesService } from './services/AttributesService';
 export { CmsService } from './services/CmsService';
 export { CustomersService } from './services/CustomersService';
