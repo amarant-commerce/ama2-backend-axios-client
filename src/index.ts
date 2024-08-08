@@ -23,6 +23,10 @@ export type { AmarantImageModel } from './models/AmarantImageModel';
 export type { AmarantImageModelVariant } from './models/AmarantImageModelVariant';
 export type { AmarantOrderAdjustmentModel } from './models/AmarantOrderAdjustmentModel';
 export type { AmarantOrderCustomerModel } from './models/AmarantOrderCustomerModel';
+export type { AmarantOrderInvoiceAdjustmentModel } from './models/AmarantOrderInvoiceAdjustmentModel';
+export type { AmarantOrderInvoiceItemModel } from './models/AmarantOrderInvoiceItemModel';
+export type { AmarantOrderInvoiceModel } from './models/AmarantOrderInvoiceModel';
+export type { AmarantOrderInvoiceTotalModel } from './models/AmarantOrderInvoiceTotalModel';
 export type { AmarantOrderItemModel } from './models/AmarantOrderItemModel';
 export type { AmarantOrderModel } from './models/AmarantOrderModel';
 export type { AmarantOrderPaymentModel } from './models/AmarantOrderPaymentModel';
@@ -48,6 +52,7 @@ export type { SyncProductCsvInputAmarantProductCsvSyncInputDto } from './models/
 export { AttributesService } from './services/AttributesService';
 export { CmsService } from './services/CmsService';
 export { CustomersService } from './services/CustomersService';
+export { InvoicesService } from './services/InvoicesService';
 export { OrdersService } from './services/OrdersService';
 export { ProductsService } from './services/ProductsService';
 export { SalesService } from './services/SalesService';
