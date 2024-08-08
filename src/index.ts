@@ -22,6 +22,7 @@ export { AmarantDataScope } from './models/AmarantDataScope';
 export type { AmarantImageModel } from './models/AmarantImageModel';
 export type { AmarantImageModelVariant } from './models/AmarantImageModelVariant';
 export type { AmarantOrderAdjustmentModel } from './models/AmarantOrderAdjustmentModel';
+export type { AmarantOrderCommentModel } from './models/AmarantOrderCommentModel';
 export type { AmarantOrderCustomerModel } from './models/AmarantOrderCustomerModel';
 export type { AmarantOrderInvoiceAdjustmentModel } from './models/AmarantOrderInvoiceAdjustmentModel';
 export type { AmarantOrderInvoiceItemModel } from './models/AmarantOrderInvoiceItemModel';
@@ -40,6 +41,7 @@ export type { AmarantSalesCustomerAccountAddressOutputDto } from './models/Amara
 export type { AmarantSalesCustomerAccountOutputDto } from './models/AmarantSalesCustomerAccountOutputDto';
 export { AmarantSalesCustomerAccountStateOutputDto } from './models/AmarantSalesCustomerAccountStateOutputDto';
 export type { AmarantSalesPricingRule } from './models/AmarantSalesPricingRule';
+export type { AmarantSalesTaxRateModel } from './models/AmarantSalesTaxRateModel';
 export type { AmarantSalesTierRule } from './models/AmarantSalesTierRule';
 export type { AmarantSalesTierRuleItem } from './models/AmarantSalesTierRuleItem';
 export type { AmarantSearchAggregationResultModel } from './models/AmarantSearchAggregationResultModel';

@@ -73,4 +73,24 @@ export class SalesService {
             },
         });
     }
+    /**
+     * Get tax rate collection.
+     * Get tax rate collection.
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getTaxRateCollection(q, page, itemsPerPage) {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/sales/v1/tax/rates',
+            query: {
+                'q': q,
+                'page': page,
+                'itemsPerPage': itemsPerPage,
+            },
+        });
+    }
 }
