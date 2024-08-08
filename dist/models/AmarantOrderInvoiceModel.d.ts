@@ -5,6 +5,7 @@ export type AmarantOrderInvoiceModel = {
     id: string;
     orderId: string;
     paymentId?: string | null;
+    status: string;
     items: Array<AmarantOrderInvoiceItemModel>;
     adjustments: Array<AmarantOrderInvoiceAdjustmentModel>;
     totals: Array<AmarantOrderInvoiceTotalModel>;

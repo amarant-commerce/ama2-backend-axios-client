@@ -25,6 +25,7 @@ export type { AmarantOrderInvoiceTotalModel } from './models/AmarantOrderInvoice
 export type { AmarantOrderItemModel } from './models/AmarantOrderItemModel';
 export type { AmarantOrderModel } from './models/AmarantOrderModel';
 export type { AmarantOrderPaymentModel } from './models/AmarantOrderPaymentModel';
+export type { AmarantOrderPaymentTransactionModel } from './models/AmarantOrderPaymentTransactionModel';
 export type { AmarantOrderProductModel } from './models/AmarantOrderProductModel';
 export type { AmarantOrderShippingBatchItemModel } from './models/AmarantOrderShippingBatchItemModel';
 export type { AmarantOrderShippingBatchModel } from './models/AmarantOrderShippingBatchModel';

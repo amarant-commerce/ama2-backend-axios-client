@@ -4,6 +4,7 @@
 /* eslint-disable */
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantOrderModel } from '../models/AmarantOrderModel';
+import type { AmarantOrderPaymentTransactionModel } from '../models/AmarantOrderPaymentTransactionModel';
 import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
@@ -28,6 +29,63 @@ export class OrdersService {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/orders/v1',
+            query: {
+                'q': q,
+                'page': page,
+                'itemsPerPage': itemsPerPage,
+            },
+        });
+    }
+    /**
+     * Get order payment transaction collection.
+     * Get order payment transaction collection.
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    public static getOrderPaymentTransactionCollection(
+        q?: AmarantSearchCriteriaFilter,
+        page?: number,
+        itemsPerPage?: number,
+    ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+        data: Array<AmarantOrderPaymentTransactionModel>;
+    })> {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/orders/v1/payment-transactions',
+            query: {
+                'q': q,
+                'page': page,
+                'itemsPerPage': itemsPerPage,
+            },
+        });
+    }
+    /**
+     * Get order payment transaction collection.
+     * Get order payment transaction collection.
+     * @param id Order ID
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    public static getOrderPaymentTransactionCollectionForOrder(
+        id: number,
+        q?: AmarantSearchCriteriaFilter,
+        page?: number,
+        itemsPerPage?: number,
+    ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+        data: Array<AmarantOrderPaymentTransactionModel>;
+    })> {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/orders/v1/{id}/payment-transactions',
+            path: {
+                'id': id,
+            },
             query: {
                 'q': q,
                 'page': page,
