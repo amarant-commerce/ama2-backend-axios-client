@@ -14,6 +14,8 @@ export { AmarantAttributeDataTypeEnum } from './models/AmarantAttributeDataTypeE
 export { AmarantAttributeInputTypeEnum } from './models/AmarantAttributeInputTypeEnum';
 export type { AmarantAttributeModel } from './models/AmarantAttributeModel';
 export { AmarantAttributeModelFlag } from './models/AmarantAttributeModelFlag';
+export type { AmarantCmsBannerItemModel } from './models/AmarantCmsBannerItemModel';
+export type { AmarantCmsBannerModel } from './models/AmarantCmsBannerModel';
 export type { AmarantCmsBlockModel } from './models/AmarantCmsBlockModel';
 export type { AmarantCmsBlockTagModel } from './models/AmarantCmsBlockTagModel';
 export type { AmarantCmsPageModel } from './models/AmarantCmsPageModel';
@@ -21,6 +23,9 @@ export type { AmarantCmsPageTagModel } from './models/AmarantCmsPageTagModel';
 export { AmarantDataScope } from './models/AmarantDataScope';
 export type { AmarantImageModel } from './models/AmarantImageModel';
 export type { AmarantImageModelVariant } from './models/AmarantImageModelVariant';
+export type { AmarantMediaFileModel } from './models/AmarantMediaFileModel';
+export type { AmarantMediaModel } from './models/AmarantMediaModel';
+export type { AmarantMediaVideoModel } from './models/AmarantMediaVideoModel';
 export type { AmarantOrderAdjustmentModel } from './models/AmarantOrderAdjustmentModel';
 export type { AmarantOrderCommentModel } from './models/AmarantOrderCommentModel';
 export type { AmarantOrderCustomerModel } from './models/AmarantOrderCustomerModel';

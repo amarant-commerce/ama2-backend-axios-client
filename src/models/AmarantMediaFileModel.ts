@@ -2,15 +2,11 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-import type { AmarantImageModelVariant } from './AmarantImageModelVariant';
-export type AmarantImageModel = {
+export type AmarantMediaFileModel = {
     url: string;
     position: number;
     featured: boolean;
     altText?: string | null;
-    width: number;
-    height: number;
-    variants: Array<AmarantImageModelVariant>;
-    type: 'image';
+    type: 'file';
 };
 
