@@ -10,6 +10,8 @@ export type AmarantCmsBannerModel = {
     scopes: Array<string>;
     items: Array<AmarantCmsBannerItemModel>;
     createdAt: string;
+    createdByUsername: string;
     updatedAt: string;
+    updatedByUsername: string;
 };
 

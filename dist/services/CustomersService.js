@@ -37,4 +37,40 @@ export class CustomersService {
             },
         });
     }
+    /**
+     * Get customer organization collection.
+     * Get customer organization collection.
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getCustomerOrganizationCollection(q, page, itemsPerPage) {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/customers/v1/organizations',
+            query: {
+                'q': q,
+                'page': page,
+                'itemsPerPage': itemsPerPage,
+            },
+        });
+    }
+    /**
+     * Get customer organization item.
+     * Get customer organization item.
+     * @param id Customer organization ID
+     * @returns AmarantSalesCustomerAccountOrganizationOutputDto OK
+     * @throws ApiError
+     */
+    static getCustomerOrganizationItem(id) {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/customers/v1/organizations/{id}',
+            path: {
+                'id': id,
+            },
+        });
+    }
 }

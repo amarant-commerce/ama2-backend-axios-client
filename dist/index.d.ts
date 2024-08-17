@@ -38,6 +38,7 @@ export type { AmarantOrderShippingBatchModel } from './models/AmarantOrderShippi
 export type { AmarantOrderTotalModel } from './models/AmarantOrderTotalModel';
 export type { AmarantProductBackendOutputProductOutput } from './models/AmarantProductBackendOutputProductOutput';
 export type { AmarantSalesCustomerAccountAddressOutputDto } from './models/AmarantSalesCustomerAccountAddressOutputDto';
+export type { AmarantSalesCustomerAccountOrganizationOutputDto } from './models/AmarantSalesCustomerAccountOrganizationOutputDto';
 export type { AmarantSalesCustomerAccountOutputDto } from './models/AmarantSalesCustomerAccountOutputDto';
 export { AmarantSalesCustomerAccountStateOutputDto } from './models/AmarantSalesCustomerAccountStateOutputDto';
 export type { AmarantSalesPricingRule } from './models/AmarantSalesPricingRule';
