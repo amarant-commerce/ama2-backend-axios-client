@@ -17,3 +17,4 @@ export { InvoicesService } from './services/InvoicesService';
 export { OrdersService } from './services/OrdersService';
 export { ProductsService } from './services/ProductsService';
 export { SalesService } from './services/SalesService';
+export { StoresService } from './services/StoresService';

@@ -50,6 +50,9 @@ export type { AmarantSearchAggregationResultStatsAggregationModel } from './mode
 export type { AmarantSearchAggregationResultTermAggregationModel } from './models/AmarantSearchAggregationResultTermAggregationModel';
 export type { AmarantSearchCriteriaFilter } from './models/AmarantSearchCriteriaFilter';
 export type { AmarantSearchTermAggregationItem } from './models/AmarantSearchTermAggregationItem';
+export type { AmarantStoreChannelDomainModel } from './models/AmarantStoreChannelDomainModel';
+export type { AmarantStoreChannelModel } from './models/AmarantStoreChannelModel';
+export type { AmarantStoreChannelScopeModel } from './models/AmarantStoreChannelScopeModel';
 export type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from './models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
 export type { SyncProductCsvInputAmarantProductCsvSyncInputDto } from './models/SyncProductCsvInputAmarantProductCsvSyncInputDto';
 export { AttributesService } from './services/AttributesService';
@@ -59,3 +62,4 @@ export { InvoicesService } from './services/InvoicesService';
 export { OrdersService } from './services/OrdersService';
 export { ProductsService } from './services/ProductsService';
 export { SalesService } from './services/SalesService';
+export { StoresService } from './services/StoresService';
