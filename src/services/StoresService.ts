@@ -3,6 +3,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
+import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
 import type { AmarantStoreChannelDomainModel } from '../models/AmarantStoreChannelDomainModel';
 import type { AmarantStoreChannelModel } from '../models/AmarantStoreChannelModel';
 import type { AmarantStoreChannelScopeModel } from '../models/AmarantStoreChannelScopeModel';
@@ -13,12 +14,14 @@ export class StoresService {
     /**
      * Get store channel collection.
      * Get store channel collection.
+     * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
     public static getChannelCollection(
+        q?: AmarantSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -28,6 +31,7 @@ export class StoresService {
             method: 'GET',
             url: '/api/stores/v1/channels',
             query: {
+                'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
             },
@@ -54,12 +58,14 @@ export class StoresService {
     /**
      * Get store channel scope collection.
      * Get store channel scope collection.
+     * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
     public static getChannelScopeCollection(
+        q?: AmarantSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -69,6 +75,7 @@ export class StoresService {
             method: 'GET',
             url: '/api/stores/v1/channel-scopes',
             query: {
+                'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
             },
@@ -95,12 +102,14 @@ export class StoresService {
     /**
      * Get store channel domain collection.
      * Get store channel domain collection.
+     * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
     public static getChannelDomainCollection(
+        q?: AmarantSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -110,6 +119,7 @@ export class StoresService {
             method: 'GET',
             url: '/api/stores/v1/channel-domains',
             query: {
+                'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
             },

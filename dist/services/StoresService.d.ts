@@ -1,4 +1,5 @@
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
+import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
 import type { AmarantStoreChannelDomainModel } from '../models/AmarantStoreChannelDomainModel';
 import type { AmarantStoreChannelModel } from '../models/AmarantStoreChannelModel';
 import type { AmarantStoreChannelScopeModel } from '../models/AmarantStoreChannelScopeModel';
@@ -7,12 +8,13 @@ export declare class StoresService {
     /**
      * Get store channel collection.
      * Get store channel collection.
+     * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
-    static getChannelCollection(page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getChannelCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantStoreChannelModel>;
     })>;
     /**
@@ -26,12 +28,13 @@ export declare class StoresService {
     /**
      * Get store channel scope collection.
      * Get store channel scope collection.
+     * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
-    static getChannelScopeCollection(page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getChannelScopeCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantStoreChannelScopeModel>;
     })>;
     /**
@@ -45,12 +48,13 @@ export declare class StoresService {
     /**
      * Get store channel domain collection.
      * Get store channel domain collection.
+     * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
-    static getChannelDomainCollection(page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getChannelDomainCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantStoreChannelDomainModel>;
     })>;
     /**

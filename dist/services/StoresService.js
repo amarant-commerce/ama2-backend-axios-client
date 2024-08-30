@@ -4,16 +4,18 @@ export class StoresService {
     /**
      * Get store channel collection.
      * Get store channel collection.
+     * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
-    static getChannelCollection(page, itemsPerPage) {
+    static getChannelCollection(q, page, itemsPerPage) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/stores/v1/channels',
             query: {
+                'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
             },
@@ -38,16 +40,18 @@ export class StoresService {
     /**
      * Get store channel scope collection.
      * Get store channel scope collection.
+     * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
-    static getChannelScopeCollection(page, itemsPerPage) {
+    static getChannelScopeCollection(q, page, itemsPerPage) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/stores/v1/channel-scopes',
             query: {
+                'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
             },
@@ -72,16 +76,18 @@ export class StoresService {
     /**
      * Get store channel domain collection.
      * Get store channel domain collection.
+     * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
-    static getChannelDomainCollection(page, itemsPerPage) {
+    static getChannelDomainCollection(q, page, itemsPerPage) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/stores/v1/channel-domains',
             query: {
+                'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
             },
