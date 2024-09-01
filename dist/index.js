@@ -18,3 +18,4 @@ export { OrdersService } from './services/OrdersService';
 export { ProductsService } from './services/ProductsService';
 export { SalesService } from './services/SalesService';
 export { StoresService } from './services/StoresService';
+export { UsersService } from './services/UsersService';

@@ -2,13 +2,10 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-export type AmarantStoreChannelDomainModel = {
+export type AmarantUserAccountGroupModel = {
     id: number;
-    channelId: number;
-    channelCode: string;
-    host: string;
-    state: string;
-    defaultDomain: boolean;
+    name: string;
+    accessScopes: Array<string>;
     createdAt: string;
     updatedAt: string;
 };

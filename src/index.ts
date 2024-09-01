@@ -58,6 +58,8 @@ export type { AmarantSearchTermAggregationItem } from './models/AmarantSearchTer
 export type { AmarantStoreChannelDomainModel } from './models/AmarantStoreChannelDomainModel';
 export type { AmarantStoreChannelModel } from './models/AmarantStoreChannelModel';
 export type { AmarantStoreChannelScopeModel } from './models/AmarantStoreChannelScopeModel';
+export type { AmarantUserAccountGroupModel } from './models/AmarantUserAccountGroupModel';
+export type { AmarantUserAccountModel } from './models/AmarantUserAccountModel';
 export type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from './models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
 export type { SyncProductCsvInputAmarantProductCsvSyncInputDto } from './models/SyncProductCsvInputAmarantProductCsvSyncInputDto';
 
@@ -69,3 +71,4 @@ export { OrdersService } from './services/OrdersService';
 export { ProductsService } from './services/ProductsService';
 export { SalesService } from './services/SalesService';
 export { StoresService } from './services/StoresService';
+export { UsersService } from './services/UsersService';
