@@ -9,6 +9,7 @@ export type AmarantUserAccountModel = {
     username: string;
     email: string;
     status: number;
+    statusText: string;
     failedLoginCount: number;
     timesLocked: number;
     lastLoginIp?: string | null;

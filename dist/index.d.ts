@@ -9,6 +9,7 @@ export { AmarantAttributeDataTypeEnum } from './models/AmarantAttributeDataTypeE
 export { AmarantAttributeInputTypeEnum } from './models/AmarantAttributeInputTypeEnum';
 export type { AmarantAttributeModel } from './models/AmarantAttributeModel';
 export { AmarantAttributeModelFlag } from './models/AmarantAttributeModelFlag';
+export type { AmarantAttributeOptionModel } from './models/AmarantAttributeOptionModel';
 export type { AmarantCmsBannerItemModel } from './models/AmarantCmsBannerItemModel';
 export type { AmarantCmsBannerModel } from './models/AmarantCmsBannerModel';
 export type { AmarantCmsBlockModel } from './models/AmarantCmsBlockModel';
