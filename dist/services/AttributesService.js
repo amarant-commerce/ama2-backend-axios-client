@@ -41,4 +41,23 @@ export class AttributesService {
             },
         });
     }
+    /**
+     * Update attribute option item.
+     * Update attribute option item.
+     * @param id Attribute option ID
+     * @param requestBody
+     * @returns AmarantAttributeOptionModel Resource updated.
+     * @throws ApiError
+     */
+    static updateAttributeOptionItem(id, requestBody) {
+        return __request(OpenAPI, {
+            method: 'PUT',
+            url: '/api/attributes/v1/options/{id}',
+            path: {
+                'id': id,
+            },
+            body: requestBody,
+            mediaType: 'application/json',
+        });
+    }
 }

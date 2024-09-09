@@ -63,6 +63,7 @@ export type { AmarantUserAccountGroupModel } from './models/AmarantUserAccountGr
 export type { AmarantUserAccountModel } from './models/AmarantUserAccountModel';
 export type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from './models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
 export type { SyncProductCsvInputAmarantProductCsvSyncInputDto } from './models/SyncProductCsvInputAmarantProductCsvSyncInputDto';
+export type { UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto } from './models/UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto';
 
 export { AttributesService } from './services/AttributesService';
 export { CmsService } from './services/CmsService';
