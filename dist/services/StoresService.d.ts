@@ -1,5 +1,7 @@
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
-import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
+import type { AmarantGetChannelCollectionSearchCriteriaFilter } from '../models/AmarantGetChannelCollectionSearchCriteriaFilter';
+import type { AmarantGetChannelDomainCollectionSearchCriteriaFilter } from '../models/AmarantGetChannelDomainCollectionSearchCriteriaFilter';
+import type { AmarantGetChannelScopeCollectionSearchCriteriaFilter } from '../models/AmarantGetChannelScopeCollectionSearchCriteriaFilter';
 import type { AmarantStoreChannelDomainModel } from '../models/AmarantStoreChannelDomainModel';
 import type { AmarantStoreChannelModel } from '../models/AmarantStoreChannelModel';
 import type { AmarantStoreChannelScopeModel } from '../models/AmarantStoreChannelScopeModel';
@@ -14,7 +16,7 @@ export declare class StoresService {
      * @returns any OK
      * @throws ApiError
      */
-    static getChannelCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getChannelCollection(q?: AmarantGetChannelCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantStoreChannelModel>;
     })>;
     /**
@@ -34,7 +36,7 @@ export declare class StoresService {
      * @returns any OK
      * @throws ApiError
      */
-    static getChannelScopeCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getChannelScopeCollection(q?: AmarantGetChannelScopeCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantStoreChannelScopeModel>;
     })>;
     /**
@@ -54,7 +56,7 @@ export declare class StoresService {
      * @returns any OK
      * @throws ApiError
      */
-    static getChannelDomainCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getChannelDomainCollection(q?: AmarantGetChannelDomainCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantStoreChannelDomainModel>;
     })>;
     /**

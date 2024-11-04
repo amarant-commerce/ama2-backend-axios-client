@@ -181,4 +181,40 @@ export class CmsService {
             },
         });
     }
+    /**
+     * Get CMS template collection.
+     * Get CMS template collection.
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getCmsTemplateCollection(q, page, itemsPerPage) {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/cms/v1/templates',
+            query: {
+                'q': q,
+                'page': page,
+                'itemsPerPage': itemsPerPage,
+            },
+        });
+    }
+    /**
+     * Get CMS template item.
+     * Get CMS template item.
+     * @param id Template ID
+     * @returns AmarantCmsTemplateModel OK
+     * @throws ApiError
+     */
+    static getCmsTemplateItem(id) {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/cms/v1/templates/{id}',
+            path: {
+                'id': id,
+            },
+        });
+    }
 }

@@ -1,24 +1,31 @@
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
+import type { AmarantGetCustomerCollectionSearchCriteriaFilter } from '../models/AmarantGetCustomerCollectionSearchCriteriaFilter';
+import type { AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter } from '../models/AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter';
 import type { AmarantSalesCustomerAccountOrganizationOutputDto } from '../models/AmarantSalesCustomerAccountOrganizationOutputDto';
 import type { AmarantSalesCustomerAccountOutputDto } from '../models/AmarantSalesCustomerAccountOutputDto';
-import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
 import type { CancelablePromise } from '../core/CancelablePromise';
 export declare class CustomersService {
     /**
      * Get customer collection.
      * Get customer collection.
+     *
+     * Required access scopes:
+     * * read_customers
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
-    static getCustomerCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getCustomerCollection(q?: AmarantGetCustomerCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantSalesCustomerAccountOutputDto>;
     })>;
     /**
      * Get customer item.
      * Get customer item.
+     *
+     * Required access scopes:
+     * * read_customers
      * @param id Customer ID
      * @returns AmarantSalesCustomerAccountOutputDto OK
      * @throws ApiError
@@ -33,7 +40,7 @@ export declare class CustomersService {
      * @returns any OK
      * @throws ApiError
      */
-    static getCustomerOrganizationCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getCustomerOrganizationCollection(q?: AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantSalesCustomerAccountOrganizationOutputDto>;
     })>;
     /**

@@ -4,6 +4,9 @@ export class InvoicesService {
     /**
      * Get invoice collection.
      * Get invoice collection.
+     *
+     * Required access scopes:
+     * * read_orders
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
@@ -24,6 +27,9 @@ export class InvoicesService {
     /**
      * Get invoice collection.
      * Get invoice collection.
+     *
+     * Required access scopes:
+     * * read_orders
      * @param id Order ID
      * @param q Search criteria query.
      * @param page Page.

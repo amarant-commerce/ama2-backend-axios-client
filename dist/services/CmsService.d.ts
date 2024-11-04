@@ -4,6 +4,9 @@ import type { AmarantCmsBlockModel } from '../models/AmarantCmsBlockModel';
 import type { AmarantCmsBlockTagModel } from '../models/AmarantCmsBlockTagModel';
 import type { AmarantCmsPageModel } from '../models/AmarantCmsPageModel';
 import type { AmarantCmsPageTagModel } from '../models/AmarantCmsPageTagModel';
+import type { AmarantCmsTemplateModel } from '../models/AmarantCmsTemplateModel';
+import type { AmarantGetCmsBannerCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsBannerCollectionSearchCriteriaFilter';
+import type { AmarantGetCmsTemplateCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsTemplateCollectionSearchCriteriaFilter';
 import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
 import type { CancelablePromise } from '../core/CancelablePromise';
 export declare class CmsService {
@@ -96,7 +99,7 @@ export declare class CmsService {
      * @returns any OK
      * @throws ApiError
      */
-    static getCmsBannerCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getCmsBannerCollection(q?: AmarantGetCmsBannerCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantCmsBannerModel>;
     })>;
     /**
@@ -107,4 +110,24 @@ export declare class CmsService {
      * @throws ApiError
      */
     static getCmsBannerItem(id: number): CancelablePromise<AmarantCmsBannerModel>;
+    /**
+     * Get CMS template collection.
+     * Get CMS template collection.
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getCmsTemplateCollection(q?: AmarantGetCmsTemplateCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+        data: Array<AmarantCmsTemplateModel>;
+    })>;
+    /**
+     * Get CMS template item.
+     * Get CMS template item.
+     * @param id Template ID
+     * @returns AmarantCmsTemplateModel OK
+     * @throws ApiError
+     */
+    static getCmsTemplateItem(id: number): CancelablePromise<AmarantCmsTemplateModel>;
 }

@@ -1,6 +1,7 @@
 export type UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto = {
-    id: (string | null | number | null);
+    id: (number | null | string | null);
     attributeId: number;
     label: string;
     scopedLabels: Record<string, any>;
+    position: number;
 };

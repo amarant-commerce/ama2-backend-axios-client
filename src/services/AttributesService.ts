@@ -5,7 +5,8 @@
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantAttributeModel } from '../models/AmarantAttributeModel';
 import type { AmarantAttributeOptionModel } from '../models/AmarantAttributeOptionModel';
-import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
+import type { AmarantGetAttributeCollectionSearchCriteriaFilter } from '../models/AmarantGetAttributeCollectionSearchCriteriaFilter';
+import type { AmarantGetAttributeOptionCollectionSearchCriteriaFilter } from '../models/AmarantGetAttributeOptionCollectionSearchCriteriaFilter';
 import type { UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto } from '../models/UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto';
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
@@ -21,7 +22,7 @@ export class AttributesService {
      * @throws ApiError
      */
     public static getAttributeCollection(
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetAttributeCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -47,7 +48,7 @@ export class AttributesService {
      * @throws ApiError
      */
     public static getAttributeOptionCollection(
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetAttributeOptionCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -66,7 +67,7 @@ export class AttributesService {
     /**
      * Update attribute option item.
      * Update attribute option item.
-     * @param id Attribute option ID
+     * @param id Attribute option ID.
      * @param requestBody
      * @returns AmarantAttributeOptionModel Resource updated.
      * @throws ApiError

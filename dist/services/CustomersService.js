@@ -4,6 +4,9 @@ export class CustomersService {
     /**
      * Get customer collection.
      * Get customer collection.
+     *
+     * Required access scopes:
+     * * read_customers
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
@@ -24,6 +27,9 @@ export class CustomersService {
     /**
      * Get customer item.
      * Get customer item.
+     *
+     * Required access scopes:
+     * * read_customers
      * @param id Customer ID
      * @returns AmarantSalesCustomerAccountOutputDto OK
      * @throws ApiError

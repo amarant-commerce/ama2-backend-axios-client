@@ -3,7 +3,9 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
-import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
+import type { AmarantGetChannelCollectionSearchCriteriaFilter } from '../models/AmarantGetChannelCollectionSearchCriteriaFilter';
+import type { AmarantGetChannelDomainCollectionSearchCriteriaFilter } from '../models/AmarantGetChannelDomainCollectionSearchCriteriaFilter';
+import type { AmarantGetChannelScopeCollectionSearchCriteriaFilter } from '../models/AmarantGetChannelScopeCollectionSearchCriteriaFilter';
 import type { AmarantStoreChannelDomainModel } from '../models/AmarantStoreChannelDomainModel';
 import type { AmarantStoreChannelModel } from '../models/AmarantStoreChannelModel';
 import type { AmarantStoreChannelScopeModel } from '../models/AmarantStoreChannelScopeModel';
@@ -21,7 +23,7 @@ export class StoresService {
      * @throws ApiError
      */
     public static getChannelCollection(
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetChannelCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -65,7 +67,7 @@ export class StoresService {
      * @throws ApiError
      */
     public static getChannelScopeCollection(
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetChannelScopeCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -109,7 +111,7 @@ export class StoresService {
      * @throws ApiError
      */
     public static getChannelDomainCollection(
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetChannelDomainCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {

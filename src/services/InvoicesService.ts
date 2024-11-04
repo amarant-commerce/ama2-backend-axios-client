@@ -3,8 +3,9 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
+import type { AmarantGetOrderInvoiceCollectionForOrderSearchCriteriaFilter } from '../models/AmarantGetOrderInvoiceCollectionForOrderSearchCriteriaFilter';
+import type { AmarantGetOrderInvoiceCollectionSearchCriteriaFilter } from '../models/AmarantGetOrderInvoiceCollectionSearchCriteriaFilter';
 import type { AmarantOrderInvoiceModel } from '../models/AmarantOrderInvoiceModel';
-import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
@@ -12,6 +13,9 @@ export class InvoicesService {
     /**
      * Get invoice collection.
      * Get invoice collection.
+     *
+     * Required access scopes:
+     * * read_orders
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
@@ -19,7 +23,7 @@ export class InvoicesService {
      * @throws ApiError
      */
     public static getOrderInvoiceCollection(
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetOrderInvoiceCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -38,6 +42,9 @@ export class InvoicesService {
     /**
      * Get invoice collection.
      * Get invoice collection.
+     *
+     * Required access scopes:
+     * * read_orders
      * @param id Order ID
      * @param q Search criteria query.
      * @param page Page.
@@ -47,7 +54,7 @@ export class InvoicesService {
      */
     public static getOrderInvoiceCollectionForOrder(
         id: number,
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetOrderInvoiceCollectionForOrderSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {

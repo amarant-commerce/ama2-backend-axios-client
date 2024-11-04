@@ -3,4 +3,5 @@ export type AmarantAttributeOptionModel = {
     attributeId: number;
     label: string;
     scopedLabels: Record<string, any>;
+    position: number;
 };

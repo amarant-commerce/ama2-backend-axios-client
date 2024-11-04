@@ -4,6 +4,9 @@ export class OrdersService {
     /**
      * Get order collection.
      * Get order collection.
+     *
+     * Required access scopes:
+     * * read_orders
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
@@ -24,6 +27,9 @@ export class OrdersService {
     /**
      * Get order payment transaction collection.
      * Get order payment transaction collection.
+     *
+     * Required access scopes:
+     * * read_orders
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
@@ -44,6 +50,9 @@ export class OrdersService {
     /**
      * Get order payment transaction collection.
      * Get order payment transaction collection.
+     *
+     * Required access scopes:
+     * * read_orders
      * @param id Order ID
      * @param q Search criteria query.
      * @param page Page.

@@ -8,6 +8,9 @@ import type { AmarantCmsBlockModel } from '../models/AmarantCmsBlockModel';
 import type { AmarantCmsBlockTagModel } from '../models/AmarantCmsBlockTagModel';
 import type { AmarantCmsPageModel } from '../models/AmarantCmsPageModel';
 import type { AmarantCmsPageTagModel } from '../models/AmarantCmsPageTagModel';
+import type { AmarantCmsTemplateModel } from '../models/AmarantCmsTemplateModel';
+import type { AmarantGetCmsBannerCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsBannerCollectionSearchCriteriaFilter';
+import type { AmarantGetCmsTemplateCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsTemplateCollectionSearchCriteriaFilter';
 import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
@@ -199,7 +202,7 @@ export class CmsService {
      * @throws ApiError
      */
     public static getCmsBannerCollection(
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetCmsBannerCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -228,6 +231,50 @@ export class CmsService {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/cms/v1/banners/{id}',
+            path: {
+                'id': id,
+            },
+        });
+    }
+    /**
+     * Get CMS template collection.
+     * Get CMS template collection.
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    public static getCmsTemplateCollection(
+        q?: AmarantGetCmsTemplateCollectionSearchCriteriaFilter,
+        page?: number,
+        itemsPerPage?: number,
+    ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+        data: Array<AmarantCmsTemplateModel>;
+    })> {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/cms/v1/templates',
+            query: {
+                'q': q,
+                'page': page,
+                'itemsPerPage': itemsPerPage,
+            },
+        });
+    }
+    /**
+     * Get CMS template item.
+     * Get CMS template item.
+     * @param id Template ID
+     * @returns AmarantCmsTemplateModel OK
+     * @throws ApiError
+     */
+    public static getCmsTemplateItem(
+        id: number,
+    ): CancelablePromise<AmarantCmsTemplateModel> {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/cms/v1/templates/{id}',
             path: {
                 'id': id,
             },

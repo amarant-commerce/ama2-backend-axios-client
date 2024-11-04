@@ -3,8 +3,8 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
+import type { AmarantGetProductCollectionSearchCriteriaFilter } from '../models/AmarantGetProductCollectionSearchCriteriaFilter';
 import type { AmarantProductBackendOutputProductOutput } from '../models/AmarantProductBackendOutputProductOutput';
-import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
 import type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from '../models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
 import type { SyncProductCsvInputAmarantProductCsvSyncInputDto } from '../models/SyncProductCsvInputAmarantProductCsvSyncInputDto';
 import type { CancelablePromise } from '../core/CancelablePromise';
@@ -14,6 +14,9 @@ export class ProductsService {
     /**
      * Get product collection.
      * Get product collection.
+     *
+     * Required access scopes:
+     * * read_products
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
@@ -21,7 +24,7 @@ export class ProductsService {
      * @throws ApiError
      */
     public static getProductCollection(
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetProductCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -40,6 +43,9 @@ export class ProductsService {
     /**
      * Get product item.
      * Get product item.
+     *
+     * Required access scopes:
+     * * read_products
      * @param id Product ID
      * @returns AmarantProductBackendOutputProductOutput OK
      * @throws ApiError
@@ -58,6 +64,10 @@ export class ProductsService {
     /**
      * Bulk delete product items.
      * Bulk delete product items.
+     *
+     * Required access scopes:
+     * * write_products
+     * * read_products
      * @param requestBody
      * @returns void
      * @throws ApiError
@@ -75,6 +85,11 @@ export class ProductsService {
     /**
      * Sync product data from CSV.
      * Sync product data from CSV.
+     *
+     * Required access scopes:
+     * * write_products
+     * * write_categories
+     * * read_products
      * @param formData
      * @returns void
      * @throws ApiError

@@ -3,7 +3,8 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
-import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
+import type { AmarantGetUserAccountCollectionSearchCriteriaFilter } from '../models/AmarantGetUserAccountCollectionSearchCriteriaFilter';
+import type { AmarantGetUserAccountGroupCollectionSearchCriteriaFilter } from '../models/AmarantGetUserAccountGroupCollectionSearchCriteriaFilter';
 import type { AmarantUserAccountGroupModel } from '../models/AmarantUserAccountGroupModel';
 import type { AmarantUserAccountModel } from '../models/AmarantUserAccountModel';
 import type { CancelablePromise } from '../core/CancelablePromise';
@@ -20,7 +21,7 @@ export class UsersService {
      * @throws ApiError
      */
     public static getUserAccountCollection(
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetUserAccountCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -46,7 +47,7 @@ export class UsersService {
      * @throws ApiError
      */
     public static getUserAccountGroupCollection(
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetUserAccountGroupCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {

@@ -44,7 +44,7 @@ export class AttributesService {
     /**
      * Update attribute option item.
      * Update attribute option item.
-     * @param id Attribute option ID
+     * @param id Attribute option ID.
      * @param requestBody
      * @returns AmarantAttributeOptionModel Resource updated.
      * @throws ApiError

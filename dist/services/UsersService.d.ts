@@ -1,5 +1,6 @@
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
-import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
+import type { AmarantGetUserAccountCollectionSearchCriteriaFilter } from '../models/AmarantGetUserAccountCollectionSearchCriteriaFilter';
+import type { AmarantGetUserAccountGroupCollectionSearchCriteriaFilter } from '../models/AmarantGetUserAccountGroupCollectionSearchCriteriaFilter';
 import type { AmarantUserAccountGroupModel } from '../models/AmarantUserAccountGroupModel';
 import type { AmarantUserAccountModel } from '../models/AmarantUserAccountModel';
 import type { CancelablePromise } from '../core/CancelablePromise';
@@ -13,7 +14,7 @@ export declare class UsersService {
      * @returns any OK
      * @throws ApiError
      */
-    static getUserAccountCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getUserAccountCollection(q?: AmarantGetUserAccountCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantUserAccountModel>;
     })>;
     /**
@@ -25,7 +26,7 @@ export declare class UsersService {
      * @returns any OK
      * @throws ApiError
      */
-    static getUserAccountGroupCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getUserAccountGroupCollection(q?: AmarantGetUserAccountGroupCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantUserAccountGroupModel>;
     })>;
 }
