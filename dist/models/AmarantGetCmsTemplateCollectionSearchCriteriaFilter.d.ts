@@ -4,6 +4,7 @@ export type AmarantGetCmsTemplateCollectionSearchCriteriaFilter = {
          * type: like
          * template_type: like
          * identifier: like
+         * title: like
          * area: like
          * created_by_username: like
          * updated_by_username: like
@@ -13,6 +14,7 @@ export type AmarantGetCmsTemplateCollectionSearchCriteriaFilter = {
          * type: string
          * template_type: string
          * identifier: string
+         * title: string
          * area: string
          * created_by_username: string
          * updated_by_username: string
@@ -21,7 +23,7 @@ export type AmarantGetCmsTemplateCollectionSearchCriteriaFilter = {
     }>>;
     sort?: Array<{
         /**
-         * id, type, template_type, identifier, area, created_at, created_by_username, updated_at, updated_by_username
+         * id, type, template_type, identifier, title, area, created_at, created_by_username, updated_at, updated_by_username
          */
         path?: string;
         direction?: 'ASC' | 'DESC';

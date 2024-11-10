@@ -32,6 +32,7 @@ export type { AmarantGetCmsBannerCollectionSearchCriteriaFilter } from './models
 export type { AmarantGetCmsTemplateCollectionSearchCriteriaFilter } from './models/AmarantGetCmsTemplateCollectionSearchCriteriaFilter';
 export type { AmarantGetCustomerCollectionSearchCriteriaFilter } from './models/AmarantGetCustomerCollectionSearchCriteriaFilter';
 export type { AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter } from './models/AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter';
+export type { AmarantGetMediaEntryCollectionSearchCriteriaFilter } from './models/AmarantGetMediaEntryCollectionSearchCriteriaFilter';
 export type { AmarantGetOrderCollectionSearchCriteriaFilter } from './models/AmarantGetOrderCollectionSearchCriteriaFilter';
 export type { AmarantGetOrderInvoiceCollectionForOrderSearchCriteriaFilter } from './models/AmarantGetOrderInvoiceCollectionForOrderSearchCriteriaFilter';
 export type { AmarantGetOrderInvoiceCollectionSearchCriteriaFilter } from './models/AmarantGetOrderInvoiceCollectionSearchCriteriaFilter';
@@ -89,6 +90,7 @@ export { AttributesService } from './services/AttributesService';
 export { CmsService } from './services/CmsService';
 export { CustomersService } from './services/CustomersService';
 export { InvoicesService } from './services/InvoicesService';
+export { MediaService } from './services/MediaService';
 export { OrdersService } from './services/OrdersService';
 export { ProductsService } from './services/ProductsService';
 export { SalesService } from './services/SalesService';

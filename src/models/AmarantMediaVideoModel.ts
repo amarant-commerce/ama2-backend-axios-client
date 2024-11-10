@@ -8,5 +8,19 @@ export type AmarantMediaVideoModel = {
     featured: boolean;
     altText?: string | null;
     type: 'video';
+    parentType: string;
+    parentId: string;
+    path: string;
+    hash: string;
+    storageProvider: string;
+    fileSize: string;
+    fileExtension: string;
+    fileOriginalName: string;
+    sourcePath?: string | null;
+    sourceProvider?: string | null;
+    meta: Record<string, any>;
+    tags: Array<string>;
+    createdAt: string;
+    updatedAt: string;
 };
 

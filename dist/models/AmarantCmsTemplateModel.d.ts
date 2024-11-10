@@ -11,4 +11,6 @@ export type AmarantCmsTemplateModel = {
     meta: Record<string, (string | number | boolean | Record<string, any> | null)>;
     createdAt: string;
     updatedAt: string;
+    createdBy: string;
+    updatedBy: string;
 };
