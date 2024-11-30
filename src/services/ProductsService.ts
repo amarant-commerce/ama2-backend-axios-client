@@ -67,7 +67,6 @@ export class ProductsService {
      *
      * Required access scopes:
      * * write_products
-     * * read_products
      * @param requestBody
      * @returns void
      * @throws ApiError
@@ -89,7 +88,6 @@ export class ProductsService {
      * Required access scopes:
      * * write_products
      * * write_categories
-     * * read_products
      * @param formData
      * @returns void
      * @throws ApiError
