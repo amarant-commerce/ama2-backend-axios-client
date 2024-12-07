@@ -27,6 +27,7 @@ export type { AmarantGetCmsBannerCollectionSearchCriteriaFilter } from './models
 export type { AmarantGetCmsTemplateCollectionSearchCriteriaFilter } from './models/AmarantGetCmsTemplateCollectionSearchCriteriaFilter';
 export type { AmarantGetCustomerCollectionSearchCriteriaFilter } from './models/AmarantGetCustomerCollectionSearchCriteriaFilter';
 export type { AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter } from './models/AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter';
+export type { AmarantGetJournalEntryCollectionSearchCriteriaFilter } from './models/AmarantGetJournalEntryCollectionSearchCriteriaFilter';
 export type { AmarantGetMediaEntryCollectionSearchCriteriaFilter } from './models/AmarantGetMediaEntryCollectionSearchCriteriaFilter';
 export type { AmarantGetOrderCollectionSearchCriteriaFilter } from './models/AmarantGetOrderCollectionSearchCriteriaFilter';
 export type { AmarantGetOrderInvoiceCollectionForOrderSearchCriteriaFilter } from './models/AmarantGetOrderInvoiceCollectionForOrderSearchCriteriaFilter';
@@ -40,6 +41,7 @@ export type { AmarantGetUserAccountCollectionSearchCriteriaFilter } from './mode
 export type { AmarantGetUserAccountGroupCollectionSearchCriteriaFilter } from './models/AmarantGetUserAccountGroupCollectionSearchCriteriaFilter';
 export type { AmarantImageModel } from './models/AmarantImageModel';
 export type { AmarantImageModelVariant } from './models/AmarantImageModelVariant';
+export type { AmarantJournalEntryModel } from './models/AmarantJournalEntryModel';
 export type { AmarantMediaFileModel } from './models/AmarantMediaFileModel';
 export type { AmarantMediaModel } from './models/AmarantMediaModel';
 export type { AmarantMediaVideoModel } from './models/AmarantMediaVideoModel';
@@ -84,6 +86,7 @@ export { AttributesService } from './services/AttributesService';
 export { CmsService } from './services/CmsService';
 export { CustomersService } from './services/CustomersService';
 export { InvoicesService } from './services/InvoicesService';
+export { JournalService } from './services/JournalService';
 export { MediaService } from './services/MediaService';
 export { OrdersService } from './services/OrdersService';
 export { ProductsService } from './services/ProductsService';

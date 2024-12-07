@@ -14,6 +14,7 @@ export { AttributesService } from './services/AttributesService';
 export { CmsService } from './services/CmsService';
 export { CustomersService } from './services/CustomersService';
 export { InvoicesService } from './services/InvoicesService';
+export { JournalService } from './services/JournalService';
 export { MediaService } from './services/MediaService';
 export { OrdersService } from './services/OrdersService';
 export { ProductsService } from './services/ProductsService';
