@@ -2,30 +2,28 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-export type AmarantGetJournalEntryCollectionSearchCriteriaFilter = {
+export type AmarantGetCookiePanelCollectionSearchCriteriaFilter = {
     groups?: Array<Record<string, {
         /**
-         * journal_id: eq
-         * area: eq
-         * identity_type: like
-         * identity_id: like
-         * level: eq
-         * identifiers: ina
+         * active: eq
+         * identifier: like
+         * scopes: in
+         * created_by_username: like
+         * updated_by_username: like
          */
         condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
         /**
-         * journal_id: integer, string
-         * area: string
-         * identity_type: string
-         * identity_id: string
-         * level: integer, string
-         * identifiers: string
+         * active: integer, string
+         * identifier: string
+         * scopes: string
+         * created_by_username: string
+         * updated_by_username: string
          */
         value?: number | number | string | boolean | any[] | null;
     }>>;
     sort?: Array<{
         /**
-         * area, identity_type, identity_id, level, created_at
+         * id, active, identifier, scopes, created_at, created_by_username, updated_at, updated_by_username
          */
         path?: string;
         direction?: 'ASC' | 'DESC';

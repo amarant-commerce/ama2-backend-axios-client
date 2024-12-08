@@ -7,6 +7,8 @@ export { CancelablePromise, CancelError } from './core/CancelablePromise';
 export { OpenAPI } from './core/OpenAPI';
 export type { OpenAPIConfig } from './core/OpenAPI';
 
+export type { AmarantAnalyticsCookiePanelItemModel } from './models/AmarantAnalyticsCookiePanelItemModel';
+export type { AmarantAnalyticsCookiePanelModel } from './models/AmarantAnalyticsCookiePanelModel';
 export type { AmarantApiError } from './models/AmarantApiError';
 export type { AmarantApiLinks } from './models/AmarantApiLinks';
 export type { AmarantApiPaginatedCollectionResponse } from './models/AmarantApiPaginatedCollectionResponse';
@@ -30,6 +32,7 @@ export type { AmarantGetChannelDomainCollectionSearchCriteriaFilter } from './mo
 export type { AmarantGetChannelScopeCollectionSearchCriteriaFilter } from './models/AmarantGetChannelScopeCollectionSearchCriteriaFilter';
 export type { AmarantGetCmsBannerCollectionSearchCriteriaFilter } from './models/AmarantGetCmsBannerCollectionSearchCriteriaFilter';
 export type { AmarantGetCmsTemplateCollectionSearchCriteriaFilter } from './models/AmarantGetCmsTemplateCollectionSearchCriteriaFilter';
+export type { AmarantGetCookiePanelCollectionSearchCriteriaFilter } from './models/AmarantGetCookiePanelCollectionSearchCriteriaFilter';
 export type { AmarantGetCustomerCollectionSearchCriteriaFilter } from './models/AmarantGetCustomerCollectionSearchCriteriaFilter';
 export type { AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter } from './models/AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter';
 export type { AmarantGetJournalEntryCollectionSearchCriteriaFilter } from './models/AmarantGetJournalEntryCollectionSearchCriteriaFilter';
@@ -88,6 +91,7 @@ export type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from
 export type { SyncProductCsvInputAmarantProductCsvSyncInputDto } from './models/SyncProductCsvInputAmarantProductCsvSyncInputDto';
 export type { UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto } from './models/UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto';
 
+export { AnalyticsService } from './services/AnalyticsService';
 export { AttributesService } from './services/AttributesService';
 export { CmsService } from './services/CmsService';
 export { CustomersService } from './services/CustomersService';
