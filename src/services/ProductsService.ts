@@ -72,7 +72,7 @@ export class ProductsService {
      * @throws ApiError
      */
     public static bulkDeleteProductItems(
-        requestBody?: BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto,
+        requestBody: BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto,
     ): CancelablePromise<void> {
         return __request(OpenAPI, {
             method: 'DELETE',
@@ -93,7 +93,7 @@ export class ProductsService {
      * @throws ApiError
      */
     public static syncProductCsv(
-        formData?: SyncProductCsvInputAmarantProductCsvSyncInputDto,
+        formData: SyncProductCsvInputAmarantProductCsvSyncInputDto,
     ): CancelablePromise<void> {
         return __request(OpenAPI, {
             method: 'POST',

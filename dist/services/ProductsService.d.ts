@@ -41,7 +41,7 @@ export declare class ProductsService {
      * @returns void
      * @throws ApiError
      */
-    static bulkDeleteProductItems(requestBody?: BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto): CancelablePromise<void>;
+    static bulkDeleteProductItems(requestBody: BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto): CancelablePromise<void>;
     /**
      * Sync product data from CSV.
      * Sync product data from CSV.
@@ -53,5 +53,5 @@ export declare class ProductsService {
      * @returns void
      * @throws ApiError
      */
-    static syncProductCsv(formData?: SyncProductCsvInputAmarantProductCsvSyncInputDto): CancelablePromise<void>;
+    static syncProductCsv(formData: SyncProductCsvInputAmarantProductCsvSyncInputDto): CancelablePromise<void>;
 }

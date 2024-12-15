@@ -38,5 +38,5 @@ export declare class AttributesService {
      * @returns AmarantAttributeOptionModel Resource updated.
      * @throws ApiError
      */
-    static updateAttributeOptionItem(id: number, requestBody?: UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto): CancelablePromise<AmarantAttributeOptionModel>;
+    static updateAttributeOptionItem(id: number, requestBody: UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto): CancelablePromise<AmarantAttributeOptionModel>;
 }

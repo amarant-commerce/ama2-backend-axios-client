@@ -74,7 +74,7 @@ export class AttributesService {
      */
     public static updateAttributeOptionItem(
         id: number,
-        requestBody?: UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto,
+        requestBody: UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto,
     ): CancelablePromise<AmarantAttributeOptionModel> {
         return __request(OpenAPI, {
             method: 'PUT',
