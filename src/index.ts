@@ -9,6 +9,7 @@ export type { OpenAPIConfig } from './core/OpenAPI';
 
 export type { AmarantAnalyticsCookiePanelItemModel } from './models/AmarantAnalyticsCookiePanelItemModel';
 export type { AmarantAnalyticsCookiePanelModel } from './models/AmarantAnalyticsCookiePanelModel';
+export type { AmarantApiCollectionResponse } from './models/AmarantApiCollectionResponse';
 export type { AmarantApiError } from './models/AmarantApiError';
 export type { AmarantApiLinks } from './models/AmarantApiLinks';
 export type { AmarantApiPaginatedCollectionResponse } from './models/AmarantApiPaginatedCollectionResponse';
@@ -24,7 +25,10 @@ export type { AmarantCmsBlockTagModel } from './models/AmarantCmsBlockTagModel';
 export type { AmarantCmsPageModel } from './models/AmarantCmsPageModel';
 export type { AmarantCmsPageTagModel } from './models/AmarantCmsPageTagModel';
 export type { AmarantCmsTemplateModel } from './models/AmarantCmsTemplateModel';
+export type { AmarantCrmClientModel } from './models/AmarantCrmClientModel';
 export { AmarantDataScope } from './models/AmarantDataScope';
+export type { AmarantDirectoryCountryModel } from './models/AmarantDirectoryCountryModel';
+export type { AmarantDirectoryRegionModel } from './models/AmarantDirectoryRegionModel';
 export type { AmarantGetAttributeCollectionSearchCriteriaFilter } from './models/AmarantGetAttributeCollectionSearchCriteriaFilter';
 export type { AmarantGetAttributeOptionCollectionSearchCriteriaFilter } from './models/AmarantGetAttributeOptionCollectionSearchCriteriaFilter';
 export type { AmarantGetChannelCollectionSearchCriteriaFilter } from './models/AmarantGetChannelCollectionSearchCriteriaFilter';
@@ -33,6 +37,7 @@ export type { AmarantGetChannelScopeCollectionSearchCriteriaFilter } from './mod
 export type { AmarantGetCmsBannerCollectionSearchCriteriaFilter } from './models/AmarantGetCmsBannerCollectionSearchCriteriaFilter';
 export type { AmarantGetCmsTemplateCollectionSearchCriteriaFilter } from './models/AmarantGetCmsTemplateCollectionSearchCriteriaFilter';
 export type { AmarantGetCookiePanelCollectionSearchCriteriaFilter } from './models/AmarantGetCookiePanelCollectionSearchCriteriaFilter';
+export type { AmarantGetCrmClientCollectionSearchCriteriaFilter } from './models/AmarantGetCrmClientCollectionSearchCriteriaFilter';
 export type { AmarantGetCustomerCollectionSearchCriteriaFilter } from './models/AmarantGetCustomerCollectionSearchCriteriaFilter';
 export type { AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter } from './models/AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter';
 export type { AmarantGetJournalEntryCollectionSearchCriteriaFilter } from './models/AmarantGetJournalEntryCollectionSearchCriteriaFilter';
@@ -94,7 +99,9 @@ export type { UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto } fro
 export { AnalyticsService } from './services/AnalyticsService';
 export { AttributesService } from './services/AttributesService';
 export { CmsService } from './services/CmsService';
+export { CrmService } from './services/CrmService';
 export { CustomersService } from './services/CustomersService';
+export { DirectoryService } from './services/DirectoryService';
 export { InvoicesService } from './services/InvoicesService';
 export { JournalService } from './services/JournalService';
 export { MediaService } from './services/MediaService';

@@ -13,7 +13,9 @@ export { AmarantSalesCustomerAccountStateOutputDto } from './models/AmarantSales
 export { AnalyticsService } from './services/AnalyticsService';
 export { AttributesService } from './services/AttributesService';
 export { CmsService } from './services/CmsService';
+export { CrmService } from './services/CrmService';
 export { CustomersService } from './services/CustomersService';
+export { DirectoryService } from './services/DirectoryService';
 export { InvoicesService } from './services/InvoicesService';
 export { JournalService } from './services/JournalService';
 export { MediaService } from './services/MediaService';
