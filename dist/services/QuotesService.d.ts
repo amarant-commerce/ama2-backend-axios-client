@@ -1,0 +1,43 @@
+import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
+import type { AmarantCartQuoteModel } from '../models/AmarantCartQuoteModel';
+import type { AmarantGetQuoteCollectionSearchCriteriaFilter } from '../models/AmarantGetQuoteCollectionSearchCriteriaFilter';
+import type { UpdateQuoteItemInputAmarantSalesQuoteInputDto } from '../models/UpdateQuoteItemInputAmarantSalesQuoteInputDto';
+import type { CancelablePromise } from '../core/CancelablePromise';
+export declare class QuotesService {
+    /**
+     * Get quote collection.
+     * Get quote collection.
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getQuoteCollection(q?: AmarantGetQuoteCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+        data: Array<AmarantCartQuoteModel>;
+    })>;
+    /**
+     * Create quote item.
+     * Create quote item.
+     * @returns AmarantCartQuoteModel OK
+     * @throws ApiError
+     */
+    static createQuoteItem(): CancelablePromise<AmarantCartQuoteModel>;
+    /**
+     * Get quote item.
+     * Get quote item.
+     * @param id Quote ID
+     * @returns AmarantCartQuoteModel OK
+     * @throws ApiError
+     */
+    static getQuoteItem(id: number): CancelablePromise<AmarantCartQuoteModel>;
+    /**
+     * Update quote item.
+     * Update quote item.
+     * @param id Quote ID
+     * @param requestBody
+     * @returns AmarantCartQuoteModel Resource updated.
+     * @throws ApiError
+     */
+    static updateQuoteItem(id: number, requestBody: UpdateQuoteItemInputAmarantSalesQuoteInputDto): CancelablePromise<AmarantCartQuoteModel>;
+}

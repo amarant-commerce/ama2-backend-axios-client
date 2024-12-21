@@ -9,6 +9,7 @@ export { AmarantAttributeDataTypeEnum } from './models/AmarantAttributeDataTypeE
 export { AmarantAttributeInputTypeEnum } from './models/AmarantAttributeInputTypeEnum';
 export { AmarantAttributeModelFlag } from './models/AmarantAttributeModelFlag';
 export { AmarantDataScope } from './models/AmarantDataScope';
+export { AmarantSalesCartItemInputProductDto } from './models/AmarantSalesCartItemInputProductDto';
 export { AmarantSalesCustomerAccountStateOutputDto } from './models/AmarantSalesCustomerAccountStateOutputDto';
 export { AnalyticsService } from './services/AnalyticsService';
 export { AttributesService } from './services/AttributesService';
@@ -21,6 +22,7 @@ export { JournalService } from './services/JournalService';
 export { MediaService } from './services/MediaService';
 export { OrdersService } from './services/OrdersService';
 export { ProductsService } from './services/ProductsService';
+export { QuotesService } from './services/QuotesService';
 export { SalesService } from './services/SalesService';
 export { StoresService } from './services/StoresService';
 export { UsersService } from './services/UsersService';
