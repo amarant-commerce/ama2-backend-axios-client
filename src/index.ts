@@ -50,6 +50,7 @@ export type { AmarantGetCmsBannerCollectionSearchCriteriaFilter } from './models
 export type { AmarantGetCmsTemplateCollectionSearchCriteriaFilter } from './models/AmarantGetCmsTemplateCollectionSearchCriteriaFilter';
 export type { AmarantGetCookiePanelCollectionSearchCriteriaFilter } from './models/AmarantGetCookiePanelCollectionSearchCriteriaFilter';
 export type { AmarantGetCrmClientCollectionSearchCriteriaFilter } from './models/AmarantGetCrmClientCollectionSearchCriteriaFilter';
+export type { AmarantGetCrmClientContactLogCollectionSearchCriteriaFilter } from './models/AmarantGetCrmClientContactLogCollectionSearchCriteriaFilter';
 export type { AmarantGetCustomerCollectionSearchCriteriaFilter } from './models/AmarantGetCustomerCollectionSearchCriteriaFilter';
 export type { AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter } from './models/AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter';
 export type { AmarantGetJournalEntryCollectionSearchCriteriaFilter } from './models/AmarantGetJournalEntryCollectionSearchCriteriaFilter';

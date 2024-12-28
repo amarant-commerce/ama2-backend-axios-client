@@ -6,6 +6,7 @@ import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApi
 import type { AmarantCrmClientContactLogModel } from '../models/AmarantCrmClientContactLogModel';
 import type { AmarantCrmClientModel } from '../models/AmarantCrmClientModel';
 import type { AmarantGetCrmClientCollectionSearchCriteriaFilter } from '../models/AmarantGetCrmClientCollectionSearchCriteriaFilter';
+import type { AmarantGetCrmClientContactLogCollectionSearchCriteriaFilter } from '../models/AmarantGetCrmClientContactLogCollectionSearchCriteriaFilter';
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
@@ -57,7 +58,8 @@ export class CrmService {
     /**
      * Get client contact log collection.
      * Get client contact log collection.
-     * @param id Client contact log ID
+     * @param id Client ID
+     * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
      * @returns any OK
@@ -65,6 +67,7 @@ export class CrmService {
      */
     public static getCrmClientContactLogCollection(
         id: number,
+        q?: AmarantGetCrmClientContactLogCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -77,6 +80,7 @@ export class CrmService {
                 'id': id,
             },
             query: {
+                'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
             },

@@ -40,13 +40,14 @@ export class CrmService {
     /**
      * Get client contact log collection.
      * Get client contact log collection.
-     * @param id Client contact log ID
+     * @param id Client ID
+     * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
-    static getCrmClientContactLogCollection(id, page, itemsPerPage) {
+    static getCrmClientContactLogCollection(id, q, page, itemsPerPage) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/crm/v1/clients/{id}/contact-logs',
@@ -54,6 +55,7 @@ export class CrmService {
                 'id': id,
             },
             query: {
+                'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
             },
