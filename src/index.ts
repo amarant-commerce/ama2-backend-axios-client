@@ -36,6 +36,7 @@ export type { AmarantCmsBlockTagModel } from './models/AmarantCmsBlockTagModel';
 export type { AmarantCmsPageModel } from './models/AmarantCmsPageModel';
 export type { AmarantCmsPageTagModel } from './models/AmarantCmsPageTagModel';
 export type { AmarantCmsTemplateModel } from './models/AmarantCmsTemplateModel';
+export type { AmarantCrmClientContactLogModel } from './models/AmarantCrmClientContactLogModel';
 export type { AmarantCrmClientModel } from './models/AmarantCrmClientModel';
 export { AmarantDataScope } from './models/AmarantDataScope';
 export type { AmarantDirectoryCountryModel } from './models/AmarantDirectoryCountryModel';
@@ -90,6 +91,7 @@ export type { AmarantSalesCartAdditionalDataInputDto } from './models/AmarantSal
 export type { AmarantSalesCartItemInputGenericProductDto } from './models/AmarantSalesCartItemInputGenericProductDto';
 export type { AmarantSalesCartItemInputGroupedProductDto } from './models/AmarantSalesCartItemInputGroupedProductDto';
 export { AmarantSalesCartItemInputProductDto } from './models/AmarantSalesCartItemInputProductDto';
+export type { AmarantSalesCartItemPricingInputDto } from './models/AmarantSalesCartItemPricingInputDto';
 export type { AmarantSalesCustomerAccountAddressOutputDto } from './models/AmarantSalesCustomerAccountAddressOutputDto';
 export type { AmarantSalesCustomerAccountOrganizationOutputDto } from './models/AmarantSalesCustomerAccountOrganizationOutputDto';
 export type { AmarantSalesCustomerAccountOutputDto } from './models/AmarantSalesCustomerAccountOutputDto';

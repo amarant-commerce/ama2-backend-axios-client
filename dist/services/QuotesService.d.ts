@@ -17,13 +17,6 @@ export declare class QuotesService {
         data: Array<AmarantCartQuoteModel>;
     })>;
     /**
-     * Create quote item.
-     * Create quote item.
-     * @returns AmarantCartQuoteModel OK
-     * @throws ApiError
-     */
-    static createQuoteItem(): CancelablePromise<AmarantCartQuoteModel>;
-    /**
      * Get quote item.
      * Get quote item.
      * @param id Quote ID

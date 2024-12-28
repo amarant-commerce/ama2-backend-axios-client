@@ -37,18 +37,6 @@ export class QuotesService {
         });
     }
     /**
-     * Create quote item.
-     * Create quote item.
-     * @returns AmarantCartQuoteModel OK
-     * @throws ApiError
-     */
-    public static createQuoteItem(): CancelablePromise<AmarantCartQuoteModel> {
-        return __request(OpenAPI, {
-            method: 'POST',
-            url: '/api/quotes/v1',
-        });
-    }
-    /**
      * Get quote item.
      * Get quote item.
      * @param id Quote ID

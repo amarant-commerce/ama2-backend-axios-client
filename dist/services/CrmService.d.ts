@@ -1,4 +1,5 @@
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
+import type { AmarantCrmClientContactLogModel } from '../models/AmarantCrmClientContactLogModel';
 import type { AmarantCrmClientModel } from '../models/AmarantCrmClientModel';
 import type { AmarantGetCrmClientCollectionSearchCriteriaFilter } from '../models/AmarantGetCrmClientCollectionSearchCriteriaFilter';
 import type { CancelablePromise } from '../core/CancelablePromise';
@@ -23,4 +24,16 @@ export declare class CrmService {
      * @throws ApiError
      */
     static getCrmClientItem(id: number): CancelablePromise<AmarantCrmClientModel>;
+    /**
+     * Get client contact log collection.
+     * Get client contact log collection.
+     * @param id Client contact log ID
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getCrmClientContactLogCollection(id: number, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+        data: Array<AmarantCrmClientContactLogModel>;
+    })>;
 }

@@ -37,4 +37,26 @@ export class CrmService {
             },
         });
     }
+    /**
+     * Get client contact log collection.
+     * Get client contact log collection.
+     * @param id Client contact log ID
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getCrmClientContactLogCollection(id, page, itemsPerPage) {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/crm/v1/clients/{id}/contact-logs',
+            path: {
+                'id': id,
+            },
+            query: {
+                'page': page,
+                'itemsPerPage': itemsPerPage,
+            },
+        });
+    }
 }
