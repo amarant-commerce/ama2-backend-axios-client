@@ -69,7 +69,7 @@ export class ProductsService {
      * * write_products
      * * write_categories
      * @param formData
-     * @returns void
+     * @returns AmarantProductCsvSyncOutputDto Accepted
      * @throws ApiError
      */
     static syncProductCsv(formData) {

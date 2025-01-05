@@ -5,6 +5,7 @@
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantGetProductCollectionSearchCriteriaFilter } from '../models/AmarantGetProductCollectionSearchCriteriaFilter';
 import type { AmarantProductBackendOutputProductOutput } from '../models/AmarantProductBackendOutputProductOutput';
+import type { AmarantProductCsvSyncOutputDto } from '../models/AmarantProductCsvSyncOutputDto';
 import type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from '../models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
 import type { SyncProductCsvInputAmarantProductCsvSyncInputDto } from '../models/SyncProductCsvInputAmarantProductCsvSyncInputDto';
 import type { CancelablePromise } from '../core/CancelablePromise';
@@ -89,12 +90,12 @@ export class ProductsService {
      * * write_products
      * * write_categories
      * @param formData
-     * @returns void
+     * @returns AmarantProductCsvSyncOutputDto Accepted
      * @throws ApiError
      */
     public static syncProductCsv(
         formData: SyncProductCsvInputAmarantProductCsvSyncInputDto,
-    ): CancelablePromise<void> {
+    ): CancelablePromise<AmarantProductCsvSyncOutputDto> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/api/products/v1/sync/csv',

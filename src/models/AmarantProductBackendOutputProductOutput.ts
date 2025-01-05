@@ -2,6 +2,7 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
+import type { AmarantProductBackendOutputProductSourceItemOutput } from './AmarantProductBackendOutputProductSourceItemOutput';
 export type AmarantProductBackendOutputProductOutput = {
     id: number;
     type: string;
@@ -15,8 +16,8 @@ export type AmarantProductBackendOutputProductOutput = {
     mediaCount: number;
     categoryIds: Array<number>;
     categoryPaths: Array<string>;
-    qty: string;
-    inStock: boolean;
+    aggregatedQty: string;
+    sourceItems: Array<AmarantProductBackendOutputProductSourceItemOutput>;
     createdAt: string;
     updatedAt: string;
 };

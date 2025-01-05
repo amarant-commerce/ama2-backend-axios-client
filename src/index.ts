@@ -7,8 +7,6 @@ export { CancelablePromise, CancelError } from './core/CancelablePromise';
 export { OpenAPI } from './core/OpenAPI';
 export type { OpenAPIConfig } from './core/OpenAPI';
 
-export type { AmarantAnalyticsCookiePanelItemModel } from './models/AmarantAnalyticsCookiePanelItemModel';
-export type { AmarantAnalyticsCookiePanelModel } from './models/AmarantAnalyticsCookiePanelModel';
 export type { AmarantApiCollectionResponse } from './models/AmarantApiCollectionResponse';
 export type { AmarantApiError } from './models/AmarantApiError';
 export type { AmarantApiLinks } from './models/AmarantApiLinks';
@@ -36,6 +34,8 @@ export type { AmarantCmsBlockTagModel } from './models/AmarantCmsBlockTagModel';
 export type { AmarantCmsPageModel } from './models/AmarantCmsPageModel';
 export type { AmarantCmsPageTagModel } from './models/AmarantCmsPageTagModel';
 export type { AmarantCmsTemplateModel } from './models/AmarantCmsTemplateModel';
+export type { AmarantCookiePanelItemModel } from './models/AmarantCookiePanelItemModel';
+export type { AmarantCookiePanelModel } from './models/AmarantCookiePanelModel';
 export type { AmarantCrmClientContactLogModel } from './models/AmarantCrmClientContactLogModel';
 export type { AmarantCrmClientModel } from './models/AmarantCrmClientModel';
 export { AmarantDataScope } from './models/AmarantDataScope';
@@ -88,6 +88,8 @@ export type { AmarantOrderShippingBatchItemModel } from './models/AmarantOrderSh
 export type { AmarantOrderShippingBatchModel } from './models/AmarantOrderShippingBatchModel';
 export type { AmarantOrderTotalModel } from './models/AmarantOrderTotalModel';
 export type { AmarantProductBackendOutputProductOutput } from './models/AmarantProductBackendOutputProductOutput';
+export type { AmarantProductBackendOutputProductSourceItemOutput } from './models/AmarantProductBackendOutputProductSourceItemOutput';
+export type { AmarantProductCsvSyncOutputDto } from './models/AmarantProductCsvSyncOutputDto';
 export type { AmarantSalesCartAdditionalDataInputDto } from './models/AmarantSalesCartAdditionalDataInputDto';
 export type { AmarantSalesCartItemInputGenericProductDto } from './models/AmarantSalesCartItemInputGenericProductDto';
 export type { AmarantSalesCartItemInputGroupedProductDto } from './models/AmarantSalesCartItemInputGroupedProductDto';
