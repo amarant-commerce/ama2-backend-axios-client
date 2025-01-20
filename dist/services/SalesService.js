@@ -108,4 +108,27 @@ export class SalesService {
             },
         });
     }
+    /**
+     * Get tax category collection.
+     * Get tax category collection.
+     *
+     * Required access scopes:
+     * * read_taxes
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getTaxCategoryCollection(q, page, itemsPerPage) {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/sales/v1/tax/categories',
+            query: {
+                'q': q,
+                'page': page,
+                'itemsPerPage': itemsPerPage,
+            },
+        });
+    }
 }

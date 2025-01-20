@@ -4,8 +4,10 @@
 /* eslint-disable */
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantGetPricingRuleCollectionSearchCriteriaFilter } from '../models/AmarantGetPricingRuleCollectionSearchCriteriaFilter';
+import type { AmarantGetTaxCategoryCollectionSearchCriteriaFilter } from '../models/AmarantGetTaxCategoryCollectionSearchCriteriaFilter';
 import type { AmarantGetTaxRateCollectionSearchCriteriaFilter } from '../models/AmarantGetTaxRateCollectionSearchCriteriaFilter';
 import type { AmarantSalesPricingRule } from '../models/AmarantSalesPricingRule';
+import type { AmarantSalesTaxCategoryModel } from '../models/AmarantSalesTaxCategoryModel';
 import type { AmarantSalesTaxRateModel } from '../models/AmarantSalesTaxRateModel';
 import type { AmarantSalesTierRule } from '../models/AmarantSalesTierRule';
 import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
@@ -135,6 +137,35 @@ export class SalesService {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/sales/v1/tax/rates',
+            query: {
+                'q': q,
+                'page': page,
+                'itemsPerPage': itemsPerPage,
+            },
+        });
+    }
+    /**
+     * Get tax category collection.
+     * Get tax category collection.
+     *
+     * Required access scopes:
+     * * read_taxes
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    public static getTaxCategoryCollection(
+        q?: AmarantGetTaxCategoryCollectionSearchCriteriaFilter,
+        page?: number,
+        itemsPerPage?: number,
+    ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+        data: Array<AmarantSalesTaxCategoryModel>;
+    })> {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/sales/v1/tax/categories',
             query: {
                 'q': q,
                 'page': page,

@@ -58,6 +58,7 @@ export type { AmarantGetOrderPaymentTransactionCollectionSearchCriteriaFilter } 
 export type { AmarantGetPricingRuleCollectionSearchCriteriaFilter } from './models/AmarantGetPricingRuleCollectionSearchCriteriaFilter';
 export type { AmarantGetProductCollectionSearchCriteriaFilter } from './models/AmarantGetProductCollectionSearchCriteriaFilter';
 export type { AmarantGetQuoteCollectionSearchCriteriaFilter } from './models/AmarantGetQuoteCollectionSearchCriteriaFilter';
+export type { AmarantGetTaxCategoryCollectionSearchCriteriaFilter } from './models/AmarantGetTaxCategoryCollectionSearchCriteriaFilter';
 export type { AmarantGetTaxRateCollectionSearchCriteriaFilter } from './models/AmarantGetTaxRateCollectionSearchCriteriaFilter';
 export type { AmarantGetUserAccountCollectionSearchCriteriaFilter } from './models/AmarantGetUserAccountCollectionSearchCriteriaFilter';
 export type { AmarantGetUserAccountGroupCollectionSearchCriteriaFilter } from './models/AmarantGetUserAccountGroupCollectionSearchCriteriaFilter';
@@ -86,6 +87,7 @@ export type { AmarantProductBackendOutputProductOutput } from './models/AmarantP
 export type { AmarantProductBackendOutputProductSourceItemOutput } from './models/AmarantProductBackendOutputProductSourceItemOutput';
 export type { AmarantProductCsvSyncOutputDto } from './models/AmarantProductCsvSyncOutputDto';
 export type { AmarantSalesCartAdditionalDataInputDto } from './models/AmarantSalesCartAdditionalDataInputDto';
+export type { AmarantSalesCartItemInputCustomizableProductDto } from './models/AmarantSalesCartItemInputCustomizableProductDto';
 export type { AmarantSalesCartItemInputGenericProductDto } from './models/AmarantSalesCartItemInputGenericProductDto';
 export type { AmarantSalesCartItemInputGroupedProductDto } from './models/AmarantSalesCartItemInputGroupedProductDto';
 export { AmarantSalesCartItemInputProductDto } from './models/AmarantSalesCartItemInputProductDto';
@@ -96,6 +98,7 @@ export type { AmarantSalesCustomerAccountOutputDto } from './models/AmarantSales
 export { AmarantSalesCustomerAccountStateOutputDto } from './models/AmarantSalesCustomerAccountStateOutputDto';
 export type { AmarantSalesPricingRule } from './models/AmarantSalesPricingRule';
 export type { AmarantSalesQuoteUpdateItemInputDto } from './models/AmarantSalesQuoteUpdateItemInputDto';
+export type { AmarantSalesTaxCategoryModel } from './models/AmarantSalesTaxCategoryModel';
 export type { AmarantSalesTaxRateModel } from './models/AmarantSalesTaxRateModel';
 export type { AmarantSalesTierRule } from './models/AmarantSalesTierRule';
 export type { AmarantSalesTierRuleItem } from './models/AmarantSalesTierRuleItem';
