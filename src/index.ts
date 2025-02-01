@@ -63,6 +63,7 @@ export type { AmarantGetOrderPaymentTransactionCollectionSearchCriteriaFilter } 
 export type { AmarantGetPricingRuleCollectionSearchCriteriaFilter } from './models/AmarantGetPricingRuleCollectionSearchCriteriaFilter';
 export type { AmarantGetProductCollectionSearchCriteriaFilter } from './models/AmarantGetProductCollectionSearchCriteriaFilter';
 export type { AmarantGetQuoteCollectionSearchCriteriaFilter } from './models/AmarantGetQuoteCollectionSearchCriteriaFilter';
+export type { AmarantGetSalesNewsletterSubscriberCollectionSearchCriteriaFilter } from './models/AmarantGetSalesNewsletterSubscriberCollectionSearchCriteriaFilter';
 export type { AmarantGetTaxCategoryCollectionSearchCriteriaFilter } from './models/AmarantGetTaxCategoryCollectionSearchCriteriaFilter';
 export type { AmarantGetTaxRateCollectionSearchCriteriaFilter } from './models/AmarantGetTaxRateCollectionSearchCriteriaFilter';
 export type { AmarantGetUserAccountCollectionSearchCriteriaFilter } from './models/AmarantGetUserAccountCollectionSearchCriteriaFilter';
@@ -101,6 +102,7 @@ export type { AmarantSalesCustomerAccountAddressOutputDto } from './models/Amara
 export type { AmarantSalesCustomerAccountOrganizationOutputDto } from './models/AmarantSalesCustomerAccountOrganizationOutputDto';
 export type { AmarantSalesCustomerAccountOutputDto } from './models/AmarantSalesCustomerAccountOutputDto';
 export { AmarantSalesCustomerAccountStateOutputDto } from './models/AmarantSalesCustomerAccountStateOutputDto';
+export type { AmarantSalesNewsletterSubscriberOutputDto } from './models/AmarantSalesNewsletterSubscriberOutputDto';
 export type { AmarantSalesPricingRule } from './models/AmarantSalesPricingRule';
 export type { AmarantSalesQuoteUpdateItemInputDto } from './models/AmarantSalesQuoteUpdateItemInputDto';
 export type { AmarantSalesTaxCategoryModel } from './models/AmarantSalesTaxCategoryModel';
@@ -131,6 +133,7 @@ export { DirectoryService } from './services/DirectoryService';
 export { InvoicesService } from './services/InvoicesService';
 export { JournalService } from './services/JournalService';
 export { MediaService } from './services/MediaService';
+export { NewsletterService } from './services/NewsletterService';
 export { OrdersService } from './services/OrdersService';
 export { ProductsService } from './services/ProductsService';
 export { QuotesService } from './services/QuotesService';

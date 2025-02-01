@@ -20,6 +20,7 @@ export { DirectoryService } from './services/DirectoryService';
 export { InvoicesService } from './services/InvoicesService';
 export { JournalService } from './services/JournalService';
 export { MediaService } from './services/MediaService';
+export { NewsletterService } from './services/NewsletterService';
 export { OrdersService } from './services/OrdersService';
 export { ProductsService } from './services/ProductsService';
 export { QuotesService } from './services/QuotesService';
