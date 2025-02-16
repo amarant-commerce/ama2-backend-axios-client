@@ -6,6 +6,7 @@ export type AmarantCartQuoteModel = {
     customer?: string | null;
     organizationId?: number | null;
     organization?: string | null;
+    attributes: Record<string, string | number | number | boolean | any[] | null>;
     cart: AmarantCartModel;
     createdAt: string;
     updatedAt: string;

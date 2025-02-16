@@ -25,5 +25,6 @@ export { OrdersService } from './services/OrdersService';
 export { ProductsService } from './services/ProductsService';
 export { QuotesService } from './services/QuotesService';
 export { SalesService } from './services/SalesService';
+export { ShipmentsService } from './services/ShipmentsService';
 export { StoresService } from './services/StoresService';
 export { UsersService } from './services/UsersService';
