@@ -7,6 +7,8 @@ export type AmarantAttributeOptionModel = {
     attributeId: number;
     label: string;
     scopedLabels: Record<string, any>;
+    swatchType?: string | null;
+    swatch?: string | null;
     position: number;
 };
 

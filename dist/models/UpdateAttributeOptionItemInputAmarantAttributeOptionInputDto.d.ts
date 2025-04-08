@@ -4,4 +4,6 @@ export type UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto = {
     label: string;
     scopedLabels: Record<string, any>;
     position: number;
+    swatchType?: string | null;
+    swatch?: string | null;
 };

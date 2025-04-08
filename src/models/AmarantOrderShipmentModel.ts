@@ -11,6 +11,7 @@ export type AmarantOrderShipmentModel = {
     carrierStatus?: string | null;
     carrierStatusCode?: string | null;
     trackingNumbers: Array<string>;
+    weight: string;
     items: Array<AmarantOrderShipmentItemModel>;
     createdAt: string;
     updatedAt: string;

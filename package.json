@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/amarant-commerce/ama-backend-axios-client",
   "dependencies": {
-    "@types/axios": "^0.14.0",
     "axios": "^1.6"
   },
   "devDependencies": {

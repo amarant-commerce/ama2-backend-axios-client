@@ -11,6 +11,7 @@ export { AmarantAttributeModelFlag } from './models/AmarantAttributeModelFlag';
 export { AmarantDataScope } from './models/AmarantDataScope';
 export { AmarantSalesCartItemInputProductDto } from './models/AmarantSalesCartItemInputProductDto';
 export { AmarantSalesCustomerAccountStateOutputDto } from './models/AmarantSalesCustomerAccountStateOutputDto';
+export { AmarantSalesCustomerPricingInputModel } from './models/AmarantSalesCustomerPricingInputModel';
 export { AnalyticsService } from './services/AnalyticsService';
 export { AttributesService } from './services/AttributesService';
 export { CmsService } from './services/CmsService';

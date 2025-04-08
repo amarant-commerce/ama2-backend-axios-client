@@ -1,8 +1,12 @@
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantGetCustomerCollectionSearchCriteriaFilter } from '../models/AmarantGetCustomerCollectionSearchCriteriaFilter';
 import type { AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter } from '../models/AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter';
+import type { AmarantGetCustomerPricingCollectionSearchCriteriaFilter } from '../models/AmarantGetCustomerPricingCollectionSearchCriteriaFilter';
 import type { AmarantSalesCustomerAccountOrganizationOutputDto } from '../models/AmarantSalesCustomerAccountOrganizationOutputDto';
 import type { AmarantSalesCustomerAccountOutputDto } from '../models/AmarantSalesCustomerAccountOutputDto';
+import type { AmarantSalesCustomerPricingModel } from '../models/AmarantSalesCustomerPricingModel';
+import type { RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel } from '../models/RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel';
+import type { UpdateCustomerPricingBulkInputAmarantSalesCustomerPricingBulkInputModel } from '../models/UpdateCustomerPricingBulkInputAmarantSalesCustomerPricingBulkInputModel';
 import type { CancelablePromise } from '../core/CancelablePromise';
 export declare class CustomersService {
     /**
@@ -51,4 +55,32 @@ export declare class CustomersService {
      * @throws ApiError
      */
     static getCustomerOrganizationItem(id: number): CancelablePromise<AmarantSalesCustomerAccountOrganizationOutputDto>;
+    /**
+     * Get customer pricing collection.
+     * Get customer pricing collection.
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getCustomerPricingCollection(q?: AmarantGetCustomerPricingCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+        data: Array<AmarantSalesCustomerPricingModel>;
+    })>;
+    /**
+     * Bulk update customer pricing.
+     * Bulk update customer pricing.
+     * @param requestBody
+     * @returns void
+     * @throws ApiError
+     */
+    static updateCustomerPricingBulk(requestBody: UpdateCustomerPricingBulkInputAmarantSalesCustomerPricingBulkInputModel): CancelablePromise<void>;
+    /**
+     * Bulk delete customer pricing.
+     * Bulk delete customer pricing.
+     * @param requestBody
+     * @returns void
+     * @throws ApiError
+     */
+    static removeCustomerPricingBulk(requestBody: RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel): CancelablePromise<void>;
 }

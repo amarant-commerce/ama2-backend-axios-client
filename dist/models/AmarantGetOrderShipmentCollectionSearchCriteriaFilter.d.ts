@@ -23,7 +23,7 @@ export type AmarantGetOrderShipmentCollectionSearchCriteriaFilter = {
     }>>;
     sort?: Array<{
         /**
-         * id, order_id, batch_id, status, carrier_status, carrier_status_code, created_at
+         * id, order_id, batch_id, status, carrier_status, carrier_status_code, weight, created_at
          */
         path?: string;
         direction?: 'ASC' | 'DESC';

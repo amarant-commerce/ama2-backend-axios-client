@@ -2,10 +2,7 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-export type AmarantOrderShipmentItemModel = {
-    id: number;
-    batchItemId: number;
-    qty: string;
-    weight: string;
+export type RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel = {
+    ids: Array<number>;
 };
 
