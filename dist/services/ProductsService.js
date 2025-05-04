@@ -80,4 +80,34 @@ export class ProductsService {
             mediaType: 'multipart/form-data',
         });
     }
+    /**
+     * Get compatible configurable product attributes for given child SKUs.
+     * Get compatible configurable product attributes for given child SKUs.
+     *
+     * Required access scopes:
+     * * read_products
+     * @param requestBody
+     * @returns AmarantProductCompatibleProductAttributesOutput OK
+     * @throws ApiError
+     */
+    static getConfigurableProductCompatibleAttributes(requestBody) {
+        return __request(OpenAPI, {
+            method: 'POST',
+            url: '/api/products/v1/configurable/compatible-attributes',
+            body: requestBody,
+            mediaType: 'application/json',
+        });
+    }
+    /**
+     * Get product wishlist collection.
+     * Get product wishlist collection.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getProductWishlistCollection() {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/product-wishlists/v1',
+        });
+    }
 }

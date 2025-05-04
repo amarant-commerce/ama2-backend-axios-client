@@ -4,6 +4,6 @@ export var AmarantSalesCartItemInputProductDto;
     (function (type) {
         type["GENERIC"] = "generic";
         type["GROUPED"] = "grouped";
-        type["CUSTOMIZABLE"] = "customizable";
+        type["CONFIGURABLE"] = "configurable";
     })(type = AmarantSalesCartItemInputProductDto.type || (AmarantSalesCartItemInputProductDto.type = {}));
 })(AmarantSalesCartItemInputProductDto || (AmarantSalesCartItemInputProductDto = {}));

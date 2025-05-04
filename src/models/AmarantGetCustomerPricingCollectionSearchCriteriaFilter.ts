@@ -13,11 +13,11 @@ export type AmarantGetCustomerPricingCollectionSearchCriteriaFilter = {
          */
         condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
         /**
-         * channel_id: integer
-         * customer_id: integer, null
-         * organization_id: integer, null
+         * channel_id: integer, string
+         * customer_id: integer, string, null
+         * organization_id: integer, string, null
          * sku: string
-         * amount_type: integer
+         * amount_type: integer, string
          */
         value?: number | number | string | boolean | any[] | null;
     }>>;

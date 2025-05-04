@@ -13,6 +13,9 @@ export class QuotesService {
     /**
      * Get quote collection.
      * Get quote collection.
+     *
+     * Required access scopes:
+     * * read_quotes
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
@@ -39,6 +42,9 @@ export class QuotesService {
     /**
      * Get quote item.
      * Get quote item.
+     *
+     * Required access scopes:
+     * * read_quotes
      * @param id Quote ID
      * @returns AmarantCartQuoteModel OK
      * @throws ApiError
@@ -57,6 +63,9 @@ export class QuotesService {
     /**
      * Update quote item.
      * Update quote item.
+     *
+     * Required access scopes:
+     * * write_quotes
      * @param id Quote ID
      * @param requestBody
      * @returns AmarantCartQuoteModel Resource updated.

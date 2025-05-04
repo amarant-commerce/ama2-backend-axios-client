@@ -2,11 +2,15 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
+import type { AmarantApiCollectionResponse } from '../models/AmarantApiCollectionResponse';
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantGetProductCollectionSearchCriteriaFilter } from '../models/AmarantGetProductCollectionSearchCriteriaFilter';
 import type { AmarantProductBackendOutputProductOutput } from '../models/AmarantProductBackendOutputProductOutput';
+import type { AmarantProductCompatibleProductAttributesOutput } from '../models/AmarantProductCompatibleProductAttributesOutput';
 import type { AmarantProductCsvSyncOutputDto } from '../models/AmarantProductCsvSyncOutputDto';
+import type { AmarantProductWishlist } from '../models/AmarantProductWishlist';
 import type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from '../models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
+import type { GetConfigurableProductCompatibleAttributesInputAmarantProductGetCompatibleAttributesForConfigurableInputDto } from '../models/GetConfigurableProductCompatibleAttributesInputAmarantProductGetCompatibleAttributesForConfigurableInputDto';
 import type { SyncProductCsvInputAmarantProductCsvSyncInputDto } from '../models/SyncProductCsvInputAmarantProductCsvSyncInputDto';
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
@@ -101,6 +105,40 @@ export class ProductsService {
             url: '/api/products/v1/sync/csv',
             formData: formData,
             mediaType: 'multipart/form-data',
+        });
+    }
+    /**
+     * Get compatible configurable product attributes for given child SKUs.
+     * Get compatible configurable product attributes for given child SKUs.
+     *
+     * Required access scopes:
+     * * read_products
+     * @param requestBody
+     * @returns AmarantProductCompatibleProductAttributesOutput OK
+     * @throws ApiError
+     */
+    public static getConfigurableProductCompatibleAttributes(
+        requestBody: GetConfigurableProductCompatibleAttributesInputAmarantProductGetCompatibleAttributesForConfigurableInputDto,
+    ): CancelablePromise<AmarantProductCompatibleProductAttributesOutput> {
+        return __request(OpenAPI, {
+            method: 'POST',
+            url: '/api/products/v1/configurable/compatible-attributes',
+            body: requestBody,
+            mediaType: 'application/json',
+        });
+    }
+    /**
+     * Get product wishlist collection.
+     * Get product wishlist collection.
+     * @returns any OK
+     * @throws ApiError
+     */
+    public static getProductWishlistCollection(): CancelablePromise<(AmarantApiCollectionResponse & {
+        data: Array<AmarantProductWishlist>;
+    })> {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/product-wishlists/v1',
         });
     }
 }

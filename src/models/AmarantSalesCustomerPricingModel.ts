@@ -5,10 +5,12 @@
 export type AmarantSalesCustomerPricingModel = {
     id: number;
     channelId: number;
+    channelName: string;
     customerId?: number | null;
-    customerUsername?: string | null;
     organizationId?: number | null;
-    organizationName?: string | null;
+    entityType: string;
+    entityId: number;
+    entityName: string;
     productId: number;
     sku: string;
     amountType: number;
@@ -16,5 +18,7 @@ export type AmarantSalesCustomerPricingModel = {
     amount: string;
     qty: string;
     meta: Record<string, any>;
+    createdAt: string;
+    updatedAt: string;
 };
 

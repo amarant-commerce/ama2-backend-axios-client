@@ -6,12 +6,12 @@ export type AmarantSalesCustomerPricingInputModel = {
     id: number;
     channelId: number;
     entityType: AmarantSalesCustomerPricingInputModel.entityType;
-    customerOrOrganizationId?: number | null;
+    entityId?: number | null;
     productId: number;
     amountType: number;
     amount: (number | string);
     qty: (number | string);
-    meta: Record<string, any>;
+    meta?: Record<string, any> | null;
 };
 export namespace AmarantSalesCustomerPricingInputModel {
     export enum entityType {

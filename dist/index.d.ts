@@ -97,9 +97,13 @@ export type { AmarantOrderShippingBatchModel } from './models/AmarantOrderShippi
 export type { AmarantOrderTotalModel } from './models/AmarantOrderTotalModel';
 export type { AmarantProductBackendOutputProductOutput } from './models/AmarantProductBackendOutputProductOutput';
 export type { AmarantProductBackendOutputProductSourceItemOutput } from './models/AmarantProductBackendOutputProductSourceItemOutput';
+export type { AmarantProductCompatibleProductAttributesItemOutput } from './models/AmarantProductCompatibleProductAttributesItemOutput';
+export type { AmarantProductCompatibleProductAttributesOutput } from './models/AmarantProductCompatibleProductAttributesOutput';
 export type { AmarantProductCsvSyncOutputDto } from './models/AmarantProductCsvSyncOutputDto';
+export type { AmarantProductWishlist } from './models/AmarantProductWishlist';
+export type { AmarantProductWishlistProduct } from './models/AmarantProductWishlistProduct';
 export type { AmarantSalesCartAdditionalDataInputDto } from './models/AmarantSalesCartAdditionalDataInputDto';
-export type { AmarantSalesCartItemInputCustomizableProductDto } from './models/AmarantSalesCartItemInputCustomizableProductDto';
+export type { AmarantSalesCartItemInputConfigurableProductDto } from './models/AmarantSalesCartItemInputConfigurableProductDto';
 export type { AmarantSalesCartItemInputGenericProductDto } from './models/AmarantSalesCartItemInputGenericProductDto';
 export type { AmarantSalesCartItemInputGroupedProductDto } from './models/AmarantSalesCartItemInputGroupedProductDto';
 export { AmarantSalesCartItemInputProductDto } from './models/AmarantSalesCartItemInputProductDto';
@@ -130,6 +134,7 @@ export type { AmarantStoreChannelScopeModel } from './models/AmarantStoreChannel
 export type { AmarantUserAccountGroupModel } from './models/AmarantUserAccountGroupModel';
 export type { AmarantUserAccountModel } from './models/AmarantUserAccountModel';
 export type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from './models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
+export type { GetConfigurableProductCompatibleAttributesInputAmarantProductGetCompatibleAttributesForConfigurableInputDto } from './models/GetConfigurableProductCompatibleAttributesInputAmarantProductGetCompatibleAttributesForConfigurableInputDto';
 export type { RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel } from './models/RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel';
 export type { SyncProductCsvInputAmarantProductCsvSyncInputDto } from './models/SyncProductCsvInputAmarantProductCsvSyncInputDto';
 export type { UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto } from './models/UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto';

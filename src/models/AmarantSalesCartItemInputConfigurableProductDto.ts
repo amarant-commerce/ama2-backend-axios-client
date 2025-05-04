@@ -4,11 +4,11 @@
 /* eslint-disable */
 import type { AmarantSalesCartAdditionalDataInputDto } from './AmarantSalesCartAdditionalDataInputDto';
 import type { AmarantSalesCartItemPricingInputDto } from './AmarantSalesCartItemPricingInputDto';
-export type AmarantSalesCartItemInputCustomizableProductDto = {
+export type AmarantSalesCartItemInputConfigurableProductDto = {
     sku: string;
     parentSku: string;
     qty: number;
-    type: 'customizable';
+    type: 'configurable';
     pricing?: AmarantSalesCartItemPricingInputDto | null;
     additionalData: Array<AmarantSalesCartAdditionalDataInputDto>;
 };
