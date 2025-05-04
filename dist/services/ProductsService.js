@@ -101,13 +101,21 @@ export class ProductsService {
     /**
      * Get product wishlist collection.
      * Get product wishlist collection.
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
-    static getProductWishlistCollection() {
+    static getProductWishlistCollection(q, page, itemsPerPage) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/product-wishlists/v1',
+            query: {
+                'q': q,
+                'page': page,
+                'itemsPerPage': itemsPerPage,
+            },
         });
     }
 }

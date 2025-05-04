@@ -2,9 +2,9 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-import type { AmarantApiCollectionResponse } from '../models/AmarantApiCollectionResponse';
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantGetProductCollectionSearchCriteriaFilter } from '../models/AmarantGetProductCollectionSearchCriteriaFilter';
+import type { AmarantGetProductWishlistCollectionSearchCriteriaFilter } from '../models/AmarantGetProductWishlistCollectionSearchCriteriaFilter';
 import type { AmarantProductBackendOutputProductOutput } from '../models/AmarantProductBackendOutputProductOutput';
 import type { AmarantProductCompatibleProductAttributesOutput } from '../models/AmarantProductCompatibleProductAttributesOutput';
 import type { AmarantProductCsvSyncOutputDto } from '../models/AmarantProductCsvSyncOutputDto';
@@ -130,15 +130,27 @@ export class ProductsService {
     /**
      * Get product wishlist collection.
      * Get product wishlist collection.
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
-    public static getProductWishlistCollection(): CancelablePromise<(AmarantApiCollectionResponse & {
+    public static getProductWishlistCollection(
+        q?: AmarantGetProductWishlistCollectionSearchCriteriaFilter,
+        page?: number,
+        itemsPerPage?: number,
+    ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantProductWishlist>;
     })> {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/product-wishlists/v1',
+            query: {
+                'q': q,
+                'page': page,
+                'itemsPerPage': itemsPerPage,
+            },
         });
     }
 }

@@ -62,6 +62,7 @@ export type { AmarantGetOrderShipmentCollectionForOrderSearchCriteriaFilter } fr
 export type { AmarantGetOrderShipmentCollectionSearchCriteriaFilter } from './models/AmarantGetOrderShipmentCollectionSearchCriteriaFilter';
 export type { AmarantGetPricingRuleCollectionSearchCriteriaFilter } from './models/AmarantGetPricingRuleCollectionSearchCriteriaFilter';
 export type { AmarantGetProductCollectionSearchCriteriaFilter } from './models/AmarantGetProductCollectionSearchCriteriaFilter';
+export type { AmarantGetProductWishlistCollectionSearchCriteriaFilter } from './models/AmarantGetProductWishlistCollectionSearchCriteriaFilter';
 export type { AmarantGetQuoteCollectionSearchCriteriaFilter } from './models/AmarantGetQuoteCollectionSearchCriteriaFilter';
 export type { AmarantGetSalesNewsletterSubscriberCollectionSearchCriteriaFilter } from './models/AmarantGetSalesNewsletterSubscriberCollectionSearchCriteriaFilter';
 export type { AmarantGetTaxCategoryCollectionSearchCriteriaFilter } from './models/AmarantGetTaxCategoryCollectionSearchCriteriaFilter';
