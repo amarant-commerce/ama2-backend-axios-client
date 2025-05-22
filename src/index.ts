@@ -144,14 +144,14 @@ export type { AmarantStoreChannelScopeModel } from './models/AmarantStoreChannel
 export type { AmarantUserAccountGroupModel } from './models/AmarantUserAccountGroupModel';
 export type { AmarantUserAccountModel } from './models/AmarantUserAccountModel';
 export type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from './models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
-export type { DeleteCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryDeleteInput } from './models/DeleteCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryDeleteInput';
+export type { DeleteMediaGalleryCollectionInputAmarantMediaGalleryBackendDeleteInput } from './models/DeleteMediaGalleryCollectionInputAmarantMediaGalleryBackendDeleteInput';
 export type { GetConfigurableProductCompatibleAttributesInputAmarantProductGetCompatibleAttributesForConfigurableInputDto } from './models/GetConfigurableProductCompatibleAttributesInputAmarantProductGetCompatibleAttributesForConfigurableInputDto';
 export type { RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel } from './models/RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel';
 export type { SyncProductCsvInputAmarantProductCsvSyncInputDto } from './models/SyncProductCsvInputAmarantProductCsvSyncInputDto';
 export type { UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto } from './models/UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto';
 export type { UpdateCustomerPricingBulkInputAmarantSalesCustomerPricingBulkInputModel } from './models/UpdateCustomerPricingBulkInputAmarantSalesCustomerPricingBulkInputModel';
 export type { UpdateQuoteItemInputAmarantSalesQuoteInputDto } from './models/UpdateQuoteItemInputAmarantSalesQuoteInputDto';
-export type { UploadCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryInput } from './models/UploadCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryInput';
+export type { UploadMediaGalleryCollectionInputAmarantMediaGalleryBackendInput } from './models/UploadMediaGalleryCollectionInputAmarantMediaGalleryBackendInput';
 
 export { AnalyticsService } from './services/AnalyticsService';
 export { AttributesService } from './services/AttributesService';

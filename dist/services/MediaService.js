@@ -21,4 +21,34 @@ export class MediaService {
             },
         });
     }
+    /**
+     * Upload files to media gallery.
+     * Upload files to media gallery.
+     * @param formData
+     * @returns any Resource created.
+     * @throws ApiError
+     */
+    static uploadMediaGalleryCollection(formData) {
+        return __request(OpenAPI, {
+            method: 'POST',
+            url: '/api/media/v1/gallery',
+            formData: formData,
+            mediaType: 'multipart/form-data',
+        });
+    }
+    /**
+     * Delete files from media gallery.
+     * Delete files from media gallery.
+     * @param requestBody
+     * @returns void
+     * @throws ApiError
+     */
+    static deleteMediaGalleryCollection(requestBody) {
+        return __request(OpenAPI, {
+            method: 'DELETE',
+            url: '/api/media/v1/gallery',
+            body: requestBody,
+            mediaType: 'application/json',
+        });
+    }
 }

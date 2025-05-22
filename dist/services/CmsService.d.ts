@@ -1,4 +1,3 @@
-import type { AmarantApiCollectionResponse } from '../models/AmarantApiCollectionResponse';
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantCmsBannerModel } from '../models/AmarantCmsBannerModel';
 import type { AmarantCmsBlockModel } from '../models/AmarantCmsBlockModel';
@@ -12,9 +11,6 @@ import type { AmarantGetCmsBlockTagCollectionSearchCriteriaFilter } from '../mod
 import type { AmarantGetCmsPageCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsPageCollectionSearchCriteriaFilter';
 import type { AmarantGetCmsPageTagCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsPageTagCollectionSearchCriteriaFilter';
 import type { AmarantGetCmsTemplateCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsTemplateCollectionSearchCriteriaFilter';
-import type { AmarantMediaModel } from '../models/AmarantMediaModel';
-import type { DeleteCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryDeleteInput } from '../models/DeleteCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryDeleteInput';
-import type { UploadCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryInput } from '../models/UploadCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryInput';
 import type { CancelablePromise } from '../core/CancelablePromise';
 export declare class CmsService {
     /**
@@ -137,22 +133,4 @@ export declare class CmsService {
      * @throws ApiError
      */
     static getCmsTemplateItem(id: number): CancelablePromise<AmarantCmsTemplateModel>;
-    /**
-     * Upload files to media gallery.
-     * Upload files to media gallery.
-     * @param formData
-     * @returns any Resource created.
-     * @throws ApiError
-     */
-    static uploadCmsMediaGalleryCollection(formData: UploadCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryInput): CancelablePromise<(AmarantApiCollectionResponse & {
-        data: Array<AmarantMediaModel>;
-    })>;
-    /**
-     * Delete files from media gallery.
-     * Delete files from media gallery.
-     * @param requestBody
-     * @returns void
-     * @throws ApiError
-     */
-    static deleteCmsMediaGalleryCollection(requestBody: DeleteCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryDeleteInput): CancelablePromise<void>;
 }
