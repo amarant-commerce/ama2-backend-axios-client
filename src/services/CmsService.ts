@@ -2,6 +2,7 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
+import type { AmarantApiCollectionResponse } from '../models/AmarantApiCollectionResponse';
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantCmsBannerModel } from '../models/AmarantCmsBannerModel';
 import type { AmarantCmsBlockModel } from '../models/AmarantCmsBlockModel';
@@ -10,8 +11,14 @@ import type { AmarantCmsPageModel } from '../models/AmarantCmsPageModel';
 import type { AmarantCmsPageTagModel } from '../models/AmarantCmsPageTagModel';
 import type { AmarantCmsTemplateModel } from '../models/AmarantCmsTemplateModel';
 import type { AmarantGetCmsBannerCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsBannerCollectionSearchCriteriaFilter';
+import type { AmarantGetCmsBlockCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsBlockCollectionSearchCriteriaFilter';
+import type { AmarantGetCmsBlockTagCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsBlockTagCollectionSearchCriteriaFilter';
+import type { AmarantGetCmsPageCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsPageCollectionSearchCriteriaFilter';
+import type { AmarantGetCmsPageTagCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsPageTagCollectionSearchCriteriaFilter';
 import type { AmarantGetCmsTemplateCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsTemplateCollectionSearchCriteriaFilter';
-import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
+import type { AmarantMediaModel } from '../models/AmarantMediaModel';
+import type { DeleteCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryDeleteInput } from '../models/DeleteCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryDeleteInput';
+import type { UploadCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryInput } from '../models/UploadCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryInput';
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
@@ -26,7 +33,7 @@ export class CmsService {
      * @throws ApiError
      */
     public static getCmsPageCollection(
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetCmsPageCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -70,7 +77,7 @@ export class CmsService {
      * @throws ApiError
      */
     public static getCmsPageTagCollection(
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetCmsPageTagCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -114,7 +121,7 @@ export class CmsService {
      * @throws ApiError
      */
     public static getCmsBlockCollection(
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetCmsBlockCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -158,7 +165,7 @@ export class CmsService {
      * @throws ApiError
      */
     public static getCmsBlockTagCollection(
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetCmsBlockTagCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -278,6 +285,42 @@ export class CmsService {
             path: {
                 'id': id,
             },
+        });
+    }
+    /**
+     * Upload files to media gallery.
+     * Upload files to media gallery.
+     * @param formData
+     * @returns any Resource created.
+     * @throws ApiError
+     */
+    public static uploadCmsMediaGalleryCollection(
+        formData: UploadCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryInput,
+    ): CancelablePromise<(AmarantApiCollectionResponse & {
+        data: Array<AmarantMediaModel>;
+    })> {
+        return __request(OpenAPI, {
+            method: 'POST',
+            url: '/api/cms/v1/media-gallery',
+            formData: formData,
+            mediaType: 'multipart/form-data',
+        });
+    }
+    /**
+     * Delete files from media gallery.
+     * Delete files from media gallery.
+     * @param requestBody
+     * @returns void
+     * @throws ApiError
+     */
+    public static deleteCmsMediaGalleryCollection(
+        requestBody: DeleteCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryDeleteInput,
+    ): CancelablePromise<void> {
+        return __request(OpenAPI, {
+            method: 'DELETE',
+            url: '/api/cms/v1/media-gallery',
+            body: requestBody,
+            mediaType: 'application/json',
         });
     }
 }

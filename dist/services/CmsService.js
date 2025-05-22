@@ -217,4 +217,34 @@ export class CmsService {
             },
         });
     }
+    /**
+     * Upload files to media gallery.
+     * Upload files to media gallery.
+     * @param formData
+     * @returns any Resource created.
+     * @throws ApiError
+     */
+    static uploadCmsMediaGalleryCollection(formData) {
+        return __request(OpenAPI, {
+            method: 'POST',
+            url: '/api/cms/v1/media-gallery',
+            formData: formData,
+            mediaType: 'multipart/form-data',
+        });
+    }
+    /**
+     * Delete files from media gallery.
+     * Delete files from media gallery.
+     * @param requestBody
+     * @returns void
+     * @throws ApiError
+     */
+    static deleteCmsMediaGalleryCollection(requestBody) {
+        return __request(OpenAPI, {
+            method: 'DELETE',
+            url: '/api/cms/v1/media-gallery',
+            body: requestBody,
+            mediaType: 'application/json',
+        });
+    }
 }

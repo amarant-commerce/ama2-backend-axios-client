@@ -9,4 +9,7 @@ export type AmarantProductWishlist = {
     shared: boolean;
     items: Array<AmarantProductWishlistProduct>;
     itemCount: number;
+    channels: Array<number>;
+    createdAt: string;
+    updatedAt: string;
 };

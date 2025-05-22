@@ -42,6 +42,10 @@ export type { AmarantGetChannelCollectionSearchCriteriaFilter } from './models/A
 export type { AmarantGetChannelDomainCollectionSearchCriteriaFilter } from './models/AmarantGetChannelDomainCollectionSearchCriteriaFilter';
 export type { AmarantGetChannelScopeCollectionSearchCriteriaFilter } from './models/AmarantGetChannelScopeCollectionSearchCriteriaFilter';
 export type { AmarantGetCmsBannerCollectionSearchCriteriaFilter } from './models/AmarantGetCmsBannerCollectionSearchCriteriaFilter';
+export type { AmarantGetCmsBlockCollectionSearchCriteriaFilter } from './models/AmarantGetCmsBlockCollectionSearchCriteriaFilter';
+export type { AmarantGetCmsBlockTagCollectionSearchCriteriaFilter } from './models/AmarantGetCmsBlockTagCollectionSearchCriteriaFilter';
+export type { AmarantGetCmsPageCollectionSearchCriteriaFilter } from './models/AmarantGetCmsPageCollectionSearchCriteriaFilter';
+export type { AmarantGetCmsPageTagCollectionSearchCriteriaFilter } from './models/AmarantGetCmsPageTagCollectionSearchCriteriaFilter';
 export type { AmarantGetCmsTemplateCollectionSearchCriteriaFilter } from './models/AmarantGetCmsTemplateCollectionSearchCriteriaFilter';
 export type { AmarantGetCookiePanelCollectionSearchCriteriaFilter } from './models/AmarantGetCookiePanelCollectionSearchCriteriaFilter';
 export type { AmarantGetCrmClientCollectionSearchCriteriaFilter } from './models/AmarantGetCrmClientCollectionSearchCriteriaFilter';
@@ -135,12 +139,14 @@ export type { AmarantStoreChannelScopeModel } from './models/AmarantStoreChannel
 export type { AmarantUserAccountGroupModel } from './models/AmarantUserAccountGroupModel';
 export type { AmarantUserAccountModel } from './models/AmarantUserAccountModel';
 export type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from './models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
+export type { DeleteCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryDeleteInput } from './models/DeleteCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryDeleteInput';
 export type { GetConfigurableProductCompatibleAttributesInputAmarantProductGetCompatibleAttributesForConfigurableInputDto } from './models/GetConfigurableProductCompatibleAttributesInputAmarantProductGetCompatibleAttributesForConfigurableInputDto';
 export type { RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel } from './models/RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel';
 export type { SyncProductCsvInputAmarantProductCsvSyncInputDto } from './models/SyncProductCsvInputAmarantProductCsvSyncInputDto';
 export type { UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto } from './models/UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto';
 export type { UpdateCustomerPricingBulkInputAmarantSalesCustomerPricingBulkInputModel } from './models/UpdateCustomerPricingBulkInputAmarantSalesCustomerPricingBulkInputModel';
 export type { UpdateQuoteItemInputAmarantSalesQuoteInputDto } from './models/UpdateQuoteItemInputAmarantSalesQuoteInputDto';
+export type { UploadCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryInput } from './models/UploadCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryInput';
 export { AnalyticsService } from './services/AnalyticsService';
 export { AttributesService } from './services/AttributesService';
 export { CmsService } from './services/CmsService';

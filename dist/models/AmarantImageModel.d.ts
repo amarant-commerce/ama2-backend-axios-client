@@ -7,6 +7,7 @@ export type AmarantImageModel = {
     width: number;
     height: number;
     variants: Array<AmarantImageModelVariant>;
+    id: number;
     type: 'image';
     parentType: string;
     parentId: string;

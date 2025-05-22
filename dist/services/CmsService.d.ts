@@ -1,3 +1,4 @@
+import type { AmarantApiCollectionResponse } from '../models/AmarantApiCollectionResponse';
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantCmsBannerModel } from '../models/AmarantCmsBannerModel';
 import type { AmarantCmsBlockModel } from '../models/AmarantCmsBlockModel';
@@ -6,8 +7,14 @@ import type { AmarantCmsPageModel } from '../models/AmarantCmsPageModel';
 import type { AmarantCmsPageTagModel } from '../models/AmarantCmsPageTagModel';
 import type { AmarantCmsTemplateModel } from '../models/AmarantCmsTemplateModel';
 import type { AmarantGetCmsBannerCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsBannerCollectionSearchCriteriaFilter';
+import type { AmarantGetCmsBlockCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsBlockCollectionSearchCriteriaFilter';
+import type { AmarantGetCmsBlockTagCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsBlockTagCollectionSearchCriteriaFilter';
+import type { AmarantGetCmsPageCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsPageCollectionSearchCriteriaFilter';
+import type { AmarantGetCmsPageTagCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsPageTagCollectionSearchCriteriaFilter';
 import type { AmarantGetCmsTemplateCollectionSearchCriteriaFilter } from '../models/AmarantGetCmsTemplateCollectionSearchCriteriaFilter';
-import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
+import type { AmarantMediaModel } from '../models/AmarantMediaModel';
+import type { DeleteCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryDeleteInput } from '../models/DeleteCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryDeleteInput';
+import type { UploadCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryInput } from '../models/UploadCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryInput';
 import type { CancelablePromise } from '../core/CancelablePromise';
 export declare class CmsService {
     /**
@@ -19,7 +26,7 @@ export declare class CmsService {
      * @returns any OK
      * @throws ApiError
      */
-    static getCmsPageCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getCmsPageCollection(q?: AmarantGetCmsPageCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantCmsPageModel>;
     })>;
     /**
@@ -39,7 +46,7 @@ export declare class CmsService {
      * @returns any OK
      * @throws ApiError
      */
-    static getCmsPageTagCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getCmsPageTagCollection(q?: AmarantGetCmsPageTagCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantCmsPageTagModel>;
     })>;
     /**
@@ -59,7 +66,7 @@ export declare class CmsService {
      * @returns any OK
      * @throws ApiError
      */
-    static getCmsBlockCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getCmsBlockCollection(q?: AmarantGetCmsBlockCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantCmsBlockModel>;
     })>;
     /**
@@ -79,7 +86,7 @@ export declare class CmsService {
      * @returns any OK
      * @throws ApiError
      */
-    static getCmsBlockTagCollection(q?: AmarantSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getCmsBlockTagCollection(q?: AmarantGetCmsBlockTagCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantCmsBlockTagModel>;
     })>;
     /**
@@ -130,4 +137,22 @@ export declare class CmsService {
      * @throws ApiError
      */
     static getCmsTemplateItem(id: number): CancelablePromise<AmarantCmsTemplateModel>;
+    /**
+     * Upload files to media gallery.
+     * Upload files to media gallery.
+     * @param formData
+     * @returns any Resource created.
+     * @throws ApiError
+     */
+    static uploadCmsMediaGalleryCollection(formData: UploadCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryInput): CancelablePromise<(AmarantApiCollectionResponse & {
+        data: Array<AmarantMediaModel>;
+    })>;
+    /**
+     * Delete files from media gallery.
+     * Delete files from media gallery.
+     * @param requestBody
+     * @returns void
+     * @throws ApiError
+     */
+    static deleteCmsMediaGalleryCollection(requestBody: DeleteCmsMediaGalleryCollectionInputAmarantCmsMediaGalleryDeleteInput): CancelablePromise<void>;
 }

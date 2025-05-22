@@ -5,7 +5,7 @@
 export type AmarantGetMediaEntryCollectionSearchCriteriaFilter = {
     groups?: Array<Record<string, {
         /**
-         * parent_type: like
+         * parent_type: like, eq
          * original_name: like
          */
         condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
