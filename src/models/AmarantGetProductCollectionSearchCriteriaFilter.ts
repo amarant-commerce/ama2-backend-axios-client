@@ -11,6 +11,7 @@ export type AmarantGetProductCollectionSearchCriteriaFilter = {
          * attribute_set_id: eq
          * channel_ids: ina
          * category_ids: ina
+         * pricing_rules: in
          */
         condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
         /**
@@ -20,6 +21,7 @@ export type AmarantGetProductCollectionSearchCriteriaFilter = {
          * attribute_set_id: string, integer
          * channel_ids: string, integer
          * category_ids: string, integer
+         * pricing_rules: array
          */
         value?: number | number | string | boolean | any[] | null;
     }>>;
