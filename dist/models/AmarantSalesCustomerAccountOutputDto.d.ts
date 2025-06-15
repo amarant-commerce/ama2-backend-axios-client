@@ -1,11 +1,11 @@
 import type { AmarantSalesCustomerAccountAddressOutputDto } from './AmarantSalesCustomerAccountAddressOutputDto';
+import type { AmarantSalesCustomerAccountOrganizationOutputDto } from './AmarantSalesCustomerAccountOrganizationOutputDto';
 import type { AmarantSalesCustomerAccountStateOutputDto } from './AmarantSalesCustomerAccountStateOutputDto';
 export type AmarantSalesCustomerAccountOutputDto = {
     id: number;
     groupId?: number | null;
     groupName?: string | null;
-    organizationId?: number | null;
-    organizationName?: string | null;
+    organization?: AmarantSalesCustomerAccountOrganizationOutputDto | null;
     username: string;
     email: string;
     channelId: number;
@@ -16,6 +16,7 @@ export type AmarantSalesCustomerAccountOutputDto = {
     addresses: Array<AmarantSalesCustomerAccountAddressOutputDto>;
     cartId?: string | null;
     impersonatedBy?: number | null;
+    accessScopes: Array<string>;
     lastLoggedInTime?: string | null;
     lastSeenTime?: string | null;
     createdAt?: string | null;

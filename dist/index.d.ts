@@ -11,6 +11,11 @@ export { AmarantAttributeInputTypeEnum } from './models/AmarantAttributeInputTyp
 export type { AmarantAttributeModel } from './models/AmarantAttributeModel';
 export { AmarantAttributeModelFlag } from './models/AmarantAttributeModelFlag';
 export type { AmarantAttributeOptionModel } from './models/AmarantAttributeOptionModel';
+export type { AmarantBlogPostAuthorModel } from './models/AmarantBlogPostAuthorModel';
+export type { AmarantBlogPostCategoryModel } from './models/AmarantBlogPostCategoryModel';
+export type { AmarantBlogPostModel } from './models/AmarantBlogPostModel';
+export type { AmarantBlogPostTagModel } from './models/AmarantBlogPostTagModel';
+export type { AmarantBlogPostVersionModel } from './models/AmarantBlogPostVersionModel';
 export type { AmarantCartAddressModel } from './models/AmarantCartAddressModel';
 export type { AmarantCartAdjustmentModel } from './models/AmarantCartAdjustmentModel';
 export type { AmarantCartCustomerModel } from './models/AmarantCartCustomerModel';
@@ -38,6 +43,9 @@ export type { AmarantDirectoryCountryModel } from './models/AmarantDirectoryCoun
 export type { AmarantDirectoryRegionModel } from './models/AmarantDirectoryRegionModel';
 export type { AmarantGetAttributeCollectionSearchCriteriaFilter } from './models/AmarantGetAttributeCollectionSearchCriteriaFilter';
 export type { AmarantGetAttributeOptionCollectionSearchCriteriaFilter } from './models/AmarantGetAttributeOptionCollectionSearchCriteriaFilter';
+export type { AmarantGetBlogPostCategoryCollectionSearchCriteriaFilter } from './models/AmarantGetBlogPostCategoryCollectionSearchCriteriaFilter';
+export type { AmarantGetBlogPostCollectionSearchCriteriaFilter } from './models/AmarantGetBlogPostCollectionSearchCriteriaFilter';
+export type { AmarantGetBlogPostTagCollectionSearchCriteriaFilter } from './models/AmarantGetBlogPostTagCollectionSearchCriteriaFilter';
 export type { AmarantGetChannelCollectionSearchCriteriaFilter } from './models/AmarantGetChannelCollectionSearchCriteriaFilter';
 export type { AmarantGetChannelDomainCollectionSearchCriteriaFilter } from './models/AmarantGetChannelDomainCollectionSearchCriteriaFilter';
 export type { AmarantGetChannelScopeCollectionSearchCriteriaFilter } from './models/AmarantGetChannelScopeCollectionSearchCriteriaFilter';
@@ -149,6 +157,7 @@ export type { UpdateQuoteItemInputAmarantSalesQuoteInputDto } from './models/Upd
 export type { UploadMediaGalleryCollectionInputAmarantMediaGalleryBackendInput } from './models/UploadMediaGalleryCollectionInputAmarantMediaGalleryBackendInput';
 export { AnalyticsService } from './services/AnalyticsService';
 export { AttributesService } from './services/AttributesService';
+export { BlogService } from './services/BlogService';
 export { CmsService } from './services/CmsService';
 export { CrmService } from './services/CrmService';
 export { CustomersService } from './services/CustomersService';

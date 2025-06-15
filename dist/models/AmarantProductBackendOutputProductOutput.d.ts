@@ -14,6 +14,7 @@ export type AmarantProductBackendOutputProductOutput = {
     categoryPaths: Array<string>;
     aggregatedQty: string;
     sourceItems: Array<AmarantProductBackendOutputProductSourceItemOutput>;
+    extendedData: Record<string, any>;
     createdAt: string;
     updatedAt: string;
 };
