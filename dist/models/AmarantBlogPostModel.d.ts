@@ -6,6 +6,8 @@ export type AmarantBlogPostModel = {
     id: number;
     status: string;
     channelIds: Array<number>;
+    channels: Array<string>;
+    categoryIds: Array<number>;
     categories: Array<AmarantBlogPostCategoryModel>;
     tags: Array<AmarantBlogPostTagModel>;
     author?: AmarantBlogPostAuthorModel | null;
