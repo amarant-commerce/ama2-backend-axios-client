@@ -15,6 +15,7 @@ export { AmarantAttributeDataTypeEnum } from './models/AmarantAttributeDataTypeE
 export { AmarantAttributeInputTypeEnum } from './models/AmarantAttributeInputTypeEnum';
 export type { AmarantAttributeModel } from './models/AmarantAttributeModel';
 export { AmarantAttributeModelFlag } from './models/AmarantAttributeModelFlag';
+export { AmarantAttributeOptionDataInputDto } from './models/AmarantAttributeOptionDataInputDto';
 export type { AmarantAttributeOptionModel } from './models/AmarantAttributeOptionModel';
 export type { AmarantBlogPostAuthorModel } from './models/AmarantBlogPostAuthorModel';
 export type { AmarantBlogPostCategoryModel } from './models/AmarantBlogPostCategoryModel';
@@ -89,6 +90,7 @@ export type { AmarantGetUserAccountGroupCollectionSearchCriteriaFilter } from '.
 export type { AmarantImageModel } from './models/AmarantImageModel';
 export type { AmarantImageModelVariant } from './models/AmarantImageModelVariant';
 export type { AmarantJournalEntryModel } from './models/AmarantJournalEntryModel';
+export { AmarantMediaAttributeValueModel } from './models/AmarantMediaAttributeValueModel';
 export type { AmarantMediaFileModel } from './models/AmarantMediaFileModel';
 export type { AmarantMediaModel } from './models/AmarantMediaModel';
 export type { AmarantMediaVideoModel } from './models/AmarantMediaVideoModel';

@@ -2,13 +2,16 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
+import type { AmarantAttributeOptionDataInputDto } from './AmarantAttributeOptionDataInputDto';
 export type UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto = {
-    id: (number | null | string | null);
-    attributeId: number;
-    label: string;
-    scopedLabels: Record<string, any>;
-    position: number;
-    swatchType?: string | null;
-    swatch?: string | null;
+    data: AmarantAttributeOptionDataInputDto;
+    /**
+     * Media file (swatch image).
+     */
+    media?: Blob | null;
+    /**
+     * Remove swatch media.
+     */
+    removeMedia?: boolean | null;
 };
 

@@ -68,13 +68,13 @@ export class AttributesService {
      * Update attribute option item.
      * Update attribute option item.
      * @param id Attribute option ID.
-     * @param requestBody
+     * @param formData
      * @returns AmarantAttributeOptionModel Resource updated.
      * @throws ApiError
      */
     public static updateAttributeOptionItem(
         id: number,
-        requestBody: UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto,
+        formData: UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto,
     ): CancelablePromise<AmarantAttributeOptionModel> {
         return __request(OpenAPI, {
             method: 'PUT',
@@ -82,8 +82,8 @@ export class AttributesService {
             path: {
                 'id': id,
             },
-            body: requestBody,
-            mediaType: 'application/json',
+            formData: formData,
+            mediaType: 'multipart/form-data',
         });
     }
 }
