@@ -46,12 +46,12 @@ export class AttributesService {
      * Update attribute option item.
      * @param id Attribute option ID.
      * @param formData
-     * @returns AmarantAttributeOptionModel Resource updated.
+     * @returns AmarantAttributeOptionModel OK
      * @throws ApiError
      */
     static updateAttributeOptionItem(id, formData) {
         return __request(OpenAPI, {
-            method: 'PUT',
+            method: 'POST',
             url: '/api/attributes/v1/options/{id}',
             path: {
                 'id': id,
