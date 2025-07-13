@@ -6,6 +6,7 @@ export type AmarantGetQuoteCollectionSearchCriteriaFilter = {
          * currency: eq, like
          * status: eq
          * customer: like
+         * customer_id: in
          * customer_organization_id: eq
          */
         condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
@@ -15,6 +16,7 @@ export type AmarantGetQuoteCollectionSearchCriteriaFilter = {
          * currency: string
          * status: string
          * customer: string
+         * customer_id: array
          * customer_organization_id: string, integer
          */
         value?: number | number | string | boolean | any[] | null;

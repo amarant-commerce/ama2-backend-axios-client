@@ -9,6 +9,7 @@ export { AmarantAttributeDataTypeEnum } from './models/AmarantAttributeDataTypeE
 export { AmarantAttributeInputTypeEnum } from './models/AmarantAttributeInputTypeEnum';
 export { AmarantAttributeModelFlag } from './models/AmarantAttributeModelFlag';
 export { AmarantAttributeOptionDataInputDto } from './models/AmarantAttributeOptionDataInputDto';
+export { AmarantCheckoutAllowedActionsModel } from './models/AmarantCheckoutAllowedActionsModel';
 export { AmarantDataScope } from './models/AmarantDataScope';
 export { AmarantMediaAttributeValueModel } from './models/AmarantMediaAttributeValueModel';
 export { AmarantSalesCartItemInputProductDto } from './models/AmarantSalesCartItemInputProductDto';

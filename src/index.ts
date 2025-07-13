@@ -33,6 +33,7 @@ export type { AmarantCartQuoteModel } from './models/AmarantCartQuoteModel';
 export type { AmarantCartShippingBatchItemModel } from './models/AmarantCartShippingBatchItemModel';
 export type { AmarantCartShippingBatchModel } from './models/AmarantCartShippingBatchModel';
 export type { AmarantCartTotalModel } from './models/AmarantCartTotalModel';
+export { AmarantCheckoutAllowedActionsModel } from './models/AmarantCheckoutAllowedActionsModel';
 export type { AmarantCmsBannerItemModel } from './models/AmarantCmsBannerItemModel';
 export type { AmarantCmsBannerModel } from './models/AmarantCmsBannerModel';
 export type { AmarantCmsBlockModel } from './models/AmarantCmsBlockModel';
