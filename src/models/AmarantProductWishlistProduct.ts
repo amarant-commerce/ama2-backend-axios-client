@@ -13,6 +13,7 @@ export type AmarantProductWishlistProduct = {
     parentSku?: string | null;
     parentProductName?: string | null;
     configurationId?: string | null;
+    note?: string | null;
     addedAt: string;
 };
 

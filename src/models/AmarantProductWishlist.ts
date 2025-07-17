@@ -14,6 +14,7 @@ export type AmarantProductWishlist = {
     items: Array<AmarantProductWishlistProduct>;
     itemCount: number;
     channels: Array<number>;
+    attributes: Record<string, string | number | number | boolean | any[] | null>;
     createdAt: string;
     updatedAt: string;
 };
