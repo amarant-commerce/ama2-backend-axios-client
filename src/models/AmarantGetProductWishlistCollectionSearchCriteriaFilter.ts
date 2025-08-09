@@ -23,7 +23,7 @@ export type AmarantGetProductWishlistCollectionSearchCriteriaFilter = {
     }>>;
     sort?: Array<{
         /**
-         * id, name, shared, channel_id, customer, customer_organization_id, created_at, updated_at
+         * id, name, shared, channel_id, customer, customer_organization_id, created_at, updated_at, item_count
          */
         path?: string;
         direction?: 'ASC' | 'DESC';
