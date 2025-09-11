@@ -1,9 +1,11 @@
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantGetCustomerCollectionSearchCriteriaFilter } from '../models/AmarantGetCustomerCollectionSearchCriteriaFilter';
 import type { AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter } from '../models/AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter';
+import type { AmarantGetCustomerOrganizationContactLogCollectionSearchCriteriaFilter } from '../models/AmarantGetCustomerOrganizationContactLogCollectionSearchCriteriaFilter';
 import type { AmarantGetCustomerPricingCollectionSearchCriteriaFilter } from '../models/AmarantGetCustomerPricingCollectionSearchCriteriaFilter';
 import type { AmarantSalesCustomerAccountOrganizationOutputDto } from '../models/AmarantSalesCustomerAccountOrganizationOutputDto';
 import type { AmarantSalesCustomerAccountOutputDto } from '../models/AmarantSalesCustomerAccountOutputDto';
+import type { AmarantSalesCustomerOrganizationContactLogModel } from '../models/AmarantSalesCustomerOrganizationContactLogModel';
 import type { AmarantSalesCustomerPricingModel } from '../models/AmarantSalesCustomerPricingModel';
 import type { RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel } from '../models/RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel';
 import type { UpdateCustomerPricingBulkInputAmarantSalesCustomerPricingBulkInputModel } from '../models/UpdateCustomerPricingBulkInputAmarantSalesCustomerPricingBulkInputModel';
@@ -55,6 +57,19 @@ export declare class CustomersService {
      * @throws ApiError
      */
     static getCustomerOrganizationItem(id: number): CancelablePromise<AmarantSalesCustomerAccountOrganizationOutputDto>;
+    /**
+     * Get customer organization contact log collection.
+     * Get customer organization contact log collection.
+     * @param id Customer organization ID
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getCustomerOrganizationContactLogCollection(id: number, q?: AmarantGetCustomerOrganizationContactLogCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+        data: Array<AmarantSalesCustomerOrganizationContactLogModel>;
+    })>;
     /**
      * Get customer pricing collection.
      * Get customer pricing collection.

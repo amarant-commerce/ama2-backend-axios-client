@@ -5,9 +5,11 @@
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantGetCustomerCollectionSearchCriteriaFilter } from '../models/AmarantGetCustomerCollectionSearchCriteriaFilter';
 import type { AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter } from '../models/AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter';
+import type { AmarantGetCustomerOrganizationContactLogCollectionSearchCriteriaFilter } from '../models/AmarantGetCustomerOrganizationContactLogCollectionSearchCriteriaFilter';
 import type { AmarantGetCustomerPricingCollectionSearchCriteriaFilter } from '../models/AmarantGetCustomerPricingCollectionSearchCriteriaFilter';
 import type { AmarantSalesCustomerAccountOrganizationOutputDto } from '../models/AmarantSalesCustomerAccountOrganizationOutputDto';
 import type { AmarantSalesCustomerAccountOutputDto } from '../models/AmarantSalesCustomerAccountOutputDto';
+import type { AmarantSalesCustomerOrganizationContactLogModel } from '../models/AmarantSalesCustomerOrganizationContactLogModel';
 import type { AmarantSalesCustomerPricingModel } from '../models/AmarantSalesCustomerPricingModel';
 import type { RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel } from '../models/RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel';
 import type { UpdateCustomerPricingBulkInputAmarantSalesCustomerPricingBulkInputModel } from '../models/UpdateCustomerPricingBulkInputAmarantSalesCustomerPricingBulkInputModel';
@@ -106,6 +108,37 @@ export class CustomersService {
             url: '/api/customers/v1/organizations/{id}',
             path: {
                 'id': id,
+            },
+        });
+    }
+    /**
+     * Get customer organization contact log collection.
+     * Get customer organization contact log collection.
+     * @param id Customer organization ID
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    public static getCustomerOrganizationContactLogCollection(
+        id: number,
+        q?: AmarantGetCustomerOrganizationContactLogCollectionSearchCriteriaFilter,
+        page?: number,
+        itemsPerPage?: number,
+    ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+        data: Array<AmarantSalesCustomerOrganizationContactLogModel>;
+    })> {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/customers/v1/organizations/{id}/contact-logs',
+            path: {
+                'id': id,
+            },
+            query: {
+                'q': q,
+                'page': page,
+                'itemsPerPage': itemsPerPage,
             },
         });
     }

@@ -80,6 +80,30 @@ export class CustomersService {
         });
     }
     /**
+     * Get customer organization contact log collection.
+     * Get customer organization contact log collection.
+     * @param id Customer organization ID
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getCustomerOrganizationContactLogCollection(id, q, page, itemsPerPage) {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/customers/v1/organizations/{id}/contact-logs',
+            path: {
+                'id': id,
+            },
+            query: {
+                'q': q,
+                'page': page,
+                'itemsPerPage': itemsPerPage,
+            },
+        });
+    }
+    /**
      * Get customer pricing collection.
      * Get customer pricing collection.
      * @param q Search criteria query.

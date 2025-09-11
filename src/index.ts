@@ -67,6 +67,7 @@ export type { AmarantGetCrmClientCollectionSearchCriteriaFilter } from './models
 export type { AmarantGetCrmClientContactLogCollectionSearchCriteriaFilter } from './models/AmarantGetCrmClientContactLogCollectionSearchCriteriaFilter';
 export type { AmarantGetCustomerCollectionSearchCriteriaFilter } from './models/AmarantGetCustomerCollectionSearchCriteriaFilter';
 export type { AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter } from './models/AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter';
+export type { AmarantGetCustomerOrganizationContactLogCollectionSearchCriteriaFilter } from './models/AmarantGetCustomerOrganizationContactLogCollectionSearchCriteriaFilter';
 export type { AmarantGetCustomerPricingCollectionSearchCriteriaFilter } from './models/AmarantGetCustomerPricingCollectionSearchCriteriaFilter';
 export type { AmarantGetJournalEntryCollectionSearchCriteriaFilter } from './models/AmarantGetJournalEntryCollectionSearchCriteriaFilter';
 export type { AmarantGetMediaEntryCollectionSearchCriteriaFilter } from './models/AmarantGetMediaEntryCollectionSearchCriteriaFilter';
@@ -133,6 +134,7 @@ export type { AmarantSalesCustomerAccountAddressOutputDto } from './models/Amara
 export type { AmarantSalesCustomerAccountOrganizationOutputDto } from './models/AmarantSalesCustomerAccountOrganizationOutputDto';
 export type { AmarantSalesCustomerAccountOutputDto } from './models/AmarantSalesCustomerAccountOutputDto';
 export { AmarantSalesCustomerAccountStateOutputDto } from './models/AmarantSalesCustomerAccountStateOutputDto';
+export type { AmarantSalesCustomerOrganizationContactLogModel } from './models/AmarantSalesCustomerOrganizationContactLogModel';
 export { AmarantSalesCustomerPricingInputModel } from './models/AmarantSalesCustomerPricingInputModel';
 export type { AmarantSalesCustomerPricingModel } from './models/AmarantSalesCustomerPricingModel';
 export type { AmarantSalesNewsletterSubscriberOutputDto } from './models/AmarantSalesNewsletterSubscriberOutputDto';
