@@ -86,6 +86,29 @@ export class SalesService {
         });
     }
     /**
+     * Get pricing rule coupon collection.
+     * Get pricing rule coupon collection.
+     *
+     * Required access scopes:
+     * * read_pricing_rules
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getPricingRuleCouponCollection(q, page, itemsPerPage) {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/sales/v1/pricing/rules/{id}/coupons',
+            query: {
+                'q': q,
+                'page': page,
+                'itemsPerPage': itemsPerPage,
+            },
+        });
+    }
+    /**
      * Get tax rate collection.
      * Get tax rate collection.
      *

@@ -18,6 +18,7 @@ export type AmarantSalesPricingRule = {
     matchContextConditions: Array<Record<string, any>>;
     actions: Array<Record<string, any>>;
     stop: boolean;
+    disallowPricingModifiers: boolean;
     createdAt: string;
     updatedAt: string;
 };

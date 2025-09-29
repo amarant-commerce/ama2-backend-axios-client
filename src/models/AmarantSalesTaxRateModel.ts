@@ -11,7 +11,6 @@ export type AmarantSalesTaxRateModel = {
     regionId?: string | null;
     postcode?: string | null;
     amount: string;
-    includedInPrice: boolean;
     zipRange: boolean;
     zipRangeFrom?: string | null;
     zipRangeTo?: string | null;

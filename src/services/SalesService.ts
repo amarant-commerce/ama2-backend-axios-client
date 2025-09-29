@@ -4,9 +4,11 @@
 /* eslint-disable */
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantGetPricingRuleCollectionSearchCriteriaFilter } from '../models/AmarantGetPricingRuleCollectionSearchCriteriaFilter';
+import type { AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter } from '../models/AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter';
 import type { AmarantGetTaxCategoryCollectionSearchCriteriaFilter } from '../models/AmarantGetTaxCategoryCollectionSearchCriteriaFilter';
 import type { AmarantGetTaxRateCollectionSearchCriteriaFilter } from '../models/AmarantGetTaxRateCollectionSearchCriteriaFilter';
 import type { AmarantSalesPricingRule } from '../models/AmarantSalesPricingRule';
+import type { AmarantSalesPricingRuleCoupon } from '../models/AmarantSalesPricingRuleCoupon';
 import type { AmarantSalesTaxCategoryModel } from '../models/AmarantSalesTaxCategoryModel';
 import type { AmarantSalesTaxRateModel } from '../models/AmarantSalesTaxRateModel';
 import type { AmarantSalesTierRule } from '../models/AmarantSalesTierRule';
@@ -112,6 +114,35 @@ export class SalesService {
             url: '/api/sales/v1/pricing/rules/{id}',
             path: {
                 'id': id,
+            },
+        });
+    }
+    /**
+     * Get pricing rule coupon collection.
+     * Get pricing rule coupon collection.
+     *
+     * Required access scopes:
+     * * read_pricing_rules
+     * @param q Search criteria query.
+     * @param page Page.
+     * @param itemsPerPage Items per page.
+     * @returns any OK
+     * @throws ApiError
+     */
+    public static getPricingRuleCouponCollection(
+        q?: AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter,
+        page?: number,
+        itemsPerPage?: number,
+    ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+        data: Array<AmarantSalesPricingRuleCoupon>;
+    })> {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/sales/v1/pricing/rules/{id}/coupons',
+            query: {
+                'q': q,
+                'page': page,
+                'itemsPerPage': itemsPerPage,
             },
         });
     }

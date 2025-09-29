@@ -4,7 +4,7 @@
 /* eslint-disable */
 export type AmarantSalesCustomerOrganizationContactLogModel = {
     id: number;
-    clientId: number;
+    organizationId: number;
     clientContactId?: number | null;
     clientContactText?: string | null;
     note: string;

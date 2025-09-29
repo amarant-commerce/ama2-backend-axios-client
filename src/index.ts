@@ -81,6 +81,7 @@ export type { AmarantGetOrderPaymentTransactionCollectionSearchCriteriaFilter } 
 export type { AmarantGetOrderShipmentCollectionForOrderSearchCriteriaFilter } from './models/AmarantGetOrderShipmentCollectionForOrderSearchCriteriaFilter';
 export type { AmarantGetOrderShipmentCollectionSearchCriteriaFilter } from './models/AmarantGetOrderShipmentCollectionSearchCriteriaFilter';
 export type { AmarantGetPricingRuleCollectionSearchCriteriaFilter } from './models/AmarantGetPricingRuleCollectionSearchCriteriaFilter';
+export type { AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter } from './models/AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter';
 export type { AmarantGetProductCollectionSearchCriteriaFilter } from './models/AmarantGetProductCollectionSearchCriteriaFilter';
 export type { AmarantGetProductWishlistCollectionSearchCriteriaFilter } from './models/AmarantGetProductWishlistCollectionSearchCriteriaFilter';
 export type { AmarantGetQuoteCollectionSearchCriteriaFilter } from './models/AmarantGetQuoteCollectionSearchCriteriaFilter';
@@ -139,6 +140,7 @@ export { AmarantSalesCustomerPricingInputModel } from './models/AmarantSalesCust
 export type { AmarantSalesCustomerPricingModel } from './models/AmarantSalesCustomerPricingModel';
 export type { AmarantSalesNewsletterSubscriberOutputDto } from './models/AmarantSalesNewsletterSubscriberOutputDto';
 export type { AmarantSalesPricingRule } from './models/AmarantSalesPricingRule';
+export type { AmarantSalesPricingRuleCoupon } from './models/AmarantSalesPricingRuleCoupon';
 export type { AmarantSalesQuoteUpdateItemInputDto } from './models/AmarantSalesQuoteUpdateItemInputDto';
 export type { AmarantSalesTaxCategoryModel } from './models/AmarantSalesTaxCategoryModel';
 export type { AmarantSalesTaxRateModel } from './models/AmarantSalesTaxRateModel';
