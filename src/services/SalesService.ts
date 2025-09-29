@@ -13,6 +13,7 @@ import type { AmarantSalesTaxCategoryModel } from '../models/AmarantSalesTaxCate
 import type { AmarantSalesTaxRateModel } from '../models/AmarantSalesTaxRateModel';
 import type { AmarantSalesTierRule } from '../models/AmarantSalesTierRule';
 import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
+import type { BulkDeletePricingRuleCouponItemsInputAmarantSalesPricingRuleCouponBulkDeleteInputDto } from '../models/BulkDeletePricingRuleCouponItemsInputAmarantSalesPricingRuleCouponBulkDeleteInputDto';
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
@@ -149,6 +150,26 @@ export class SalesService {
                 'page': page,
                 'itemsPerPage': itemsPerPage,
             },
+        });
+    }
+    /**
+     * Bulk delete pricing rule coupons.
+     * Bulk delete pricing rule coupons.
+     *
+     * Required access scopes:
+     * * write_pricing_rules
+     * @param requestBody
+     * @returns void
+     * @throws ApiError
+     */
+    public static bulkDeletePricingRuleCouponItems(
+        requestBody: BulkDeletePricingRuleCouponItemsInputAmarantSalesPricingRuleCouponBulkDeleteInputDto,
+    ): CancelablePromise<void> {
+        return __request(OpenAPI, {
+            method: 'DELETE',
+            url: '/api/sales/v1/pricing/coupons',
+            body: requestBody,
+            mediaType: 'application/json',
         });
     }
     /**

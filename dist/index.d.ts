@@ -153,6 +153,7 @@ export type { AmarantStoreChannelModel } from './models/AmarantStoreChannelModel
 export type { AmarantStoreChannelScopeModel } from './models/AmarantStoreChannelScopeModel';
 export type { AmarantUserAccountGroupModel } from './models/AmarantUserAccountGroupModel';
 export type { AmarantUserAccountModel } from './models/AmarantUserAccountModel';
+export type { BulkDeletePricingRuleCouponItemsInputAmarantSalesPricingRuleCouponBulkDeleteInputDto } from './models/BulkDeletePricingRuleCouponItemsInputAmarantSalesPricingRuleCouponBulkDeleteInputDto';
 export type { BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto } from './models/BulkDeleteProductItemsInputAmarantProductBulkDeleteInputDto';
 export type { DeleteMediaGalleryCollectionInputAmarantMediaGalleryBackendDeleteInput } from './models/DeleteMediaGalleryCollectionInputAmarantMediaGalleryBackendDeleteInput';
 export type { GetConfigurableProductCompatibleAttributesInputAmarantProductGetCompatibleAttributesForConfigurableInputDto } from './models/GetConfigurableProductCompatibleAttributesInputAmarantProductGetCompatibleAttributesForConfigurableInputDto';

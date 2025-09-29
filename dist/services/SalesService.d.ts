@@ -9,6 +9,7 @@ import type { AmarantSalesTaxCategoryModel } from '../models/AmarantSalesTaxCate
 import type { AmarantSalesTaxRateModel } from '../models/AmarantSalesTaxRateModel';
 import type { AmarantSalesTierRule } from '../models/AmarantSalesTierRule';
 import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
+import type { BulkDeletePricingRuleCouponItemsInputAmarantSalesPricingRuleCouponBulkDeleteInputDto } from '../models/BulkDeletePricingRuleCouponItemsInputAmarantSalesPricingRuleCouponBulkDeleteInputDto';
 import type { CancelablePromise } from '../core/CancelablePromise';
 export declare class SalesService {
     /**
@@ -79,6 +80,17 @@ export declare class SalesService {
     static getPricingRuleCouponCollection(id: number, q?: AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantSalesPricingRuleCoupon>;
     })>;
+    /**
+     * Bulk delete pricing rule coupons.
+     * Bulk delete pricing rule coupons.
+     *
+     * Required access scopes:
+     * * write_pricing_rules
+     * @param requestBody
+     * @returns void
+     * @throws ApiError
+     */
+    static bulkDeletePricingRuleCouponItems(requestBody: BulkDeletePricingRuleCouponItemsInputAmarantSalesPricingRuleCouponBulkDeleteInputDto): CancelablePromise<void>;
     /**
      * Get tax rate collection.
      * Get tax rate collection.

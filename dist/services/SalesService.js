@@ -113,6 +113,24 @@ export class SalesService {
         });
     }
     /**
+     * Bulk delete pricing rule coupons.
+     * Bulk delete pricing rule coupons.
+     *
+     * Required access scopes:
+     * * write_pricing_rules
+     * @param requestBody
+     * @returns void
+     * @throws ApiError
+     */
+    static bulkDeletePricingRuleCouponItems(requestBody) {
+        return __request(OpenAPI, {
+            method: 'DELETE',
+            url: '/api/sales/v1/pricing/coupons',
+            body: requestBody,
+            mediaType: 'application/json',
+        });
+    }
+    /**
      * Get tax rate collection.
      * Get tax rate collection.
      *
