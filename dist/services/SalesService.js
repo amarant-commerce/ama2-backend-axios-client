@@ -91,16 +91,20 @@ export class SalesService {
      *
      * Required access scopes:
      * * read_pricing_rules
+     * @param id Pricing Rule ID
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
-    static getPricingRuleCouponCollection(q, page, itemsPerPage) {
+    static getPricingRuleCouponCollection(id, q, page, itemsPerPage) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/sales/v1/pricing/rules/{id}/coupons',
+            path: {
+                'id': id,
+            },
             query: {
                 'q': q,
                 'page': page,

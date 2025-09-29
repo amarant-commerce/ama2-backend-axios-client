@@ -69,13 +69,14 @@ export declare class SalesService {
      *
      * Required access scopes:
      * * read_pricing_rules
+     * @param id Pricing Rule ID
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
      * @returns any OK
      * @throws ApiError
      */
-    static getPricingRuleCouponCollection(q?: AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getPricingRuleCouponCollection(id: number, q?: AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantSalesPricingRuleCoupon>;
     })>;
     /**
