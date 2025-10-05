@@ -8,8 +8,8 @@ export type AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter = {
         condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
         /**
          * coupon_code: string
-         * usage_limit: integer, string
-         * usage_count: integer, string
+         * usage_limit: array
+         * usage_count: array
          */
         value?: number | number | string | boolean | any[] | null;
     }>>;
