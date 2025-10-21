@@ -3,6 +3,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { AmarantSalesCartAdditionalDataInputDto } from './AmarantSalesCartAdditionalDataInputDto';
+import type { AmarantSalesCartItemInputProductOptionsDto } from './AmarantSalesCartItemInputProductOptionsDto';
 import type { AmarantSalesCartItemPricingInputDto } from './AmarantSalesCartItemPricingInputDto';
 export type AmarantSalesCartItemInputConfigurableProductDto = {
     sku: string;
@@ -10,6 +11,7 @@ export type AmarantSalesCartItemInputConfigurableProductDto = {
     qty: number;
     type: 'configurable';
     pricing?: AmarantSalesCartItemPricingInputDto | null;
-    additionalData: Array<AmarantSalesCartAdditionalDataInputDto>;
+    additionalData?: Array<AmarantSalesCartAdditionalDataInputDto>;
+    productOptions?: Array<AmarantSalesCartItemInputProductOptionsDto>;
 };
 

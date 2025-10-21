@@ -1,6 +1,7 @@
 export type AmarantGetAttributeCollectionSearchCriteriaFilter = {
     groups?: Array<Record<string, {
         /**
+         * entity_id: eq
          * code: eq, like
          * type: eq
          * input_type: eq
@@ -8,6 +9,7 @@ export type AmarantGetAttributeCollectionSearchCriteriaFilter = {
          */
         condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
         /**
+         * entity_id: integer, string
          * code: string
          * type: string
          * input_type: string
@@ -17,7 +19,7 @@ export type AmarantGetAttributeCollectionSearchCriteriaFilter = {
     }>>;
     sort?: Array<{
         /**
-         * id, code, type, input_type, entity_name
+         * id, entity_id, code, type, input_type, entity_name
          */
         path?: string;
         direction?: 'ASC' | 'DESC';

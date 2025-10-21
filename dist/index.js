@@ -15,6 +15,7 @@ export { AmarantMediaAttributeValueModel } from './models/AmarantMediaAttributeV
 export { AmarantSalesCartItemInputProductDto } from './models/AmarantSalesCartItemInputProductDto';
 export { AmarantSalesCustomerAccountStateOutputDto } from './models/AmarantSalesCustomerAccountStateOutputDto';
 export { AmarantSalesCustomerPricingInputModel } from './models/AmarantSalesCustomerPricingInputModel';
+export { AiService } from './services/AiService';
 export { AnalyticsService } from './services/AnalyticsService';
 export { AttributesService } from './services/AttributesService';
 export { BlogService } from './services/BlogService';
