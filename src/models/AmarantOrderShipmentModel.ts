@@ -8,6 +8,7 @@ export type AmarantOrderShipmentModel = {
     orderId: number;
     batchId: number;
     status: string;
+    carrierTitle: string;
     carrierStatus?: string | null;
     carrierStatusCode?: string | null;
     trackingNumbers: Array<string>;

@@ -7,12 +7,12 @@ import type { AmarantGetPricingRuleCollectionSearchCriteriaFilter } from '../mod
 import type { AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter } from '../models/AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter';
 import type { AmarantGetTaxCategoryCollectionSearchCriteriaFilter } from '../models/AmarantGetTaxCategoryCollectionSearchCriteriaFilter';
 import type { AmarantGetTaxRateCollectionSearchCriteriaFilter } from '../models/AmarantGetTaxRateCollectionSearchCriteriaFilter';
+import type { AmarantGetTierRuleCollectionSearchCriteriaFilter } from '../models/AmarantGetTierRuleCollectionSearchCriteriaFilter';
 import type { AmarantSalesPricingRule } from '../models/AmarantSalesPricingRule';
 import type { AmarantSalesPricingRuleCoupon } from '../models/AmarantSalesPricingRuleCoupon';
 import type { AmarantSalesTaxCategoryModel } from '../models/AmarantSalesTaxCategoryModel';
 import type { AmarantSalesTaxRateModel } from '../models/AmarantSalesTaxRateModel';
 import type { AmarantSalesTierRule } from '../models/AmarantSalesTierRule';
-import type { AmarantSearchCriteriaFilter } from '../models/AmarantSearchCriteriaFilter';
 import type { BulkDeletePricingRuleCouponItemsInputAmarantSalesPricingRuleCouponBulkDeleteInputDto } from '../models/BulkDeletePricingRuleCouponItemsInputAmarantSalesPricingRuleCouponBulkDeleteInputDto';
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
@@ -31,7 +31,7 @@ export class SalesService {
      * @throws ApiError
      */
     public static getTierRuleCollection(
-        q?: AmarantSearchCriteriaFilter,
+        q?: AmarantGetTierRuleCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
