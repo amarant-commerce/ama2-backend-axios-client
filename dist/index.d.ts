@@ -84,6 +84,7 @@ export type { AmarantGetQuoteCollectionSearchCriteriaFilter } from './models/Ama
 export type { AmarantGetSalesNewsletterSubscriberCollectionSearchCriteriaFilter } from './models/AmarantGetSalesNewsletterSubscriberCollectionSearchCriteriaFilter';
 export type { AmarantGetTaxCategoryCollectionSearchCriteriaFilter } from './models/AmarantGetTaxCategoryCollectionSearchCriteriaFilter';
 export type { AmarantGetTaxRateCollectionSearchCriteriaFilter } from './models/AmarantGetTaxRateCollectionSearchCriteriaFilter';
+export type { AmarantGetTierRuleCollectionSearchCriteriaFilter } from './models/AmarantGetTierRuleCollectionSearchCriteriaFilter';
 export type { AmarantGetUserAccountCollectionSearchCriteriaFilter } from './models/AmarantGetUserAccountCollectionSearchCriteriaFilter';
 export type { AmarantGetUserAccountGroupCollectionSearchCriteriaFilter } from './models/AmarantGetUserAccountGroupCollectionSearchCriteriaFilter';
 export type { AmarantImageModel } from './models/AmarantImageModel';
@@ -143,13 +144,10 @@ export type { AmarantSalesTaxCategoryModel } from './models/AmarantSalesTaxCateg
 export type { AmarantSalesTaxRateModel } from './models/AmarantSalesTaxRateModel';
 export type { AmarantSalesTierRule } from './models/AmarantSalesTierRule';
 export type { AmarantSalesTierRuleItem } from './models/AmarantSalesTierRuleItem';
-export type { AmarantSearchAggregationResultCategoryAggregationModel } from './models/AmarantSearchAggregationResultCategoryAggregationModel';
 export type { AmarantSearchAggregationResultModel } from './models/AmarantSearchAggregationResultModel';
 export type { AmarantSearchAggregationResultRangeAggregationModel } from './models/AmarantSearchAggregationResultRangeAggregationModel';
 export type { AmarantSearchAggregationResultStatsAggregationModel } from './models/AmarantSearchAggregationResultStatsAggregationModel';
 export type { AmarantSearchAggregationResultTermAggregationModel } from './models/AmarantSearchAggregationResultTermAggregationModel';
-export type { AmarantSearchCategoryAggregationItem } from './models/AmarantSearchCategoryAggregationItem';
-export type { AmarantSearchCriteriaFilter } from './models/AmarantSearchCriteriaFilter';
 export type { AmarantSearchRangeAggregationItem } from './models/AmarantSearchRangeAggregationItem';
 export type { AmarantSearchTermAggregationItem } from './models/AmarantSearchTermAggregationItem';
 export type { AmarantStoreChannelDomainModel } from './models/AmarantStoreChannelDomainModel';
