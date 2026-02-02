@@ -21,6 +21,8 @@ export type AmarantSalesCustomerAccountOutputDto = {
     cartId?: string | null;
     impersonatedBy?: number | null;
     accessScopes: Array<string>;
+    createdInArea?: string | null;
+    externalProvider?: string | null;
     lastLoggedInTime?: string | null;
     lastSeenTime?: string | null;
     createdAt?: string | null;

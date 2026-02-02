@@ -7,7 +7,7 @@ export type AmarantGetOrderPaymentTransactionCollectionSearchCriteriaFilter = {
          * transaction_id: eq
          * transaction_type: eq
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * parent_id: integer, string
          * order_id: integer, string

@@ -7,7 +7,7 @@ export type AmarantGetPricingRuleCollectionSearchCriteriaFilter = {
          * subject: eq, like
          * price_type: eq, like
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * active: integer, string
          * featured: integer, string

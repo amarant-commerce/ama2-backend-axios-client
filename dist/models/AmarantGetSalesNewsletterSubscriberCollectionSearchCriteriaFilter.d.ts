@@ -6,7 +6,7 @@ export type AmarantGetSalesNewsletterSubscriberCollectionSearchCriteriaFilter = 
          * email: eq, like
          * status: eq
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * channel_id: string, integer
          * subject_type: string

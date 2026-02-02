@@ -10,7 +10,7 @@ export type AmarantGetTaxRateCollectionSearchCriteriaFilter = {
          * zip_range_from: like
          * zip_range_to: like
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * name: string
          * tax_category_code: string

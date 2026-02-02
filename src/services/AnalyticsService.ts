@@ -2,9 +2,11 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
+import type { AmarantApiCollectionResponse } from '../models/AmarantApiCollectionResponse';
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantCookiePanelModel } from '../models/AmarantCookiePanelModel';
 import type { AmarantGetCookiePanelCollectionSearchCriteriaFilter } from '../models/AmarantGetCookiePanelCollectionSearchCriteriaFilter';
+import type { AmarantSalesAnalyticsSaleHistoryModel } from '../models/AmarantSalesAnalyticsSaleHistoryModel';
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
 import { request as __request } from '../core/request';
@@ -50,6 +52,29 @@ export class AnalyticsService {
             url: '/api/cookie-panels/v1/{id}',
             path: {
                 'id': id,
+            },
+        });
+    }
+    /**
+     * Get sales analytics order sale history collection.
+     * Get sales analytics order sale history collection.
+     * @param unit Unit of age of data.
+     * @param age Value of age of data.
+     * @returns any OK
+     * @throws ApiError
+     */
+    public static getSalesAnalyticsOrderSaleHistory(
+        unit: 'days',
+        age: number,
+    ): CancelablePromise<(AmarantApiCollectionResponse & {
+        data: Array<AmarantSalesAnalyticsSaleHistoryModel>;
+    })> {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/sales-analytics/v1/orders/sale-history',
+            query: {
+                'unit': unit,
+                'age': age,
             },
         });
     }

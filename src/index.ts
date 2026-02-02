@@ -89,6 +89,7 @@ export type { AmarantGetQuoteCollectionSearchCriteriaFilter } from './models/Ama
 export type { AmarantGetSalesNewsletterSubscriberCollectionSearchCriteriaFilter } from './models/AmarantGetSalesNewsletterSubscriberCollectionSearchCriteriaFilter';
 export type { AmarantGetTaxCategoryCollectionSearchCriteriaFilter } from './models/AmarantGetTaxCategoryCollectionSearchCriteriaFilter';
 export type { AmarantGetTaxRateCollectionSearchCriteriaFilter } from './models/AmarantGetTaxRateCollectionSearchCriteriaFilter';
+export type { AmarantGetTermsConditionsCollectionSearchCriteriaFilter } from './models/AmarantGetTermsConditionsCollectionSearchCriteriaFilter';
 export type { AmarantGetTierRuleCollectionSearchCriteriaFilter } from './models/AmarantGetTierRuleCollectionSearchCriteriaFilter';
 export type { AmarantGetUserAccountCollectionSearchCriteriaFilter } from './models/AmarantGetUserAccountCollectionSearchCriteriaFilter';
 export type { AmarantGetUserAccountGroupCollectionSearchCriteriaFilter } from './models/AmarantGetUserAccountGroupCollectionSearchCriteriaFilter';
@@ -127,6 +128,8 @@ export type { AmarantProductCompatibleProductAttributesOutput } from './models/A
 export type { AmarantProductCsvSyncOutputDto } from './models/AmarantProductCsvSyncOutputDto';
 export type { AmarantProductWishlist } from './models/AmarantProductWishlist';
 export type { AmarantProductWishlistProduct } from './models/AmarantProductWishlistProduct';
+export type { AmarantSalesAnalyticsSaleHistoryItemModel } from './models/AmarantSalesAnalyticsSaleHistoryItemModel';
+export type { AmarantSalesAnalyticsSaleHistoryModel } from './models/AmarantSalesAnalyticsSaleHistoryModel';
 export type { AmarantSalesCartAdditionalDataInputDto } from './models/AmarantSalesCartAdditionalDataInputDto';
 export type { AmarantSalesCartItemInputConfigurableProductDto } from './models/AmarantSalesCartItemInputConfigurableProductDto';
 export type { AmarantSalesCartItemInputGenericProductDto } from './models/AmarantSalesCartItemInputGenericProductDto';
@@ -147,6 +150,7 @@ export type { AmarantSalesPricingRuleCoupon } from './models/AmarantSalesPricing
 export type { AmarantSalesQuoteUpdateItemInputDto } from './models/AmarantSalesQuoteUpdateItemInputDto';
 export type { AmarantSalesTaxCategoryModel } from './models/AmarantSalesTaxCategoryModel';
 export type { AmarantSalesTaxRateModel } from './models/AmarantSalesTaxRateModel';
+export type { AmarantSalesTermsConditionsOutputDto } from './models/AmarantSalesTermsConditionsOutputDto';
 export type { AmarantSalesTierRule } from './models/AmarantSalesTierRule';
 export type { AmarantSalesTierRuleItem } from './models/AmarantSalesTierRuleItem';
 export type { AmarantSearchAggregationResultModel } from './models/AmarantSearchAggregationResultModel';
@@ -158,6 +162,8 @@ export type { AmarantSearchTermAggregationItem } from './models/AmarantSearchTer
 export type { AmarantStoreChannelDomainModel } from './models/AmarantStoreChannelDomainModel';
 export type { AmarantStoreChannelModel } from './models/AmarantStoreChannelModel';
 export type { AmarantStoreChannelScopeModel } from './models/AmarantStoreChannelScopeModel';
+export { AmarantTotalCodeModel } from './models/AmarantTotalCodeModel';
+export { AmarantTotalLabelModel } from './models/AmarantTotalLabelModel';
 export type { AmarantUserAccountGroupModel } from './models/AmarantUserAccountGroupModel';
 export type { AmarantUserAccountModel } from './models/AmarantUserAccountModel';
 export type { BulkDeletePricingRuleCouponItemsInputAmarantSalesPricingRuleCouponBulkDeleteInputDto } from './models/BulkDeletePricingRuleCouponItemsInputAmarantSalesPricingRuleCouponBulkDeleteInputDto';
@@ -190,4 +196,5 @@ export { QuotesService } from './services/QuotesService';
 export { SalesService } from './services/SalesService';
 export { ShipmentsService } from './services/ShipmentsService';
 export { StoresService } from './services/StoresService';
+export { TermsAndConditionsService } from './services/TermsAndConditionsService';
 export { UsersService } from './services/UsersService';

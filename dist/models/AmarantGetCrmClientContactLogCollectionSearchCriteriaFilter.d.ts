@@ -6,7 +6,7 @@ export type AmarantGetCrmClientContactLogCollectionSearchCriteriaFilter = {
          * note: like
          * contact_time: gt, gte, lt, lte
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * client_id: integer
          * customer_id: integer

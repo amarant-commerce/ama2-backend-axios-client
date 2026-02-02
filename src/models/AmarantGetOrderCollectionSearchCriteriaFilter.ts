@@ -13,7 +13,7 @@ export type AmarantGetOrderCollectionSearchCriteriaFilter = {
          * currency: eq, like
          * status: eq
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * human_id: string
          * channel_id: string, integer
@@ -27,7 +27,7 @@ export type AmarantGetOrderCollectionSearchCriteriaFilter = {
     }>>;
     sort?: Array<{
         /**
-         * id, human_id, channel_id, channel_scope_id, shipping_addresses, billing_addresses, currency, base_grand_total, grand_total, status, physical, created_at
+         * id, human_id, channel_id, channel_scope_id, shipping_addresses, billing_addresses, currency, base_grand_total, grand_total, status, physical, payment_method, carrier_code, created_at
          */
         path?: string;
         direction?: 'ASC' | 'DESC';

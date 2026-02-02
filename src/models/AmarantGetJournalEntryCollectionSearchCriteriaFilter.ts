@@ -12,7 +12,7 @@ export type AmarantGetJournalEntryCollectionSearchCriteriaFilter = {
          * level: eq
          * identifiers: ina
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * journal_id: integer, string
          * area: string

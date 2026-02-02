@@ -13,7 +13,7 @@ export type AmarantGetCmsTemplateCollectionSearchCriteriaFilter = {
          * created_by_username: like
          * updated_by_username: like
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * type: string
          * template_type: string

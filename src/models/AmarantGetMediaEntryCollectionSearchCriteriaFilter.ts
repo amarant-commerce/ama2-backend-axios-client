@@ -8,7 +8,7 @@ export type AmarantGetMediaEntryCollectionSearchCriteriaFilter = {
          * parent_type: like, eq
          * original_name: like
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * parent_type: string
          * original_name: string

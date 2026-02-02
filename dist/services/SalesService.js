@@ -176,4 +176,22 @@ export class SalesService {
             },
         });
     }
+    /**
+     * Get sales analytics order sale history collection.
+     * Get sales analytics order sale history collection.
+     * @param unit Unit of age of data.
+     * @param age Value of age of data.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getSalesAnalyticsOrderSaleHistory(unit, age) {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/sales-analytics/v1/orders/sale-history',
+            query: {
+                'unit': unit,
+                'age': age,
+            },
+        });
+    }
 }

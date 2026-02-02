@@ -2,12 +2,14 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
+import type { AmarantApiCollectionResponse } from '../models/AmarantApiCollectionResponse';
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantGetPricingRuleCollectionSearchCriteriaFilter } from '../models/AmarantGetPricingRuleCollectionSearchCriteriaFilter';
 import type { AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter } from '../models/AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter';
 import type { AmarantGetTaxCategoryCollectionSearchCriteriaFilter } from '../models/AmarantGetTaxCategoryCollectionSearchCriteriaFilter';
 import type { AmarantGetTaxRateCollectionSearchCriteriaFilter } from '../models/AmarantGetTaxRateCollectionSearchCriteriaFilter';
 import type { AmarantGetTierRuleCollectionSearchCriteriaFilter } from '../models/AmarantGetTierRuleCollectionSearchCriteriaFilter';
+import type { AmarantSalesAnalyticsSaleHistoryModel } from '../models/AmarantSalesAnalyticsSaleHistoryModel';
 import type { AmarantSalesPricingRule } from '../models/AmarantSalesPricingRule';
 import type { AmarantSalesPricingRuleCoupon } from '../models/AmarantSalesPricingRuleCoupon';
 import type { AmarantSalesTaxCategoryModel } from '../models/AmarantSalesTaxCategoryModel';
@@ -227,6 +229,29 @@ export class SalesService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+            },
+        });
+    }
+    /**
+     * Get sales analytics order sale history collection.
+     * Get sales analytics order sale history collection.
+     * @param unit Unit of age of data.
+     * @param age Value of age of data.
+     * @returns any OK
+     * @throws ApiError
+     */
+    public static getSalesAnalyticsOrderSaleHistory(
+        unit: 'days',
+        age: number,
+    ): CancelablePromise<(AmarantApiCollectionResponse & {
+        data: Array<AmarantSalesAnalyticsSaleHistoryModel>;
+    })> {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/sales-analytics/v1/orders/sale-history',
+            query: {
+                'unit': unit,
+                'age': age,
             },
         });
     }

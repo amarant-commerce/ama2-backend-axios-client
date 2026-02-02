@@ -1,9 +1,11 @@
+import type { AmarantApiCollectionResponse } from '../models/AmarantApiCollectionResponse';
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
 import type { AmarantGetPricingRuleCollectionSearchCriteriaFilter } from '../models/AmarantGetPricingRuleCollectionSearchCriteriaFilter';
 import type { AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter } from '../models/AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter';
 import type { AmarantGetTaxCategoryCollectionSearchCriteriaFilter } from '../models/AmarantGetTaxCategoryCollectionSearchCriteriaFilter';
 import type { AmarantGetTaxRateCollectionSearchCriteriaFilter } from '../models/AmarantGetTaxRateCollectionSearchCriteriaFilter';
 import type { AmarantGetTierRuleCollectionSearchCriteriaFilter } from '../models/AmarantGetTierRuleCollectionSearchCriteriaFilter';
+import type { AmarantSalesAnalyticsSaleHistoryModel } from '../models/AmarantSalesAnalyticsSaleHistoryModel';
 import type { AmarantSalesPricingRule } from '../models/AmarantSalesPricingRule';
 import type { AmarantSalesPricingRuleCoupon } from '../models/AmarantSalesPricingRuleCoupon';
 import type { AmarantSalesTaxCategoryModel } from '../models/AmarantSalesTaxCategoryModel';
@@ -120,5 +122,16 @@ export declare class SalesService {
      */
     static getTaxCategoryCollection(q?: AmarantGetTaxCategoryCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantSalesTaxCategoryModel>;
+    })>;
+    /**
+     * Get sales analytics order sale history collection.
+     * Get sales analytics order sale history collection.
+     * @param unit Unit of age of data.
+     * @param age Value of age of data.
+     * @returns any OK
+     * @throws ApiError
+     */
+    static getSalesAnalyticsOrderSaleHistory(unit: 'days', age: number): CancelablePromise<(AmarantApiCollectionResponse & {
+        data: Array<AmarantSalesAnalyticsSaleHistoryModel>;
     })>;
 }

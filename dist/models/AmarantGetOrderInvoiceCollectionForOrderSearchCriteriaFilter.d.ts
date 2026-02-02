@@ -4,7 +4,7 @@ export type AmarantGetOrderInvoiceCollectionForOrderSearchCriteriaFilter = {
          * order_id: eq
          * status: eq
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * order_id: integer, string
          * status: string

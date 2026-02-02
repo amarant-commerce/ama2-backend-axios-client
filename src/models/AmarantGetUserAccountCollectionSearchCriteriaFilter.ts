@@ -18,7 +18,7 @@ export type AmarantGetUserAccountCollectionSearchCriteriaFilter = {
          * last_failed_login_time: gt, gte, lt, lte, range, nrange, null
          * access_scopes: jina, jnina
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * user_account_group_id: integer, string
          * username: string

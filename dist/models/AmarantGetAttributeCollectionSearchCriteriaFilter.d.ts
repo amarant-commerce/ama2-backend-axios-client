@@ -7,7 +7,7 @@ export type AmarantGetAttributeCollectionSearchCriteriaFilter = {
          * input_type: eq
          * entity_name: eq
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * entity_id: integer, string
          * code: string

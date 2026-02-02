@@ -13,7 +13,7 @@ export type AmarantGetProductCollectionSearchCriteriaFilter = {
          * category_ids: ina
          * pricing_rules: in
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * sku: string
          * master_sku: string

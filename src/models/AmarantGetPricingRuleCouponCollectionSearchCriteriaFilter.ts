@@ -9,7 +9,7 @@ export type AmarantGetPricingRuleCouponCollectionSearchCriteriaFilter = {
          * usage_limit: range
          * usage_count: range
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * coupon_code: string
          * usage_limit: array

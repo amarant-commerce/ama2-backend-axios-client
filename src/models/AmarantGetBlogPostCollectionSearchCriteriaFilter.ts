@@ -14,7 +14,7 @@ export type AmarantGetBlogPostCollectionSearchCriteriaFilter = {
          * created_by_username: like
          * updated_by_username: like
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * title: string
          * status: array

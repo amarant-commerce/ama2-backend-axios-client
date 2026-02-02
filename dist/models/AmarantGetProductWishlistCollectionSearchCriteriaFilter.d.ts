@@ -7,7 +7,7 @@ export type AmarantGetProductWishlistCollectionSearchCriteriaFilter = {
          * customer: like
          * customer_organization_id: eq
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * name: string
          * shared: integer, string, boolean

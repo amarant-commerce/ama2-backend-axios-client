@@ -8,7 +8,7 @@ export type AmarantGetAttributeOptionCollectionSearchCriteriaFilter = {
          * attribute_id: eq
          * label: like
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * attribute_id: integer, string
          * label: string

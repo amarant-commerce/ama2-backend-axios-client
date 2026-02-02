@@ -13,7 +13,7 @@ export type AmarantGetQuoteCollectionSearchCriteriaFilter = {
          * customer_id: in
          * customer_organization_id: eq
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * channel_id: string, integer
          * channel_scope_id: string, integer

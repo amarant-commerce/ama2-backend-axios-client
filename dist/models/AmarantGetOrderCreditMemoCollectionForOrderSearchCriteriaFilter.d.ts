@@ -5,7 +5,7 @@ export type AmarantGetOrderCreditMemoCollectionForOrderSearchCriteriaFilter = {
          * invoice_id: eq
          * status: eq
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * order_id: integer, string
          * invoice_id: integer, string

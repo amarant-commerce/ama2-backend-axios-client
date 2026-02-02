@@ -6,7 +6,7 @@ export type AmarantGetChannelDomainCollectionSearchCriteriaFilter = {
          * state: eq
          * default_domain: eq
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * channel_id: integer, string
          * host: string

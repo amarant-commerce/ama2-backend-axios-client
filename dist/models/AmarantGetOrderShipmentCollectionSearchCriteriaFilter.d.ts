@@ -9,7 +9,7 @@ export type AmarantGetOrderShipmentCollectionSearchCriteriaFilter = {
          * carrier_status_code: like
          * tracking_numbers: ina, nina
          */
-        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr';
+        condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
          * id: integer
          * order_id: integer, string
