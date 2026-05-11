@@ -20,10 +20,12 @@ export declare class CustomersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getCustomerCollection(q?: AmarantGetCustomerCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getCustomerCollection(q?: AmarantGetCustomerCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number, include?: string, exclude?: string): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantSalesCustomerAccountOutputDto>;
     })>;
     /**
@@ -43,10 +45,12 @@ export declare class CustomersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getCustomerOrganizationCollection(q?: AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getCustomerOrganizationCollection(q?: AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number, include?: string, exclude?: string): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantSalesCustomerAccountOrganizationOutputDto>;
     })>;
     /**
@@ -64,10 +68,12 @@ export declare class CustomersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getCustomerOrganizationContactLogCollection(id: number, q?: AmarantGetCustomerOrganizationContactLogCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getCustomerOrganizationContactLogCollection(id: number, q?: AmarantGetCustomerOrganizationContactLogCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number, include?: string, exclude?: string): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantSalesCustomerOrganizationContactLogModel>;
     })>;
     /**
@@ -76,10 +82,12 @@ export declare class CustomersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getCustomerPricingCollection(q?: AmarantGetCustomerPricingCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getCustomerPricingCollection(q?: AmarantGetCustomerPricingCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number, include?: string, exclude?: string): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantSalesCustomerPricingModel>;
     })>;
     /**

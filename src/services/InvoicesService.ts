@@ -22,6 +22,8 @@ export class InvoicesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
@@ -29,6 +31,8 @@ export class InvoicesService {
         q?: AmarantGetOrderInvoiceCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
+        include?: string,
+        exclude?: string,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantOrderInvoiceModel>;
     })> {
@@ -39,6 +43,8 @@ export class InvoicesService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -52,6 +58,8 @@ export class InvoicesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
@@ -60,6 +68,8 @@ export class InvoicesService {
         q?: AmarantGetOrderInvoiceCollectionForOrderSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
+        include?: string,
+        exclude?: string,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantOrderInvoiceModel>;
     })> {
@@ -73,6 +83,8 @@ export class InvoicesService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -85,6 +97,8 @@ export class InvoicesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
@@ -92,6 +106,8 @@ export class InvoicesService {
         q?: AmarantGetOrderCreditMemoCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
+        include?: string,
+        exclude?: string,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantOrderCreditMemoModel>;
     })> {
@@ -102,6 +118,8 @@ export class InvoicesService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -115,6 +133,8 @@ export class InvoicesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
@@ -123,6 +143,8 @@ export class InvoicesService {
         q?: AmarantGetOrderCreditMemoCollectionForOrderSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
+        include?: string,
+        exclude?: string,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantOrderCreditMemoModel>;
     })> {
@@ -136,6 +158,8 @@ export class InvoicesService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }

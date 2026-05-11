@@ -7,10 +7,12 @@ export class UsersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getUserAccountCollection(q, page, itemsPerPage) {
+    static getUserAccountCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/users/v1/accounts',
@@ -18,6 +20,8 @@ export class UsersService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -27,10 +31,12 @@ export class UsersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getUserAccountGroupCollection(q, page, itemsPerPage) {
+    static getUserAccountGroupCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/users/v1/groups',
@@ -38,6 +44,8 @@ export class UsersService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }

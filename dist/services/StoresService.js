@@ -7,10 +7,12 @@ export class StoresService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getChannelCollection(q, page, itemsPerPage) {
+    static getChannelCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/stores/v1/channels',
@@ -18,6 +20,8 @@ export class StoresService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -43,10 +47,12 @@ export class StoresService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getChannelScopeCollection(q, page, itemsPerPage) {
+    static getChannelScopeCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/stores/v1/channel-scopes',
@@ -54,6 +60,8 @@ export class StoresService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -79,10 +87,12 @@ export class StoresService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getChannelDomainCollection(q, page, itemsPerPage) {
+    static getChannelDomainCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/stores/v1/channel-domains',
@@ -90,6 +100,8 @@ export class StoresService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }

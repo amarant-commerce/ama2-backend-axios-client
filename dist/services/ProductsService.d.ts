@@ -19,10 +19,12 @@ export declare class ProductsService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getProductCollection(q?: AmarantGetProductCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getProductCollection(q?: AmarantGetProductCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number, include?: string, exclude?: string): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantProductBackendOutputProductOutput>;
     })>;
     /**
@@ -76,10 +78,12 @@ export declare class ProductsService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getProductWishlistCollection(q?: AmarantGetProductWishlistCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getProductWishlistCollection(q?: AmarantGetProductWishlistCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number, include?: string, exclude?: string): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantProductWishlist>;
     })>;
 }

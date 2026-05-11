@@ -7,10 +7,12 @@ export class AnalyticsService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getCookiePanelCollection(q, page, itemsPerPage) {
+    static getCookiePanelCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/cookie-panels/v1',
@@ -18,6 +20,8 @@ export class AnalyticsService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -42,16 +46,20 @@ export class AnalyticsService {
      * Get sales analytics order sale history collection.
      * @param unit Unit of age of data.
      * @param age Value of age of data.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getSalesAnalyticsOrderSaleHistory(unit, age) {
+    static getSalesAnalyticsOrderSaleHistory(unit, age, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/sales-analytics/v1/orders/sale-history',
             query: {
                 'unit': unit,
                 'age': age,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }

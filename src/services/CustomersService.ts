@@ -26,6 +26,8 @@ export class CustomersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
@@ -33,6 +35,8 @@ export class CustomersService {
         q?: AmarantGetCustomerCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
+        include?: string,
+        exclude?: string,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantSalesCustomerAccountOutputDto>;
     })> {
@@ -43,6 +47,8 @@ export class CustomersService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -73,6 +79,8 @@ export class CustomersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
@@ -80,6 +88,8 @@ export class CustomersService {
         q?: AmarantGetCustomerOrganizationCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
+        include?: string,
+        exclude?: string,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantSalesCustomerAccountOrganizationOutputDto>;
     })> {
@@ -90,6 +100,8 @@ export class CustomersService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -118,6 +130,8 @@ export class CustomersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
@@ -126,6 +140,8 @@ export class CustomersService {
         q?: AmarantGetCustomerOrganizationContactLogCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
+        include?: string,
+        exclude?: string,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantSalesCustomerOrganizationContactLogModel>;
     })> {
@@ -139,6 +155,8 @@ export class CustomersService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -148,6 +166,8 @@ export class CustomersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
@@ -155,6 +175,8 @@ export class CustomersService {
         q?: AmarantGetCustomerPricingCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
+        include?: string,
+        exclude?: string,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantSalesCustomerPricingModel>;
     })> {
@@ -165,6 +187,8 @@ export class CustomersService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }

@@ -11,6 +11,7 @@ export type AmarantBlogPostModel = {
     categories: Array<AmarantBlogPostCategoryModel>;
     tags: Array<AmarantBlogPostTagModel>;
     author?: AmarantBlogPostAuthorModel | null;
+    position: number;
     url: string;
     path: string;
     content?: AmarantBlogPostVersionModel | null;

@@ -3,7 +3,8 @@ export type AmarantCookiePanelModel = {
     id: number;
     active: boolean;
     identifier: string;
-    scopes: Array<string>;
+    channelScopes: Array<string>;
+    channelScopeIds: Array<number>;
     attributes: Record<string, string | number | number | boolean | any[] | null>;
     items: Array<AmarantCookiePanelItemModel>;
     createdAt: string;

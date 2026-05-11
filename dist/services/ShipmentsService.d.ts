@@ -13,10 +13,12 @@ export declare class ShipmentsService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getOrderShipmentCollection(q?: AmarantGetOrderShipmentCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getOrderShipmentCollection(q?: AmarantGetOrderShipmentCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number, include?: string, exclude?: string): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantOrderShipmentModel>;
     })>;
     /**
@@ -29,10 +31,12 @@ export declare class ShipmentsService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getOrderShipmentCollectionForOrder(id: number, q?: AmarantGetOrderShipmentCollectionForOrderSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getOrderShipmentCollectionForOrder(id: number, q?: AmarantGetOrderShipmentCollectionForOrderSearchCriteriaFilter, page?: number, itemsPerPage?: number, include?: string, exclude?: string): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantOrderShipmentModel>;
     })>;
 }

@@ -26,6 +26,7 @@ export type { AmarantCartModel } from './models/AmarantCartModel';
 export type { AmarantCartPaymentModel } from './models/AmarantCartPaymentModel';
 export type { AmarantCartProductModel } from './models/AmarantCartProductModel';
 export type { AmarantCartQuoteModel } from './models/AmarantCartQuoteModel';
+export type { AmarantCartQuoteSourceItemModel } from './models/AmarantCartQuoteSourceItemModel';
 export type { AmarantCartShippingBatchItemModel } from './models/AmarantCartShippingBatchItemModel';
 export type { AmarantCartShippingBatchModel } from './models/AmarantCartShippingBatchModel';
 export type { AmarantCartTotalModel } from './models/AmarantCartTotalModel';

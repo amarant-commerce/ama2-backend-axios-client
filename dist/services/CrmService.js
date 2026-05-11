@@ -7,10 +7,12 @@ export class CrmService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getCrmClientCollection(q, page, itemsPerPage) {
+    static getCrmClientCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/crm/v1/clients',
@@ -18,6 +20,8 @@ export class CrmService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -44,10 +48,12 @@ export class CrmService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getCrmClientContactLogCollection(id, q, page, itemsPerPage) {
+    static getCrmClientContactLogCollection(id, q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/crm/v1/clients/{id}/contact-logs',
@@ -58,6 +64,8 @@ export class CrmService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }

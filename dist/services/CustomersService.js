@@ -10,10 +10,12 @@ export class CustomersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getCustomerCollection(q, page, itemsPerPage) {
+    static getCustomerCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/customers/v1',
@@ -21,6 +23,8 @@ export class CustomersService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -49,10 +53,12 @@ export class CustomersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getCustomerOrganizationCollection(q, page, itemsPerPage) {
+    static getCustomerOrganizationCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/customers/v1/organizations',
@@ -60,6 +66,8 @@ export class CustomersService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -86,10 +94,12 @@ export class CustomersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getCustomerOrganizationContactLogCollection(id, q, page, itemsPerPage) {
+    static getCustomerOrganizationContactLogCollection(id, q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/customers/v1/organizations/{id}/contact-logs',
@@ -100,6 +110,8 @@ export class CustomersService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -109,10 +121,12 @@ export class CustomersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getCustomerPricingCollection(q, page, itemsPerPage) {
+    static getCustomerPricingCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/customer-pricing/v1',
@@ -120,6 +134,8 @@ export class CustomersService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }

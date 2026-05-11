@@ -25,7 +25,7 @@ export type AmarantGetBlogPostCollectionSearchCriteriaFilter = {
     }>>;
     sort?: Array<{
         /**
-         * id, title, status, channel_ids, category_ids, tag_ids, author_id, created_at, created_by_username, updated_at, updated_by_username
+         * id, title, status, channel_ids, category_ids, tag_ids, author_id, position, created_at, created_by_username, updated_at, updated_by_username
          */
         path?: string;
         direction?: 'ASC' | 'DESC';

@@ -10,10 +10,12 @@ export class OrdersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getOrderCollection(q, page, itemsPerPage) {
+    static getOrderCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/orders/v1',
@@ -21,6 +23,8 @@ export class OrdersService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -33,10 +37,12 @@ export class OrdersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getOrderPaymentTransactionCollection(q, page, itemsPerPage) {
+    static getOrderPaymentTransactionCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/orders/v1/payment-transactions',
@@ -44,6 +50,8 @@ export class OrdersService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -57,10 +65,12 @@ export class OrdersService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getOrderPaymentTransactionCollectionForOrder(id, q, page, itemsPerPage) {
+    static getOrderPaymentTransactionCollectionForOrder(id, q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/orders/v1/{id}/payment-transactions',
@@ -71,6 +81,8 @@ export class OrdersService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }

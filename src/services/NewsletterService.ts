@@ -18,6 +18,8 @@ export class NewsletterService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
@@ -25,6 +27,8 @@ export class NewsletterService {
         q?: AmarantGetSalesNewsletterSubscriberCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
+        include?: string,
+        exclude?: string,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantSalesNewsletterSubscriberOutputDto>;
     })> {
@@ -35,6 +39,8 @@ export class NewsletterService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }

@@ -12,20 +12,24 @@ export declare class MediaService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getMediaEntryCollection(q?: AmarantGetMediaEntryCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getMediaEntryCollection(q?: AmarantGetMediaEntryCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number, include?: string, exclude?: string): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantMediaModel>;
     })>;
     /**
      * Upload files to media gallery.
      * Upload files to media gallery.
      * @param formData
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any Resource created.
      * @throws ApiError
      */
-    static uploadMediaGalleryCollection(formData: UploadMediaGalleryCollectionInputAmarantMediaGalleryBackendInput): CancelablePromise<(AmarantApiCollectionResponse & {
+    static uploadMediaGalleryCollection(formData: UploadMediaGalleryCollectionInputAmarantMediaGalleryBackendInput, include?: string, exclude?: string): CancelablePromise<(AmarantApiCollectionResponse & {
         data: Array<AmarantMediaModel>;
     })>;
     /**

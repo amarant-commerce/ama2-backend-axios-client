@@ -10,10 +10,12 @@ export class InvoicesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getOrderInvoiceCollection(q, page, itemsPerPage) {
+    static getOrderInvoiceCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/orders/v1/invoices',
@@ -21,6 +23,8 @@ export class InvoicesService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -34,10 +38,12 @@ export class InvoicesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getOrderInvoiceCollectionForOrder(id, q, page, itemsPerPage) {
+    static getOrderInvoiceCollectionForOrder(id, q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/orders/v1/{id}/invoices',
@@ -48,6 +54,8 @@ export class InvoicesService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -60,10 +68,12 @@ export class InvoicesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getOrderCreditMemoCollection(q, page, itemsPerPage) {
+    static getOrderCreditMemoCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/orders/v1/credit-memos',
@@ -71,6 +81,8 @@ export class InvoicesService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -84,10 +96,12 @@ export class InvoicesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getOrderCreditMemoCollectionForOrder(id, q, page, itemsPerPage) {
+    static getOrderCreditMemoCollectionForOrder(id, q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/orders/v1/{id}/credit-memos',
@@ -98,6 +112,8 @@ export class InvoicesService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }

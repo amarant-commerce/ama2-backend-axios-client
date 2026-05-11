@@ -7,7 +7,7 @@ export type AmarantGetCookiePanelCollectionSearchCriteriaFilter = {
         /**
          * active: eq
          * identifier: like
-         * scopes: in
+         * channel_scope_ids: aina
          * created_by_username: like
          * updated_by_username: like
          */
@@ -15,7 +15,7 @@ export type AmarantGetCookiePanelCollectionSearchCriteriaFilter = {
         /**
          * active: integer, string
          * identifier: string
-         * scopes: string
+         * channel_scope_ids: string, integer
          * created_by_username: string
          * updated_by_username: string
          */
@@ -23,7 +23,7 @@ export type AmarantGetCookiePanelCollectionSearchCriteriaFilter = {
     }>>;
     sort?: Array<{
         /**
-         * id, active, identifier, scopes, created_at, created_by_username, updated_at, updated_by_username
+         * id, active, identifier, channel_scope_ids, created_at, created_by_username, updated_at, updated_by_username
          */
         path?: string;
         direction?: 'ASC' | 'DESC';

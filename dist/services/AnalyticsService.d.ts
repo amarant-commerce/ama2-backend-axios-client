@@ -11,10 +11,12 @@ export declare class AnalyticsService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getCookiePanelCollection(q?: AmarantGetCookiePanelCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getCookiePanelCollection(q?: AmarantGetCookiePanelCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number, include?: string, exclude?: string): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantCookiePanelModel>;
     })>;
     /**
@@ -30,10 +32,12 @@ export declare class AnalyticsService {
      * Get sales analytics order sale history collection.
      * @param unit Unit of age of data.
      * @param age Value of age of data.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getSalesAnalyticsOrderSaleHistory(unit: 'days', age: number): CancelablePromise<(AmarantApiCollectionResponse & {
+    static getSalesAnalyticsOrderSaleHistory(unit: 'days', age: number, include?: string, exclude?: string): CancelablePromise<(AmarantApiCollectionResponse & {
         data: Array<AmarantSalesAnalyticsSaleHistoryModel>;
     })>;
 }

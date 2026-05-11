@@ -16,10 +16,12 @@ export declare class InvoicesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getOrderInvoiceCollection(q?: AmarantGetOrderInvoiceCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getOrderInvoiceCollection(q?: AmarantGetOrderInvoiceCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number, include?: string, exclude?: string): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantOrderInvoiceModel>;
     })>;
     /**
@@ -32,10 +34,12 @@ export declare class InvoicesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getOrderInvoiceCollectionForOrder(id: number, q?: AmarantGetOrderInvoiceCollectionForOrderSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getOrderInvoiceCollectionForOrder(id: number, q?: AmarantGetOrderInvoiceCollectionForOrderSearchCriteriaFilter, page?: number, itemsPerPage?: number, include?: string, exclude?: string): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantOrderInvoiceModel>;
     })>;
     /**
@@ -47,10 +51,12 @@ export declare class InvoicesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getOrderCreditMemoCollection(q?: AmarantGetOrderCreditMemoCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getOrderCreditMemoCollection(q?: AmarantGetOrderCreditMemoCollectionSearchCriteriaFilter, page?: number, itemsPerPage?: number, include?: string, exclude?: string): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantOrderCreditMemoModel>;
     })>;
     /**
@@ -63,10 +69,12 @@ export declare class InvoicesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getOrderCreditMemoCollectionForOrder(id: number, q?: AmarantGetOrderCreditMemoCollectionForOrderSearchCriteriaFilter, page?: number, itemsPerPage?: number): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
+    static getOrderCreditMemoCollectionForOrder(id: number, q?: AmarantGetOrderCreditMemoCollectionForOrderSearchCriteriaFilter, page?: number, itemsPerPage?: number, include?: string, exclude?: string): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantOrderCreditMemoModel>;
     })>;
 }

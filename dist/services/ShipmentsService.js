@@ -10,10 +10,12 @@ export class ShipmentsService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getOrderShipmentCollection(q, page, itemsPerPage) {
+    static getOrderShipmentCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/orders/v1/shipments',
@@ -21,6 +23,8 @@ export class ShipmentsService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -34,10 +38,12 @@ export class ShipmentsService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getOrderShipmentCollectionForOrder(id, q, page, itemsPerPage) {
+    static getOrderShipmentCollectionForOrder(id, q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/orders/v1/{id}/shipments',
@@ -48,6 +54,8 @@ export class ShipmentsService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }

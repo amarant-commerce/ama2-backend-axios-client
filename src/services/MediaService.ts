@@ -18,6 +18,8 @@ export class MediaService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
@@ -25,6 +27,8 @@ export class MediaService {
         q?: AmarantGetMediaEntryCollectionSearchCriteriaFilter,
         page?: number,
         itemsPerPage?: number,
+        include?: string,
+        exclude?: string,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
         data: Array<AmarantMediaModel>;
     })> {
@@ -35,6 +39,8 @@ export class MediaService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -42,17 +48,25 @@ export class MediaService {
      * Upload files to media gallery.
      * Upload files to media gallery.
      * @param formData
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any Resource created.
      * @throws ApiError
      */
     public static uploadMediaGalleryCollection(
         formData: UploadMediaGalleryCollectionInputAmarantMediaGalleryBackendInput,
+        include?: string,
+        exclude?: string,
     ): CancelablePromise<(AmarantApiCollectionResponse & {
         data: Array<AmarantMediaModel>;
     })> {
         return __request(OpenAPI, {
             method: 'POST',
             url: '/api/media/v1/gallery',
+            query: {
+                'include': include,
+                'exclude': exclude,
+            },
             formData: formData,
             mediaType: 'multipart/form-data',
         });

@@ -9,6 +9,7 @@ export type AmarantGetCustomerCollectionSearchCriteriaFilter = {
          * organization_id: eq
          * created_in_area: eq, like
          * external_provider: eq, like
+         * is_online: eq
          */
         condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
@@ -20,6 +21,7 @@ export type AmarantGetCustomerCollectionSearchCriteriaFilter = {
          * organization_id: string, integer
          * created_in_area: string
          * external_provider: string
+         * is_online: string, integer, boolean
          */
         value?: number | number | string | boolean | any[] | null;
     }>>;

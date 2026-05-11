@@ -10,10 +10,12 @@ export class SalesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getTierRuleCollection(q, page, itemsPerPage) {
+    static getTierRuleCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/sales/v1/pricing/tier-rules',
@@ -21,6 +23,8 @@ export class SalesService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -52,10 +56,12 @@ export class SalesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getPricingRuleCollection(q, page, itemsPerPage) {
+    static getPricingRuleCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/sales/v1/pricing/rules',
@@ -63,6 +69,8 @@ export class SalesService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -95,10 +103,12 @@ export class SalesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getPricingRuleCouponCollection(id, q, page, itemsPerPage) {
+    static getPricingRuleCouponCollection(id, q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/sales/v1/pricing/rules/{id}/coupons',
@@ -109,6 +119,8 @@ export class SalesService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -139,10 +151,12 @@ export class SalesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getTaxRateCollection(q, page, itemsPerPage) {
+    static getTaxRateCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/sales/v1/tax/rates',
@@ -150,6 +164,8 @@ export class SalesService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -162,10 +178,12 @@ export class SalesService {
      * @param q Search criteria query.
      * @param page Page.
      * @param itemsPerPage Items per page.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getTaxCategoryCollection(q, page, itemsPerPage) {
+    static getTaxCategoryCollection(q, page, itemsPerPage, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/sales/v1/tax/categories',
@@ -173,6 +191,8 @@ export class SalesService {
                 'q': q,
                 'page': page,
                 'itemsPerPage': itemsPerPage,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
@@ -181,16 +201,20 @@ export class SalesService {
      * Get sales analytics order sale history collection.
      * @param unit Unit of age of data.
      * @param age Value of age of data.
+     * @param include Include fields (comma separated).
+     * @param exclude Exclude fields (comma separated).
      * @returns any OK
      * @throws ApiError
      */
-    static getSalesAnalyticsOrderSaleHistory(unit, age) {
+    static getSalesAnalyticsOrderSaleHistory(unit, age, include, exclude) {
         return __request(OpenAPI, {
             method: 'GET',
             url: '/api/sales-analytics/v1/orders/sale-history',
             query: {
                 'unit': unit,
                 'age': age,
+                'include': include,
+                'exclude': exclude,
             },
         });
     }
