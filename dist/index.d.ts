@@ -87,6 +87,7 @@ export type { AmarantGetTaxCategoryCollectionSearchCriteriaFilter } from './mode
 export type { AmarantGetTaxRateCollectionSearchCriteriaFilter } from './models/AmarantGetTaxRateCollectionSearchCriteriaFilter';
 export type { AmarantGetTermsConditionsCollectionSearchCriteriaFilter } from './models/AmarantGetTermsConditionsCollectionSearchCriteriaFilter';
 export type { AmarantGetTierRuleCollectionSearchCriteriaFilter } from './models/AmarantGetTierRuleCollectionSearchCriteriaFilter';
+export type { AmarantGetUserAccountApiKeyCollectionSearchCriteriaFilter } from './models/AmarantGetUserAccountApiKeyCollectionSearchCriteriaFilter';
 export type { AmarantGetUserAccountCollectionSearchCriteriaFilter } from './models/AmarantGetUserAccountCollectionSearchCriteriaFilter';
 export type { AmarantGetUserAccountGroupCollectionSearchCriteriaFilter } from './models/AmarantGetUserAccountGroupCollectionSearchCriteriaFilter';
 export type { AmarantImageModel } from './models/AmarantImageModel';
@@ -160,6 +161,7 @@ export type { AmarantStoreChannelModel } from './models/AmarantStoreChannelModel
 export type { AmarantStoreChannelScopeModel } from './models/AmarantStoreChannelScopeModel';
 export { AmarantTotalCodeModel } from './models/AmarantTotalCodeModel';
 export { AmarantTotalLabelModel } from './models/AmarantTotalLabelModel';
+export type { AmarantUserAccountApiKeyModel } from './models/AmarantUserAccountApiKeyModel';
 export type { AmarantUserAccountGroupModel } from './models/AmarantUserAccountGroupModel';
 export type { AmarantUserAccountModel } from './models/AmarantUserAccountModel';
 export type { BulkDeletePricingRuleCouponItemsInputAmarantSalesPricingRuleCouponBulkDeleteInputDto } from './models/BulkDeletePricingRuleCouponItemsInputAmarantSalesPricingRuleCouponBulkDeleteInputDto';

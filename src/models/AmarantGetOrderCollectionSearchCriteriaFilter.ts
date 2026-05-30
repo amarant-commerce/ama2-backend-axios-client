@@ -12,6 +12,7 @@ export type AmarantGetOrderCollectionSearchCriteriaFilter = {
          * billing_addresses: like
          * currency: eq, like
          * status: eq
+         * created_at: gt, gte, lt, lte, range
          */
         condition?: 'eq' | 'neq' | 'in' | 'nin' | 'gt' | 'lt' | 'lte' | 'gte' | 'null' | 'range' | 'like' | 'tr' | 'fa';
         /**
@@ -22,6 +23,7 @@ export type AmarantGetOrderCollectionSearchCriteriaFilter = {
          * billing_addresses: string
          * currency: string
          * status: string
+         * created_at: array
          */
         value?: number | number | string | boolean | any[] | null;
     }>>;
