@@ -3,7 +3,7 @@ export type AmarantUserAccountApiKeyModel = {
     name: string;
     userAccountId: number;
     username: string;
-    status: boolean;
+    active: boolean;
     lastUsedIp?: string | null;
     lastUsedTime?: string | null;
     accessScopes: Array<string>;
