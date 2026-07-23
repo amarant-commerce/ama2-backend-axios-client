@@ -5,6 +5,7 @@ export type AmarantSalesPricingRule = {
     name: string;
     description?: string | null;
     channelIds: Array<number>;
+    customerGroupIds: Array<number>;
     subject: string;
     priceType: string;
     priority: number;
