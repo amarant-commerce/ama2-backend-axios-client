@@ -5,6 +5,7 @@ import type { AmarantGetChannelScopeCollectionSearchCriteriaFilter } from '../mo
 import type { AmarantStoreChannelDomainModel } from '../models/AmarantStoreChannelDomainModel';
 import type { AmarantStoreChannelModel } from '../models/AmarantStoreChannelModel';
 import type { AmarantStoreChannelScopeModel } from '../models/AmarantStoreChannelScopeModel';
+import type { UpdateChannelDomainStateInputAmarantStoreChannelDomainStateInputDto } from '../models/UpdateChannelDomainStateInputAmarantStoreChannelDomainStateInputDto';
 import type { CancelablePromise } from '../core/CancelablePromise';
 export declare class StoresService {
     /**
@@ -73,4 +74,27 @@ export declare class StoresService {
      * @throws ApiError
      */
     static getChannel(id: number): CancelablePromise<AmarantStoreChannelDomainModel>;
+    /**
+     * Delete store channel domain.
+     * Delete store channel domain.
+     *
+     * Required access scopes:
+     * * write_channels
+     * @param id Channel ID.
+     * @returns AmarantStoreChannelDomainModel Resource deleted.
+     * @throws ApiError
+     */
+    static deleteChannelDomain(id: number): CancelablePromise<AmarantStoreChannelDomainModel>;
+    /**
+     * Update store channel domain state.
+     * Update store channel domain state.
+     *
+     * Required access scopes:
+     * * write_channels
+     * @param id Channel ID.
+     * @param requestBody
+     * @returns AmarantStoreChannelDomainModel Resource updated.
+     * @throws ApiError
+     */
+    static updateChannelDomainState(id: number, requestBody: UpdateChannelDomainStateInputAmarantStoreChannelDomainStateInputDto): CancelablePromise<AmarantStoreChannelDomainModel>;
 }

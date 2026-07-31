@@ -177,6 +177,7 @@ export type { InputAmarantAiPlaygroundInputDto } from './models/InputAmarantAiPl
 export type { RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel } from './models/RemoveCustomerPricingBulkInputAmarantSalesCustomerPricingBulkDeleteInputModel';
 export type { SyncProductCsvInputAmarantProductCsvSyncInputDto } from './models/SyncProductCsvInputAmarantProductCsvSyncInputDto';
 export type { UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto } from './models/UpdateAttributeOptionItemInputAmarantAttributeOptionInputDto';
+export type { UpdateChannelDomainStateInputAmarantStoreChannelDomainStateInputDto } from './models/UpdateChannelDomainStateInputAmarantStoreChannelDomainStateInputDto';
 export type { UpdateCustomerPricingBulkInputAmarantSalesCustomerPricingBulkInputModel } from './models/UpdateCustomerPricingBulkInputAmarantSalesCustomerPricingBulkInputModel';
 export type { UpdateQuoteItemInputAmarantSalesQuoteInputDto } from './models/UpdateQuoteItemInputAmarantSalesQuoteInputDto';
 export type { UploadMediaGalleryCollectionInputAmarantMediaGalleryBackendInput } from './models/UploadMediaGalleryCollectionInputAmarantMediaGalleryBackendInput';

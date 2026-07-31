@@ -121,4 +121,45 @@ export class StoresService {
             },
         });
     }
+    /**
+     * Delete store channel domain.
+     * Delete store channel domain.
+     *
+     * Required access scopes:
+     * * write_channels
+     * @param id Channel ID.
+     * @returns AmarantStoreChannelDomainModel Resource deleted.
+     * @throws ApiError
+     */
+    static deleteChannelDomain(id) {
+        return __request(OpenAPI, {
+            method: 'DELETE',
+            url: '/api/stores/v1/channel-domains/{id}',
+            path: {
+                'id': id,
+            },
+        });
+    }
+    /**
+     * Update store channel domain state.
+     * Update store channel domain state.
+     *
+     * Required access scopes:
+     * * write_channels
+     * @param id Channel ID.
+     * @param requestBody
+     * @returns AmarantStoreChannelDomainModel Resource updated.
+     * @throws ApiError
+     */
+    static updateChannelDomainState(id, requestBody) {
+        return __request(OpenAPI, {
+            method: 'PATCH',
+            url: '/api/stores/v1/channel-domains/{id}',
+            path: {
+                'id': id,
+            },
+            body: requestBody,
+            mediaType: 'application/json',
+        });
+    }
 }
